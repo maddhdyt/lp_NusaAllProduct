@@ -1,1 +1,55 @@
 @import "tailwindcss";
+@plugin "@iconify/tailwind4";
+
+* {
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto !important;
+}
+
+.bg-green-gradient {
+    background: linear-gradient(180deg, #09C44E 0%, #045E25 100%)
+}
+
+.bg-blue-gradient {
+    background: linear-gradient(90deg, #0070E4 0%, #01458B 100%);
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 25px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
