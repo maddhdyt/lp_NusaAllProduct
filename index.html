@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nusa Agency - Grow Up Your Business</title>
-    <link rel="shortcut icon" href="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758723635/nusaagency_2_1_z4fkdt.webp" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758723635/nusaagency_2_1_z4fkdt.webp"
+        type="image/x-icon">
     <link rel="stylesheet" href="src/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <script defer src="http://googleusercontent.com/alpinejs/alpine@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
     <header class="bg-white sticky top-0 z-50 shadow-md">
         <div class="container">
-            <div class="flex justify-between items-center h-[120px]">
+            <div class="flex justify-between items-center md:h-[120px] h-[100px]">
 
                 <a href="#" class="flex-shrink-0">
                     <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp"
-                        alt="Nusa Agency Logo" class="h-14">
+                        alt="Nusa Agency Logo" class="h-12 md:h-14">
                 </a>
 
                 <nav class="hidden md:flex space-x-8">
@@ -61,7 +64,8 @@
                         <span class="icon-[mage--email-fill] !w-6 !h-6 text-white !block"></span>
                     </a>
                     <a href="#"
-                        class="flex justify-center items-center h-[45px] px-5 bg-blue-gradient text-white font-semibold rounded-full hover:bg-blue-600 transition duration-300">Hubungi Kami</a>
+                        class="flex justify-center items-center h-[45px] px-5 bg-blue-gradient text-white font-semibold rounded-full hover:bg-blue-600 transition duration-300">Hubungi
+                        Kami</a>
                 </div>
 
                 <button id="mobile-menu-button"
@@ -75,7 +79,7 @@
             </div>
 
             <div id="mobile-menu" class="hidden md:hidden">
-                <nav class="flex flex-col space-y-2 py-2">
+                <nav class="flex flex-col space-y-2 pb-8">
                     <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Tentang
                         Kami</a>
                     <a href="#"
@@ -94,7 +98,695 @@
         </div>
     </header>
     <main>
+        <section id="header" class="pt-16">
+            <div class="container">
+                <div class="headline flex flex-col items-center justify-center w-full">
+                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758786474/image912_sdjfnx.webp" alt=""
+                        class="lg:w-[55%] h-auto">
+                    <p class="font-medium text-[#222] text-center leading-[24px] mt-2">Kami adalah Nusa Agency, creative
+                        digital partner yang membantu bisnis, lembaga, dan komunitas <br>tumbuh melalui teknologi,
+                        desain, dan strategi digital yang relevan.</p>
+                    <a href=""
+                        class="bg-green-gradient py-2.5 rounded-xl px-5 text-white mt-4 font-semibold text-lg">Mulai
+                        Proyek Anda</a>
+                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758806642/group2159_lq8the.webp"
+                        alt="" class="lg:w-[65%] h-auto mt-8">
+                </div>
+            </div>
+        </section>
+        <section id="why-us" class="mt-14">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758808429/group2166_fi602s.webp"
+                        alt="Nusa Agency Team">
+                    <div>
+                        <h1 class="text-3xl md:text-[48px] font-extrabold leading-tight md:leading-14">KENAPA HARUS DI
+                            <span class="text-blue-gradient">NUSA AGENCY</span>
+                        </h1>
+                        <p class="mt-2 font-semibold text-[#222] text-justify">Solusi digital yang berkelanjutan, tepat
+                            waktu, dan relevan dengan perkembangan teknologi terkini.</p>
+                        <div class="flex flex-col gap-3 mt-5">
+                            <div class="flex gap-4 items-center">
+                                <div class="w-[110px] flex-shrink-0 flex items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758809731/untitleddesign_19_1_b8k1i4.webp"
+                                        alt="icon" class="w-full h-fit">
+                                </div>
+                                <div>
+                                    <h6 class="text-green-gradient text-2xl font-extrabold uppercase">Keberlanjutan</h6>
+                                    <p class="text-justify text-sm text-[#222] font-semibold">Kami tidak hanya
+                                        membangun, tapi juga mendampingi. Solusi yang kami berikan dirancang untuk
+                                        bertahan lama dan terus relevan dengan perkembangan zaman.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <div class="w-[110px] flex-shrink-0 flex items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758809731/nusaagency_4_1_ks1jjw.webp"
+                                        alt="icon" class="w-[90%] h-fit">
+                                </div>
+                                <div>
+                                    <h6 class="text-green-gradient text-2xl font-extrabold">Projek Tepat Waktu</h6>
+                                    <p class="text-justify text-sm text-[#222] font-semibold">Komitmen kami adalah
+                                        menyelesaikan setiap proyek sesuai timeline yang disepakati, tanpa mengorbankan
+                                        kualitas.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <div class="w-[110px] flex-shrink-0 flex items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758809731/untitleddesign_20_1_fidrnn.webp"
+                                        alt="icon" class="w-[95%] h-fit">
+                                </div>
+                                <div>
+                                    <h6 class="text-green-gradient text-2xl font-extrabold">Teknologi Terkini</h6>
+                                    <p class="text-justify text-sm text-[#222] font-semibold">Kami selalu mengadopsi
+                                        teknologi terbaru dalam web development, digital marketing, hingga sistem
+                                        publikasi, sehingga klien kami selalu selangkah lebih maju.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <div class="w-[110px] flex-shrink-0 flex items-center justify-center">
+                                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758809731/image915_jktvwu.webp"
+                                        alt="icon" class="w-full h-fit">
+                                </div>
+                                <div>
+                                    <h6 class="text-green-gradient text-2xl font-extrabold">Desain Terbaru</h6>
+                                    <p class="text-justify text-sm text-[#222] font-semibold">Visual adalah bahasa
+                                        universal. Tim kreatif kami memastikan brand Anda tampil menonjol dengan desain
+                                        yang modern, segar, dan sesuai tren global.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product" class="mt-14 bg-blue-gradient py-20 relative overflow-hidden">
+            <div class="container">
+                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758817654/subtract_3_mrqdc3.webp" alt=""
+                    class="absolute -top-28 -left-10 w-48 md:w-auto">
+                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758817654/subtract_4_houe4q.webp" alt=""
+                    class="absolute -bottom-5 -right-14 w-48 md:w-auto">
+                <h1 class="text-4xl md:text-[54px] font-extrabold leading-tight md:leading-14 text-white text-center">
+                    PRODUK & LAYANAN<br>NUSA
+                    AGENCY</h1>
+                <p class="text-white font-semibold text-center mt-2">Solusi digital yang berkelanjutan, tepat waktu, dan
+                    relevan<br class="hidden sm:block">dengan perkembangan teknologi terkini.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-24 mt-28">
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image934_orhrc3.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Open Journal Systems</h6>
+                        <p class="text-center font-semibold text-white mt-2">Instalasi, kustomisasi, dan pelatihan OJS
+                            atau website institusi yang profesional.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image933_xlea6b.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Website Development</h6>
+                        <p class="text-center font-semibold text-white mt-2">Pembuatan website modern, responsif, dan
+                            SEO-ready untuk mendukung pertumbuhan digital bisnis Anda.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image935_saggnd.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Jasa Iklan Digital</h6>
+                        <p class="text-center font-semibold text-white mt-2">Strategi periklanan berbasis data di Google
+                            Ads, Meta Ads, dan platform digital lainnya untuk menjangkau audiens yang tepat.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image936_c9vzbk.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Publikasi Jurnal</h6>
+                        <p class="text-center font-semibold text-white mt-2">Pendampingan submit, layout, hingga
+                            strategi indeksasi untuk jurnal ilmiah.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image937_w3z7nv.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Penerbitan Buku</h6>
+                        <p class="text-center font-semibold text-white mt-2">Kurasi naskah, ISBN, desain sampul & tata
+                            letak, percetakan, hingga distribusi.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image938_hpd2lb.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Pelatihan LKP</h6>
+                        <p class="text-center font-semibold text-white mt-2">Kursus keterampilan untuk mendukung
+                            peningkatan kompetensi individu dan tenaga kerja.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image939_zz4gy4.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Pelatihan LPK</h6>
+                        <p class="text-center font-semibold text-white mt-2">Program pelatihan kerja terstruktur bagi
+                            pencari kerja maupun pengembangan SDM perusahaan.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image940_lyuom1.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Virtual Office</h6>
+                        <p class="text-center font-semibold text-white mt-2">Layanan kantor virtual profesional dengan
+                            alamat bisnis resmi, penerimaan surat, hingga dukungan administrasi.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
+                        <div
+                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
+                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image941_przbew.webp"
+                                alt="">
+                        </div>
+                        <h6 class="font-extrabold text-center text-2xl text-white">Legalitas Usaha</h6>
+                        <p class="text-center font-semibold text-white mt-2">Pendampingan pengurusan perizinan, badan
+                            hukum, hingga sertifikasi usaha agar bisnis berjalan lebih aman dan terpercaya.</p>
+                        <a href=""
+                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
+                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonial" class="py-14 sm:py-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-[#222]">TESTIMONIAL
+                    <span class="bg-gradient-to-r from-blue-800 to-green-600 bg-clip-text text-transparent">NUSA
+                        AGENCY</span>
+                </h1>
+                <p class="text-[#222] font-semibold mt-1.5 lg:w-1/2">Klien kami merasakan manfaat nyata dari layanan
+                    digital Nusa Agency — mulai dari publikasi akademik hingga transformasi branding.</p>
+                <div class="relative mt-12">
+                    <div id="testimonial-slider-wrapper" class="overflow-hidden">
+                        <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+                        </div>
+                    </div>
+                    <button id="prev-testimonial"
+                        class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors z-10 cursor-pointer">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="next-testimonial"
+                        class="absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors z-10 cursor-pointer">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-20">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div
+                            class="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+                            <div id="logo-marquee" class="flex items-center gap-5 sm:gap-15">
+                            </div>
+                        </div>
+                        <p class="text-gray-600 font-semibold text-center md:text-left flex-shrink-0 md:max-w-xs">Kami
+                            bangga dipercaya oleh berbagai kampus, lembaga, dan bisnis di Indonesia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="mt-14">
+            <div class="container">
+                <h1 class="text-4xl md:text-[54px] font-extrabold leading-tight md:leading-14 text-[#222] text-center">
+                    PORTFOLIO<br><span
+                        class="bg-gradient-to-r from-blue-800 to-green-600 bg-clip-text text-transparent">NUSA
+                        AGENCY</span></h1>
+                <p class="text-[#222] font-semibold mt-1.5 text-center">Bukti nyata kerja kami dalam membangun solusi
+                    digital yang relevan dan berkelanjutan</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+                    <div class="porto-card rounded-3xl shadow-xl bg-white py-8 px-7 border border-green-100">
+                        <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758954301/image5_fpjls8.webp"
+                            alt="Portfolio item for Open Journal Systems">
+                        <h6 class="text-2xl font-extrabold text-blue-900 text-center mt-5">Open Journal Systems</h6>
+                        <p class="text-center text-[#222] font-semibold mt-1">Custom web solution for business</p>
+                        <a href=""
+                            class="text-white font-semibold py-2 px-4 rounded-lg bg-green-gradient mx-auto mt-4 block w-fit">Lihat
+                            Project</a>
+                    </div>
+                    <div class="porto-card rounded-3xl shadow-xl bg-white py-8 px-7 border border-green-100">
+                        <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758954402/macbook-air-arkapublisher.co.id1_ozh4lo.webp"
+                            alt="Portfolio item for Web Development">
+                        <h6 class="text-2xl font-extrabold text-blue-900 text-center mt-5">Web Development</h6>
+                        <p class="text-center text-[#222] font-semibold mt-1">Custom web solution for business</p>
+                        <a href=""
+                            class="text-white font-semibold py-2 px-4 rounded-lg bg-green-gradient mx-auto mt-4 block w-fit">Lihat
+                            Project</a>
+                    </div>
+                    <div class="porto-card rounded-3xl shadow-xl bg-white py-8 px-7 border border-green-100">
+                        <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758879179/macbook-air-ads.google.com1_zbqdo7.webp"
+                            alt="Portfolio item for Digital Marketing">
+                        <h6 class="text-2xl font-extrabold text-blue-900 text-center mt-5">Digital Marketing</h6>
+                        <p class="text-center text-[#222] font-semibold mt-1">Custom web solution for business</p>
+                        <a href=""
+                            class="text-white font-semibold py-2 px-4 rounded-lg bg-green-gradient mx-auto mt-4 block w-fit">Lihat
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="mt-16 py-12 bg-[#F0F8FF]">
+            <div class="container">
+                <h1 class="text-[54px] font-extrabold leading-tight text-[#222]">KONTAK<br>
+                    <span class="bg-gradient-to-r from-blue-800 to-green-600 bg-clip-text text-transparent">NUSA
+                        AGENCY</span>
+                </h1>
+                <p class="text-[#222] font-semibold mt-1.5">Mari mulai kolaborasi bersama Nusa Agency hari ini.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">ALAMAT</h3>
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-blue-800 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <p class="text-gray-600">Perumahan Janati Park, Jl. Raya Cirebon - Bandung Ruko 1-C,
+                                Cibeusi, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</p>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center mt-6 px-6 py-3 border border-blue-800 text-blue-800 font-semibold rounded-lg hover:bg-blue-800 hover:text-white transition-colors duration-300">
+                            Kunjungi Lokasi Kami
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">KONTAK</h3>
+                        <div class="space-y-4">
+                            <a href="admin@nusaagency.com" class="flex items-center text-gray-600 hover:text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-800 mr-3 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <span>admin@nusaagency.com</span>
+                            </a>
+                            <a href="admin@nusaagency.com" class="flex items-center text-gray-600 hover:text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-800 mr-3 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <span>service@nusaagency.com</span>
+                            </a>
+                            <a href="tel:082297881480" class="flex items-center text-gray-600 hover:text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-800 mr-3 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <span>+62 881-0223-76684</span>
+                            </a>
+                            <a href="tel:082297881480" class="flex items-center text-gray-600 hover:text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-800 mr-3 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <span>+62 812-2280-0879</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">MEDIA SOSIAL</h3>
+                        <div class="space-y-4">
+                            <a href="#" class="flex items-center text-gray-600 hover:text-green-600">
+                                <div
+                                    class="h-6 w-6 bg-gray-300 rounded-full mr-3 flex items-center justify-center bg-blue-gradient">
+                                    <span class="icon-[mdi--instagram] text-white"></span>
+                                </div>
+                                <span>@nusaagency</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-600 hover:text-green-600">
+                                <div
+                                    class="h-6 w-6 bg-gray-300 rounded-full mr-3 flex items-center justify-center bg-blue-gradient">
+                                    <span class="icon-[ic--baseline-facebook] text-white"></span>
+                                </div>
+                                <span>Nusa Agency</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-600 hover:text-green-600">
+                                <div
+                                    class="h-6 w-6 bg-gray-300 rounded-full mr-3 flex items-center justify-center bg-blue-gradient">
+                                    <span class="icon-[gg--website] text-white"></span>
+                                </div>
+                                <span>nusaagency.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 w-full h-[354px] rounded-2xl overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1218.352520381232!2d107.76266586961967!3d-6.936813668278451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c3ad4e8bb2cd%3A0x9dbff90f28b96c6f!2sNusa%20Agency!5e1!3m2!1sid!2sid!4v1758958202280!5m2!1sid!2sid"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+        <section id="faq" class="py-20">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+                    <div class="flex flex-col justify-center">
+                        <h1 class="text-[42px] font-extrabold leading-tight text-[#222]">ADAKAH PERTANYAAN?<br>
+                            <span class="text-blue-600 text-[38px]">KAMI PUNYA JAWABANNYA.</span>
+                        </h1>
+                        <p class="text-gray-600 font-medium mt-4 max-w-md">
+                            Kami merangkum pertanyaan yang paling sering ditanyakan seputar layanan Nusa Agency. Jika
+                            masih ada yang belum terjawab, tim kami siap membantu langsung.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4" id="faq-accordion">
+
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left">
+                                <h4 class="text-lg font-semibold text-gray-800">Bagaimana cara kerja layanan Nusa
+                                    Agency?</h4>
+                                <span class="text-green-500 flex-shrink-0 ml-2">
+                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="mt-2 text-gray-600">Kami mulai dari konsultasi kebutuhan Anda, lalu menyusun
+                                    strategi dan eksekusi yang disesuaikan dengan target bisnis maupun institusi Anda.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left">
+                                <h4 class="text-lg font-semibold text-gray-800">Berapa lama waktu yang dibutuhkan untuk
+                                    sebuah proyek?</h4>
+                                <span class="text-green-500 flex-shrink-0 ml-2">
+                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="mt-2 text-gray-600">Waktu pengerjaan bervariasi tergantung kompleksitas
+                                    proyek. Untuk pengembangan website standar, estimasi waktu sekitar 4-8 minggu. Kami
+                                    akan memberikan timeline detail setelah konsultasi awal.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left">
+                                <h4 class="text-lg font-semibold text-gray-800">Apakah ada layanan maintenance setelah
+                                    proyek selesai?</h4>
+                                <span class="text-green-500 flex-shrink-0 ml-2">
+                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="mt-2 text-gray-600">Ya, kami menawarkan paket maintenance dan support bulanan
+                                    untuk memastikan website atau sistem Anda berjalan optimal, aman, dan selalu
+                                    terupdate.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left">
+                                <h4 class="text-lg font-semibold text-gray-800">Bagaimana model penetapan harga di Nusa
+                                    Agency?</h4>
+                                <span class="text-green-500 flex-shrink-0 ml-2">
+                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="mt-2 text-gray-600">Kami tidak memiliki daftar harga tetap karena setiap
+                                    proyek unik. Kami akan memberikan penawaran harga yang transparan dan detail setelah
+                                    memahami sepenuhnya ruang lingkup proyek Anda melalui sesi konsultasi gratis.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left">
+                                <h4 class="text-lg font-semibold text-gray-800">Seberapa besar keterlibatan saya sebagai
+                                    klien?</h4>
+                                <span class="text-green-500 flex-shrink-0 ml-2">
+                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="mt-2 text-gray-600">Kolaborasi adalah kunci. Keterlibatan Anda akan sangat
+                                    penting pada tahap awal (diskusi konsep), persetujuan desain, dan sesi umpan balik.
+                                    Kami akan menjaga komunikasi secara teratur agar proyek berjalan sesuai visi Anda.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left">
+                                <h4 class="text-lg font-semibold text-gray-800">Apa yang membedakan Nusa Agency dari
+                                    yang lain?</h4>
+                                <span class="text-green-500 flex-shrink-0 ml-2">
+                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="mt-2 text-gray-600">Fokus kami adalah menjadi mitra strategis jangka panjang.
+                                    Kami memiliki spesialisasi mendalam dalam solusi untuk institusi akademik (seperti
+                                    OJS) dan pendekatan berbasis data yang memastikan hasil yang terukur.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="bg-blue-800 text-white py-12">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center">
+                        <div class="w-40 h-10 bg-white" style="-webkit-mask-image: url('https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp');
+                                mask-image: url('https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp');
+                                -webkit-mask-size: contain;
+                                mask-size: contain;
+                                -webkit-mask-repeat: no-repeat;
+                                mask-repeat: no-repeat;
+                                -webkit-mask-position: center;
+                                mask-position: center;">
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm text-blue-200 max-w-md">
+                        Kami membantu individu, lembaga, dan perusahaan untuk berkarya, berkembang, dan bersaing di era
+                        digital melalui layanan publikasi, pelatihan, dan pengembangan platform online yang profesional.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors"><svg class="h-6 w-6"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9.198 21.5h4v-8.01h2.598l.397-3.01h-2.995V8.498c0-.872.243-1.464 1.492-1.464h1.595V4.01c-.276-.037-1.226-.12-2.325-.12-2.302 0-3.878 1.402-3.878 3.986v2.216H7.197v3.01h2v8.01z">
+                                </path>
+                            </svg></a>
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors"><svg class="h-6 w-6"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z">
+                                </path>
+                            </svg></a>
+                        <a href="#" class="text-blue-200 hover:text-white transition-colors"><svg class="h-6 w-6"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold">Layanan</h3>
+                    <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">OJS</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Pelatihan LKP</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Web Development</a>
+                        </li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Pelatihan LPK</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Iklan Digital</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Virtual Office</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Publikasi Jurnal</a>
+                        </li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Legalitas</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold">Contact</h3>
+                    <div class="mt-4 space-y-4 text-sm">
+                        <div class="flex items-start">
+                            <svg class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <p class="text-blue-200">Graha DLA, Jl. Otto Iskandar Dinata No. 392, Lantai 1, Kelurahan
+                                Nyengseret, Kecamatan Astanaanyar, Kota Bandung, Jawa Barat 40252</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:admin@nusaagency.com"
+                                class="text-blue-200 hover:text-white transition-colors">admin@nusaagency.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <a href="tel:082297881480"
+                                class="text-blue-200 hover:text-white transition-colors">0881-0223-76684</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-blue-700 text-center">
+                <p class="text-xs text-blue-300">&copy; Copyright 2025 Nusa Agency. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="wa-btn" class="fixed bottom-10 right-10 z-50">
+        <a href="https://wa.me/6281212088836?text=Halo%20Mega%20Press%2C%20saya%20dari%20website%20mau%20bertanya%20soal%20layanan%20penerbitan%2Fpercetakan%20buku."
+            target="_blank" class="conversion relative block">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                class="w-16 h-16" />
+            <!-- Badge Notifikasi -->
+            <span id="wa-badge"
+                class="hidden absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                1
+            </span>
+        </a>
+    </div>
     <script>
         // Script untuk mengaktifkan menu mobile
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -102,6 +794,259 @@
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        window.addEventListener("load", () => {
+            const badge = document.getElementById("wa-badge");
+
+            // Tampilkan badge setelah 2 detik
+            setTimeout(() => {
+                badge.classList.remove("hidden");
+            }, 2000);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // --- Testimonial Slider Logic ---
+            const slider = document.getElementById('testimonial-slider');
+            const prevBtn = document.getElementById('prev-testimonial');
+            const nextBtn = document.getElementById('next-testimonial');
+            const cards = document.querySelectorAll('.testimonial-card');
+
+            let currentIndex = 0;
+
+            function getVisibleCards() {
+                if (window.innerWidth >= 1024) {
+                    return 3; // lg breakpoint
+                }
+                if (window.innerWidth >= 768) {
+                    return 2; // md breakpoint
+                }
+                return 1; // mobile
+            }
+
+            function updateSliderPosition() {
+                const cardWidth = cards[0].offsetWidth;
+                const newTransformValue = -currentIndex * cardWidth;
+                slider.style.transform = `translateX(${newTransformValue}px)`;
+            }
+
+            function showNext() {
+                const visibleCards = getVisibleCards();
+                if (currentIndex < cards.length - visibleCards) {
+                    currentIndex++;
+                } else {
+                    // Optional: loop back to start
+                    // currentIndex = 0;
+                }
+                updateSliderPosition();
+            }
+
+            function showPrev() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    // Optional: loop to the end
+                    // const visibleCards = getVisibleCards();
+                    // currentIndex = cards.length - visibleCards;
+                }
+                updateSliderPosition();
+            }
+
+            nextBtn.addEventListener('click', showNext);
+            prevBtn.addEventListener('click', showPrev);
+
+            // Adjust slider on window resize
+            window.addEventListener('resize', () => {
+                // Reset index and position on resize to avoid weird offsets
+                currentIndex = 0;
+                updateSliderPosition();
+            });
+
+
+            // --- Logo Marquee Logic ---
+            const logos = [
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/5.nusa_kti23d.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image880_tsgvud.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/image425_gzdhkk.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/2.arkainstitute.jpeg_lxxery.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/3_1_1_xcwhs6.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image879_zc6iek.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image882_gcfmi1.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image881_zvoisu.webp',
+                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image883_1_ylodm0.webp'
+            ];
+
+            const marqueeContainer = document.getElementById('logo-marquee');
+
+            // Duplicate logos to create a seamless loop
+            const allLogos = [...logos, ...logos];
+
+            allLogos.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'h-14 object-contain flex-shrink-0';
+                marqueeContainer.appendChild(img);
+            });
+
+            // Start animation
+            marqueeContainer.style.animation = 'marquee 40s linear infinite';
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // --- 1. Testimonial Data Array ---
+            // Now you can easily add, edit, or remove testimonials right here.
+            const testimonialsData = [
+                {
+                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
+                    quote: "Nusa Agency membantu jurnal kampus kami masuk ke indeksasi internasional. Prosesnya jelas, timnya komunikatif, hasilnya memuaskan.",
+                    avatarImg: "https://i.pravatar.cc/150?img=1",
+                    name: "Lisa Anggraini",
+                    title: "Freelancer Graphic Designer"
+                },
+                {
+                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
+                    quote: "Website yang dikembangkan sangat profesional dan sesuai dengan branding perusahaan kami. Peningkatannya luar biasa!",
+                    avatarImg: "https://i.pravatar.cc/150?img=2",
+                    name: "Budi Santoso",
+                    title: "CEO, Tech Corp"
+                },
+                {
+                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
+                    quote: "Manajemen OJS jadi lebih mudah dan efisien. Tim support Nusa Agency selalu siap membantu kapan pun dibutuhkan.",
+                    avatarImg: "https://i.pravatar.cc/150?img=3",
+                    name: "Citra Lestari",
+                    title: "Dosen & Peneliti"
+                },
+                {
+                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
+                    quote: "Proses rebranding berjalan lancar. Desain logo dan identitas visualnya sangat modern dan sesuai dengan visi kami.",
+                    avatarImg: "https://i.pravatar.cc/150?img=4",
+                    name: "Doni Firmansyah",
+                    title: "Startup Founder"
+                },
+                {
+                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
+                    quote: "Konten media sosial kami jadi lebih hidup dan menarik. Engagement rate meningkat drastis sejak ditangani Nusa Agency.",
+                    avatarImg: "https://i.pravatar.cc/150?img=5",
+                    name: "Rina Amelia",
+                    title: "Social Media Manager"
+                },
+                {
+                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
+                    quote: "Pelatihan OJS yang diberikan sangat komprehensif dan mudah diikuti, bahkan untuk pemula sekalipun. Sangat direkomendasikan!",
+                    avatarImg: "https://i.pravatar.cc/150?img=6",
+                    name: "Ahmad Hidayat",
+                    title: "Pengelola Jurnal"
+                }
+            ];
+
+            // --- 2. Dynamic Card Generation ---
+            const sliderContainer = document.getElementById('testimonial-slider');
+
+            testimonialsData.forEach(testimonial => {
+                const cardHTML = `
+                <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-8 h-full">
+                        <div class="flex items-center">
+                            <img src="${testimonial.starsImg}" alt="Rating" class="w-[115px]">
+                        </div>
+                        <p class="text-gray-600 mt-4">"${testimonial.quote}"</p>
+                        <div class="flex items-center mt-6">
+                            <img src="${testimonial.avatarImg}" alt="${testimonial.name}" class="w-14 h-14 rounded-full object-cover">
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-800">${testimonial.name}</p>
+                                <p class="text-sm text-gray-500">${testimonial.title}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+                sliderContainer.innerHTML += cardHTML;
+            });
+
+
+            // --- 3. Testimonial Slider Logic (Now works with the generated cards) ---
+            const slider = document.getElementById('testimonial-slider');
+            const prevBtn = document.getElementById('prev-testimonial');
+            const nextBtn = document.getElementById('next-testimonial');
+
+            // IMPORTANT: We select the cards *after* they have been generated
+            const cards = document.querySelectorAll('.testimonial-card');
+
+            if (cards.length > 0) {
+                let currentIndex = 0;
+
+                function getVisibleCards() {
+                    if (window.innerWidth >= 1024) return 3; // lg
+                    if (window.innerWidth >= 768) return 2; // md
+                    return 1; // mobile
+                }
+
+                function updateSliderPosition() {
+                    const cardWidth = cards[0].offsetWidth;
+                    const newTransformValue = -currentIndex * cardWidth;
+                    slider.style.transform = `translateX(${newTransformValue}px)`;
+                }
+
+                function showNext() {
+                    const visibleCards = getVisibleCards();
+                    if (currentIndex < cards.length - visibleCards) {
+                        currentIndex++;
+                    } else {
+                        currentIndex = 0; // Loop back to start
+                    }
+                    updateSliderPosition();
+                }
+
+                function showPrev() {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                    } else {
+                        const visibleCards = getVisibleCards();
+                        currentIndex = cards.length - visibleCards; // Loop to the end
+                    }
+                    updateSliderPosition();
+                }
+
+                nextBtn.addEventListener('click', showNext);
+                prevBtn.addEventListener('click', showPrev);
+
+                window.addEventListener('resize', () => {
+                    currentIndex = 0;
+                    updateSliderPosition();
+                });
+            }
+
+            // --- Logo Marquee Logic (remains the same) ---
+            // (Your existing logo marquee code goes here)
+
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const questionButton = item.querySelector('.faq-question');
+
+                questionButton.addEventListener('click', () => {
+                    const currentlyActive = document.querySelector('.faq-item.active');
+
+                    // If there is an active item and it's not the one we just clicked,
+                    // remove the active class from it.
+                    if (currentlyActive && currentlyActive !== item) {
+                        currentlyActive.classList.remove('active');
+                    }
+
+                    // Toggle the active class on the clicked item.
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Open the first FAQ item by default
+            if (faqItems.length > 0) {
+                faqItems[0].classList.add('active');
+            }
         });
     </script>
 </body>
