@@ -1,12 +1,29 @@
 @import "tailwindcss";
 @plugin "@iconify/tailwind4";
+
 @keyframes marquee {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0%);
     }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 * {
     font-family: "Karla", sans-serif;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .container {
@@ -37,26 +54,34 @@
 }
 
 .faq-item {
-        border-bottom: 1px solid #e5e7eb; /* gray-200 */
-        padding-bottom: 1rem; /* pb-4 */
-    }
-    .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
-    }
-    .faq-item.active .faq-answer {
-        max-height: 200px; /* Adjust if your content is taller */
-    }
-    .faq-icon-minus {
-        display: none;
-    }
-    .faq-item.active .faq-icon-minus {
-        display: block;
-    }
-    .faq-item.active .faq-icon-plus {
-        display: none;
-    }
+    border-bottom: 1px solid #e5e7eb;
+    /* gray-200 */
+    padding-bottom: 1rem;
+    /* pb-4 */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    /* Adjust if your content is taller */
+}
+
+.faq-icon-minus {
+    display: none;
+}
+
+.faq-item.active .faq-icon-minus {
+    display: block;
+}
+
+.faq-item.active .faq-icon-plus {
+    display: none;
+}
 
 @media (max-width: 576px) {
     .container {
