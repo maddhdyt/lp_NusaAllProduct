@@ -19,6 +19,60 @@ html {
     font-family: "Karla", sans-serif;
 }
 
+.logo-slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+    /* Masking effect for smooth edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.logo-slider-track {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    /* Space between logos */
+    /* Animation properties */
+    animation: scroll 30s linear infinite;
+}
+
+.logo-slider-container:hover .logo-slider-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-slider-track img {
+    height: 35px;
+    /* Adjust logo height */
+    max-width: none;
+    filter: grayscale(1);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.logo-slider-track img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) { /* Corresponds to Tailwind's 'md' breakpoint */
+    .stat-item:not(:first-child) {
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }

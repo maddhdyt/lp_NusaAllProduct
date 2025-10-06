@@ -305,30 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
 import { faqs } from '../data/dataOjs.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-    // const faqItems = document.querySelectorAll('.faq-item');
-
-    // faqItems.forEach(item => {
-    //     const questionButton = item.querySelector('.faq-question');
-
-    //     questionButton.addEventListener('click', () => {
-    //         const currentlyActive = document.querySelector('.faq-item.active');
-
-    //         // If there is an active item and it's not the one we just clicked,
-    //         // remove the active class from it.
-    //         if (currentlyActive && currentlyActive !== item) {
-    //             currentlyActive.classList.remove('active');
-    //         }
-
-    //         // Toggle the active class on the clicked item.
-    //         item.classList.toggle('active');
-    //     });
-    // });
-
-    // // Open the first FAQ item by default
-    // if (faqItems.length > 0) {
-    //     faqItems[0].classList.add('active');
-    // }
-    // --- FAQ Accordion (Corrected Logic) ---
     const faqContainer = document.getElementById('faq-accordion');
     if (faqContainer) {
 
