@@ -126,7 +126,7 @@ export const pricingPackages = [
 
 
 // A list of all Frequently Asked Questions
-export const faqs = [
+export const ojsFaqs = [
     {
         question: "Apa saja yang termasuk dalam paket pembuatan OJS?",
         answer: "Layanan kami mencakup instalasi OJS versi terbaru, kustomisasi tema sesuai branding institusi Anda, konfigurasi plugin esensial (seperti DOI dan plagiarisme), setup alur kerja editorial, dan pelatihan untuk tim Anda."

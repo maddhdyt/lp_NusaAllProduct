@@ -302,52 +302,52 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSlider();
 });
 
-import { faqs } from '../data/dataOjs.js';
+// import { faqs } from '../data/dataOjs.js';
 
-document.addEventListener('DOMContentLoaded', function () {
-    const faqContainer = document.getElementById('faq-accordion');
-    if (faqContainer) {
+// document.addEventListener('DOMContentLoaded', function () {
+//     const faqContainer = document.getElementById('faq-accordion');
+//     if (faqContainer) {
 
-        // Step 1: Generate all the HTML from your data at once.
-        let allFaqsHtml = ''; // Create an empty string to hold the HTML
-        faqs.forEach(faq => {
-            allFaqsHtml += `
-                <div class="faq-item bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
-                    <button class="faq-question flex justify-between items-center w-full text-left">
-                        <h4 class="text-lg font-semibold text-gray-800">${faq.question}</h4>
-                        <span class="faq-icon text-blue-600 flex-shrink-0 ml-2">
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="pt-4 text-gray-600">${faq.answer}</p>
-                    </div>
-                </div>
-            `;
-        });
-        faqContainer.innerHTML = allFaqsHtml; // Add the complete HTML to the page
+//         // Step 1: Generate all the HTML from your data at once.
+//         let allFaqsHtml = ''; // Create an empty string to hold the HTML
+//         faqs.forEach(faq => {
+//             allFaqsHtml += `
+//                 <div class="faq-item bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
+//                     <button class="faq-question flex justify-between items-center w-full text-left">
+//                         <h4 class="text-lg font-semibold text-gray-800">${faq.question}</h4>
+//                         <span class="faq-icon text-blue-600 flex-shrink-0 ml-2">
+//                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+//                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+//                             </svg>
+//                         </span>
+//                     </button>
+//                     <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+//                         <p class="pt-4 text-gray-600">${faq.answer}</p>
+//                     </div>
+//                 </div>
+//             `;
+//         });
+//         faqContainer.innerHTML = allFaqsHtml; // Add the complete HTML to the page
 
-        // Step 2: Now that the HTML exists, find the items and make them clickable.
-        const faqItems = faqContainer.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const questionButton = item.querySelector('.faq-question');
-            questionButton.addEventListener('click', () => {
-                const currentlyActive = faqContainer.querySelector('.faq-item.active');
-                if (currentlyActive && currentlyActive !== item) {
-                    currentlyActive.classList.remove('active');
-                }
-                item.classList.toggle('active');
-            });
-        });
+//         // Step 2: Now that the HTML exists, find the items and make them clickable.
+//         const faqItems = faqContainer.querySelectorAll('.faq-item');
+//         faqItems.forEach(item => {
+//             const questionButton = item.querySelector('.faq-question');
+//             questionButton.addEventListener('click', () => {
+//                 const currentlyActive = faqContainer.querySelector('.faq-item.active');
+//                 if (currentlyActive && currentlyActive !== item) {
+//                     currentlyActive.classList.remove('active');
+//                 }
+//                 item.classList.toggle('active');
+//             });
+//         });
 
-        // Open the first FAQ item by default
-        if (faqItems.length > 0) {
-            faqItems[0].classList.add('active');
-        }
-    }
-});
+//         // Open the first FAQ item by default
+//         if (faqItems.length > 0) {
+//             faqItems[0].classList.add('active');
+//         }
+//     }
+// });
 
 // Import the data from your data file
 import { pricingPackages } from '../data/dataOjs.js';
@@ -405,3 +405,52 @@ pricingPackages.forEach(pkg => {
     pricingGrid.innerHTML += cardHTML;
 });
 
+import { ojsFaqs } from '../data/dataOjs.js';
+
+document.addEventListener('DOMContentLoaded', function () {
+
+
+    const faqContainer = document.getElementById('faq-accordion');
+    if (faqContainer) {
+        let allFaqsHtml = '';
+        ojsFaqs.forEach(faq => {
+            // This HTML structure is built to match the CSS you provided
+            allFaqsHtml += `
+                <div class="faq-item">
+                    <button class="faq-question flex justify-between items-center w-full text-left">
+                        <h4 class="text-lg font-semibold text-gray-800">${faq.question}</h4>
+                        <span class="text-blue-600 flex-shrink-0 ml-2">
+                            <svg class="cursor-pointer faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <svg class="cursor-pointer faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="mt-2 text-gray-600">${faq.answer}</p>
+                    </div>
+                </div>
+            `;
+        });
+        faqContainer.innerHTML = allFaqsHtml;
+
+        // Now, add the click functionality
+        const faqItems = faqContainer.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const questionButton = item.querySelector('.faq-question');
+            questionButton.addEventListener('click', () => {
+                const currentlyActive = faqContainer.querySelector('.faq-item.active');
+                if (currentlyActive && currentlyActive !== item) {
+                    currentlyActive.classList.remove('active');
+                }
+                item.classList.toggle('active');
+            });
+        });
+
+        if (faqItems.length > 0) {
+            faqItems[0].classList.add('active');
+        }
+    }
+});
