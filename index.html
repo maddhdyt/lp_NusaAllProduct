@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -46,24 +47,31 @@
                 </a>
 
                 <nav class="hidden md:flex space-x-5">
-                    <div class="relative group">
-                        <a href="#"
-                            class="text-sm text-gray-600 hover:text-blue-500 font-semibold flex items-center transition duration-300">
-                            Layanan Nusa Agency
-                            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                        <button @click="open = !open"
+                            class="text-sm text-gray-600 hover:text-blue-500 font-semibold flex items-center transition duration-300 focus:outline-none cursor-pointer">
+                            Layanan Lainnya
+                            <svg class="ml-1 h-4 w-4 transform transition-transform duration-200"
+                                :class="{'rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7"></path>
                             </svg>
-                        </a>
-                        <div
-                            class="hidden group-hover:block absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1 z-50">
-                            <a href="/pembuatanOjs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa
-                                Pembuatan
+                        </button>
+
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="transform opacity-0 scale-95"
+                            x-transition:enter-end="transform opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-75"
+                            x-transition:leave-start="transform opacity-100 scale-100"
+                            x-transition:leave-end="transform opacity-0 scale-95"
+                            class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1 z-50"
+                            style="display: none;">
+                            <a href="/pembuatanOjs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Pembuatan
                                 OJS</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Publikasi
+                            <a href="/publisherJurnal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Publikasi
                                 Jurnal</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Penerbit
+                            <a href="/nusaPress" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Penerbit
                                 dan Percetakan Buku</a>
                         </div>
                     </div>
