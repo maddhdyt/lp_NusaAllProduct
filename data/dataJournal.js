@@ -97,3 +97,26 @@ export const servicesData = [
         ]
     }
 ];
+
+export const journalFaqs = [
+    {
+        question: "Apa saja yang termasuk dalam paket pembuatan OJS?",
+        answer: "Layanan kami mencakup instalasi OJS versi terbaru, kustomisasi tema sesuai branding institusi Anda, konfigurasi plugin esensial (seperti DOI dan plagiarisme), setup alur kerja editorial, dan pelatihan untuk tim Anda."
+    },
+    {
+        question: "Apakah bisa membantu agar jurnal kami terindeks SINTA dan Google Scholar?",
+        answer: "Tentu. Kami memastikan setup teknis OJS Anda memenuhi standar metadata OAI-PMH yang dibutuhkan oleh SINTA, Google Scholar, Garuda, dan lembaga pengindeks lainnya. Kami juga akan memandu Anda dalam proses pendaftarannya."
+    },
+    {
+        question: "Jurnal kami sudah punya OJS, tapi versi lama. Bisakah di-upgrade?",
+        answer: "Ya, kami spesialis dalam melakukan upgrade OJS dari versi lama ke versi terbaru. Kami menjamin prosesnya aman dengan melakukan backup penuh untuk melindungi semua data artikel, review, dan pengguna Anda."
+    },
+    {
+        question: "Apakah Nusa Agency menyediakan hosting untuk OJS?",
+        answer: "Kami menawarkan dua pilihan: instalasi pada server milik institusi Anda, atau menggunakan paket hosting kami yang sudah dioptimalkan khusus untuk OJS, lengkap dengan maintenance, keamanan, dan backup rutin."
+    },
+    {
+        question: "Berapa biaya untuk pembuatan website OJS?",
+        answer: "Biaya bervariasi tergantung tingkat kustomisasi dan fitur tambahan yang Anda butuhkan. Silakan hubungi kami untuk sesi konsultasi gratis, dan kami akan memberikan penawaran harga yang transparan sesuai kebutuhan spesifik jurnal Anda."
+    }
+];
