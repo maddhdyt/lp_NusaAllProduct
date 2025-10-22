@@ -1,12 +1,89 @@
 @import "tailwindcss";
 @plugin "@iconify/tailwind4";
+
+
+
 @keyframes marquee {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0%);
     }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     font-family: "Karla", sans-serif;
+}
+
+.logo-slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+    /* Masking effect for smooth edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.logo-slider-track {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    /* Space between logos */
+    /* Animation properties */
+    animation: scroll 30s linear infinite;
+}
+
+.logo-slider-container:hover .logo-slider-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-slider-track img {
+    height: 35px;
+    /* Adjust logo height */
+    max-width: none;
+    filter: grayscale(1);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.logo-slider-track img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) { /* Corresponds to Tailwind's 'md' breakpoint */
+    .stat-item:not(:first-child) {
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .container {
@@ -37,26 +114,45 @@
 }
 
 .faq-item {
-        border-bottom: 1px solid #e5e7eb; /* gray-200 */
-        padding-bottom: 1rem; /* pb-4 */
-    }
-    .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
-    }
-    .faq-item.active .faq-answer {
-        max-height: 200px; /* Adjust if your content is taller */
-    }
-    .faq-icon-minus {
-        display: none;
-    }
-    .faq-item.active .faq-icon-minus {
-        display: block;
-    }
-    .faq-item.active .faq-icon-plus {
-        display: none;
-    }
+    border-bottom: 1px solid #e5e7eb;
+    /* gray-200 */
+    padding-bottom: 1rem;
+    /* pb-4 */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    /* Adjust if your content is taller */
+}
+
+.faq-icon-minus {
+    display: none;
+}
+
+.faq-item.active .faq-icon-minus {
+    display: block;
+}
+
+.faq-item.active .faq-icon-plus {
+    display: none;
+}
+
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.testimonial-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media (max-width: 576px) {
     .container {
@@ -93,3 +189,11 @@
         max-width: 1200px;
     }
 }
+
+.bg-paket-lkp {
+          /* ganti URL di bawah dengan bg milikmu */
+          background-image: url("https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760425728/Group_2422_j7owko.png");
+          background-size: cover; /* auto responsive */
+          background-position: center; /* posisikan di tengah */
+          background-repeat: no-repeat;
+        }

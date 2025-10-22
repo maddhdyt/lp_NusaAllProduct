@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56FS37V3');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nusa Agency - Grow Up Your Business</title>
@@ -13,57 +23,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56FS37V3');</script>
+    <!-- End Google Tag Manager -->
     <header class="bg-white sticky top-0 z-50 shadow-md">
         <div class="container">
-            <div class="flex justify-between items-center md:h-[120px] h-[100px]">
+            <div class="flex justify-between items-center lg:[120px] md:h-[110px] h-[100px]">
 
                 <a href="#" class="flex-shrink-0">
                     <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp"
                         alt="Nusa Agency Logo" class="h-12 md:h-14">
                 </a>
 
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Tentang
-                        Kami</a>
-                    <div class="relative group">
-                        <a href="#"
-                            class="text-gray-600 hover:text-blue-500 font-semibold flex items-center transition duration-300">
-                            Layanan
-                            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                <nav class="hidden md:flex space-x-5">
+                    <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                        <button @click="open = !open"
+                            class="text-sm text-gray-600 hover:text-blue-500 font-semibold flex items-center transition duration-300 focus:outline-none cursor-pointer">
+                            Layanan Lainnya
+                            <svg class="ml-1 h-4 w-4 transform transition-transform duration-200"
+                                :class="{'rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7"></path>
                             </svg>
-                        </a>
-                        <div
-                            class="hidden group-hover:block absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1 z-50">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Layanan 1</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Layanan 2</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Layanan 3</a>
+                        </button>
+
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="transform opacity-0 scale-95"
+                            x-transition:enter-end="transform opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-75"
+                            x-transition:leave-start="transform opacity-100 scale-100"
+                            x-transition:leave-end="transform opacity-0 scale-95"
+                            class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1 z-50"
+                            style="display: none;">
+                            <a href="/pembuatanOjs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Pembuatan
+                                OJS</a>
+                            <a href="/publisherJurnal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Publikasi
+                                Jurnal</a>
+                            <a href="/nusaPress" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Penerbit
+                                dan Percetakan Buku</a>
                         </div>
                     </div>
-                    <a href="#"
-                        class="text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Testimoni</a>
-                    <a href="#"
-                        class="text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Kontak</a>
-                    <a href="#"
-                        class="text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Event</a>
+                    <a href="#product"
+                        class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Produk</a>
+                    <a href="#testimonial"
+                        class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Testimoni</a>
+                    <a href="#portfolio"
+                        class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Portfolio</a>
+                    <a href="#contact"
+                        class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300">Kontak</a>
                 </nav>
 
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="tel:+628123456789"
-                        class="w-[45px] h-[45px] !flex !justify-center !items-center rounded-full bg-green-gradient hover:bg-green-600 transition duration-300">
+                    <a href="https://wa.me/6285121117589?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+                        class="conversion w-[45px] h-[45px] !flex !justify-center !items-center rounded-full bg-green-gradient hover:bg-green-600 transition duration-300">
                         <span class="icon-[mynaui--telephone-call-solid] !w-6 !h-6 text-white !block"></span>
                     </a>
-                    <a href="tel:+628123456789"
+                    <a href="mailto:admin@nusaagency.com"
                         class="w-[45px] h-[45px] !flex !justify-center !items-center rounded-full bg-green-gradient hover:bg-green-600 transition duration-300">
                         <span class="icon-[mage--email-fill] !w-6 !h-6 text-white !block"></span>
                     </a>
-                    <a href="#"
-                        class="flex justify-center items-center h-[45px] px-5 bg-blue-gradient text-white font-semibold rounded-full hover:bg-blue-600 transition duration-300">Hubungi
+                    <a href="https://wa.me/6285121117589?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+                        class="conversion flex justify-center items-center h-[45px] px-5 bg-blue-gradient text-white font-semibold rounded-full hover:bg-blue-600 transition duration-300">Hubungi
                         Kami</a>
                 </div>
 
@@ -79,19 +111,17 @@
 
             <div id="mobile-menu" class="hidden md:hidden">
                 <nav class="flex flex-col space-y-2 pb-8">
-                    <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Tentang
-                        Kami</a>
-                    <a href="#"
-                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Layanan</a>
-                    <a href="#"
-                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Testimoni</a>
-                    <a href="#"
-                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Kontak</a>
-                    <a href="#"
-                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Event</a>
                     <a href="#"
                         class="block px-4 py-2 bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 transition duration-300">Hubungi
                         Kami</a>
+                    <a href="#product"
+                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Produk</a>
+                    <a href="#testimonial"
+                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Testimoni</a>
+                    <a href="#portfolio"
+                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Portfolio</a>
+                    <a href="#contact"
+                        class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300">Kontak</a>
                 </nav>
             </div>
         </div>
@@ -179,143 +209,20 @@
             </div>
         </section>
         <section id="product" class="mt-14 bg-blue-gradient py-20 relative overflow-hidden">
-            <div class="container">
-                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758817654/subtract_3_mrqdc3.webp" alt=""
-                    class="absolute -top-28 -left-10 w-48 md:w-auto">
-                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758817654/subtract_4_houe4q.webp" alt=""
-                    class="absolute -bottom-5 -right-14 w-48 md:w-auto">
+            <div class="container relative"> <img
+                    src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758817654/subtract_3_mrqdc3.webp"
+                    alt="Abstract shape" class="absolute -top-28 -left-10 w-48 md:w-auto pointer-events-none">
+                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758817654/subtract_4_houe4q.webp"
+                    alt="Abstract shape" class="absolute -bottom-5 -right-14 w-48 md:w-auto pointer-events-none">
+
                 <h1 class="text-4xl md:text-[54px] font-extrabold leading-tight md:leading-14 text-white text-center">
-                    PRODUK & LAYANAN<br>NUSA
-                    AGENCY</h1>
+                    PRODUK & LAYANAN<br>NUSA AGENCY
+                </h1>
                 <p class="text-white font-semibold text-center mt-2">Solusi digital yang berkelanjutan, tepat waktu, dan
-                    relevan<br class="hidden sm:block">dengan perkembangan teknologi terkini.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-24 mt-28">
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image934_orhrc3.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Open Journal Systems</h6>
-                        <p class="text-center font-semibold text-white mt-2">Instalasi, kustomisasi, dan pelatihan OJS
-                            atau website institusi yang profesional.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image933_xlea6b.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Website Development</h6>
-                        <p class="text-center font-semibold text-white mt-2">Pembuatan website modern, responsif, dan
-                            SEO-ready untuk mendukung pertumbuhan digital bisnis Anda.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image935_saggnd.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Jasa Iklan Digital</h6>
-                        <p class="text-center font-semibold text-white mt-2">Strategi periklanan berbasis data di Google
-                            Ads, Meta Ads, dan platform digital lainnya untuk menjangkau audiens yang tepat.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image936_c9vzbk.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Publikasi Jurnal</h6>
-                        <p class="text-center font-semibold text-white mt-2">Pendampingan submit, layout, hingga
-                            strategi indeksasi untuk jurnal ilmiah.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image937_w3z7nv.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Penerbitan Buku</h6>
-                        <p class="text-center font-semibold text-white mt-2">Kurasi naskah, ISBN, desain sampul & tata
-                            letak, percetakan, hingga distribusi.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image938_hpd2lb.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Pelatihan LKP</h6>
-                        <p class="text-center font-semibold text-white mt-2">Kursus keterampilan untuk mendukung
-                            peningkatan kompetensi individu dan tenaga kerja.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image939_zz4gy4.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Pelatihan LPK</h6>
-                        <p class="text-center font-semibold text-white mt-2">Program pelatihan kerja terstruktur bagi
-                            pencari kerja maupun pengembangan SDM perusahaan.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image940_lyuom1.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Virtual Office</h6>
-                        <p class="text-center font-semibold text-white mt-2">Layanan kantor virtual profesional dengan
-                            alamat bisnis resmi, penerimaan surat, hingga dukungan administrasi.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
-                    <div class="card border-8 border-white pt-16 pb-7 px-5 rounded-[40px] bg-green-600 relative">
-                        <div
-                            class="flex items-center justify-center rounded-full w-28 aspect-square bg-[#eee] absolute -top-16 border-6 border-white left-1/2 -translate-x-1/2 shadow-inner">
-                            <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image941_przbew.webp"
-                                alt="">
-                        </div>
-                        <h6 class="font-extrabold text-center text-2xl text-white">Legalitas Usaha</h6>
-                        <p class="text-center font-semibold text-white mt-2">Pendampingan pengurusan perizinan, badan
-                            hukum, hingga sertifikasi usaha agar bisnis berjalan lebih aman dan terpercaya.</p>
-                        <a href=""
-                            class="bg-white text-green-900 w-12 h-12 rounded-full flex items-center justify-center mx-auto mt-6 shadow-lg">
-                            <span class="icon-[ic--round-navigate-next] w-[30px] h-[30px]"></span>
-                        </a>
-                    </div>
+                    relevan<br class="hidden sm:block">dengan perkembangan teknologi terkini.
+                </p>
+
+                <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-24 mt-28">
                 </div>
             </div>
         </section>
@@ -423,7 +330,7 @@
                             <p class="text-gray-600">Perumahan Janati Park, Jl. Raya Cirebon - Bandung Ruko 1-C,
                                 Cibeusi, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</p>
                         </div>
-                        <a href="#"
+                        <a href="https://share.google/Uvrxg9aJ3aLwHSirY"
                             class="inline-flex items-center mt-6 px-6 py-3 border border-blue-800 text-blue-800 font-semibold rounded-lg hover:bg-blue-800 hover:text-white transition-colors duration-300">
                             Kunjungi Lokasi Kami
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
@@ -452,7 +359,8 @@
                                 </svg>
                                 <span>service@nusaagency.com</span>
                             </a>
-                            <a href="tel:082297881480" class="flex items-center text-gray-600 hover:text-green-600">
+                            <a href="https://wa.me/62881022376684"
+                                class="flex items-center text-gray-600 hover:text-green-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-800 mr-3 flex-shrink-0"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -460,7 +368,8 @@
                                 </svg>
                                 <span>+62 881-0223-76684</span>
                             </a>
-                            <a href="tel:082297881480" class="flex items-center text-gray-600 hover:text-green-600">
+                            <a href="https://wa.me/6281222800879"
+                                class="flex items-center text-gray-600 hover:text-green-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-800 mr-3 flex-shrink-0"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -524,153 +433,8 @@
                     </div>
 
                     <div class="space-y-4" id="faq-accordion">
-
-                        <div class="faq-item">
-                            <button class="faq-question flex justify-between items-center w-full text-left">
-                                <h4 class="text-lg font-semibold text-gray-800">Bagaimana cara kerja layanan Nusa
-                                    Agency?</h4>
-                                <span class="text-green-500 flex-shrink-0 ml-2">
-                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="faq-answer">
-                                <p class="mt-2 text-gray-600">Kami mulai dari konsultasi kebutuhan Anda, lalu menyusun
-                                    strategi dan eksekusi yang disesuaikan dengan target bisnis maupun institusi Anda.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question flex justify-between items-center w-full text-left">
-                                <h4 class="text-lg font-semibold text-gray-800">Berapa lama waktu yang dibutuhkan untuk
-                                    sebuah proyek?</h4>
-                                <span class="text-green-500 flex-shrink-0 ml-2">
-                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="faq-answer">
-                                <p class="mt-2 text-gray-600">Waktu pengerjaan bervariasi tergantung kompleksitas
-                                    proyek. Untuk pengembangan website standar, estimasi waktu sekitar 4-8 minggu. Kami
-                                    akan memberikan timeline detail setelah konsultasi awal.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question flex justify-between items-center w-full text-left">
-                                <h4 class="text-lg font-semibold text-gray-800">Apakah ada layanan maintenance setelah
-                                    proyek selesai?</h4>
-                                <span class="text-green-500 flex-shrink-0 ml-2">
-                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="faq-answer">
-                                <p class="mt-2 text-gray-600">Ya, kami menawarkan paket maintenance dan support bulanan
-                                    untuk memastikan website atau sistem Anda berjalan optimal, aman, dan selalu
-                                    terupdate.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question flex justify-between items-center w-full text-left">
-                                <h4 class="text-lg font-semibold text-gray-800">Bagaimana model penetapan harga di Nusa
-                                    Agency?</h4>
-                                <span class="text-green-500 flex-shrink-0 ml-2">
-                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="faq-answer">
-                                <p class="mt-2 text-gray-600">Kami tidak memiliki daftar harga tetap karena setiap
-                                    proyek unik. Kami akan memberikan penawaran harga yang transparan dan detail setelah
-                                    memahami sepenuhnya ruang lingkup proyek Anda melalui sesi konsultasi gratis.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question flex justify-between items-center w-full text-left">
-                                <h4 class="text-lg font-semibold text-gray-800">Seberapa besar keterlibatan saya sebagai
-                                    klien?</h4>
-                                <span class="text-green-500 flex-shrink-0 ml-2">
-                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="faq-answer">
-                                <p class="mt-2 text-gray-600">Kolaborasi adalah kunci. Keterlibatan Anda akan sangat
-                                    penting pada tahap awal (diskusi konsep), persetujuan desain, dan sesi umpan balik.
-                                    Kami akan menjaga komunikasi secara teratur agar proyek berjalan sesuai visi Anda.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <button class="faq-question flex justify-between items-center w-full text-left">
-                                <h4 class="text-lg font-semibold text-gray-800">Apa yang membedakan Nusa Agency dari
-                                    yang lain?</h4>
-                                <span class="text-green-500 flex-shrink-0 ml-2">
-                                    <svg class="faq-icon-plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <svg class="faq-icon-minus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="faq-answer">
-                                <p class="mt-2 text-gray-600">Fokus kami adalah menjadi mitra strategis jangka panjang.
-                                    Kami memiliki spesialisasi mendalam dalam solusi untuk institusi akademik (seperti
-                                    OJS) dan pendekatan berbasis data yang memastikan hasil yang terukur.</p>
-                            </div>
-                        </div>
-
                     </div>
+
                 </div>
             </div>
         </section>
@@ -717,18 +481,25 @@
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold">Layanan</h3>
+                    <h3 class="text-lg font-semibold">Layanan Nusa Agency</h3>
                     <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
-                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">OJS</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Pelatihan LKP</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Web Development</a>
+                        <li><a href="/pembuatanOjs" class="text-blue-200 hover:text-white transition-colors">Jasa
+                                Pembuatan OJS</a>
+                        </li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Jasa Pembuatan
+                                Website</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Jasa Penerbit Dan </a>
                         </li>
                         <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Pelatihan LPK</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Iklan Digital</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Virtual Office</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Publikasi Jurnal</a>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Jasa Iklan Digital</a>
                         </li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Legalitas</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Jasa Virtual Office</a>
+                        </li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Jasa Publikasi
+                                Jurnal</a>
+                        </li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Jasa Pembuatan
+                                Legalitas</a></li>
                     </ul>
                 </div>
 
@@ -743,8 +514,10 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            <p class="text-blue-200">Graha DLA, Jl. Otto Iskandar Dinata No. 392, Lantai 1, Kelurahan
-                                Nyengseret, Kecamatan Astanaanyar, Kota Bandung, Jawa Barat 40252</p>
+                            <p class="text-blue-200">Perumahan Janati Park, Jl. Raya Cirebon - Bandung Ruko 1-C,
+                                Cibeusi, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363
+
+                            </p>
                         </div>
                         <div class="flex items-center">
                             <svg class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0" fill="none" viewBox="0 0 24 24"
@@ -761,7 +534,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                            <a href="tel:082297881480"
+                            <a href="https://wa.me/62881022376684"
                                 class="text-blue-200 hover:text-white transition-colors">0881-0223-76684</a>
                         </div>
                     </div>
@@ -774,9 +547,8 @@
             </div>
         </div>
     </footer>
-    <div id="wa-btn" class="fixed bottom-10 right-10 z-50">
-        <a href="https://wa.me/6281212088836?text=Halo%20Mega%20Press%2C%20saya%20dari%20website%20mau%20bertanya%20soal%20layanan%20penerbitan%2Fpercetakan%20buku."
-            target="_blank" class="conversion relative block">
+    <div id="wa-btn" class="conversion fixed bottom-10 right-10 z-50">
+        <a href="https://wa.me/62881022376684" target="_blank" class="conversion relative block">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
                 class="w-16 h-16" />
             <!-- Badge Notifikasi -->
@@ -786,268 +558,7 @@
             </span>
         </a>
     </div>
-    <script>
-        // Script untuk mengaktifkan menu mobile
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        window.addEventListener("load", () => {
-            const badge = document.getElementById("wa-badge");
-
-            // Tampilkan badge setelah 2 detik
-            setTimeout(() => {
-                badge.classList.remove("hidden");
-            }, 2000);
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-            // --- Testimonial Slider Logic ---
-            const slider = document.getElementById('testimonial-slider');
-            const prevBtn = document.getElementById('prev-testimonial');
-            const nextBtn = document.getElementById('next-testimonial');
-            const cards = document.querySelectorAll('.testimonial-card');
-
-            let currentIndex = 0;
-
-            function getVisibleCards() {
-                if (window.innerWidth >= 1024) {
-                    return 3; // lg breakpoint
-                }
-                if (window.innerWidth >= 768) {
-                    return 2; // md breakpoint
-                }
-                return 1; // mobile
-            }
-
-            function updateSliderPosition() {
-                const cardWidth = cards[0].offsetWidth;
-                const newTransformValue = -currentIndex * cardWidth;
-                slider.style.transform = `translateX(${newTransformValue}px)`;
-            }
-
-            function showNext() {
-                const visibleCards = getVisibleCards();
-                if (currentIndex < cards.length - visibleCards) {
-                    currentIndex++;
-                } else {
-                    // Optional: loop back to start
-                    // currentIndex = 0;
-                }
-                updateSliderPosition();
-            }
-
-            function showPrev() {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                } else {
-                    // Optional: loop to the end
-                    // const visibleCards = getVisibleCards();
-                    // currentIndex = cards.length - visibleCards;
-                }
-                updateSliderPosition();
-            }
-
-            nextBtn.addEventListener('click', showNext);
-            prevBtn.addEventListener('click', showPrev);
-
-            // Adjust slider on window resize
-            window.addEventListener('resize', () => {
-                // Reset index and position on resize to avoid weird offsets
-                currentIndex = 0;
-                updateSliderPosition();
-            });
-
-
-            // --- Logo Marquee Logic ---
-            const logos = [
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/5.nusa_kti23d.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image880_tsgvud.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/image425_gzdhkk.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/2.arkainstitute.jpeg_lxxery.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/3_1_1_xcwhs6.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image879_zc6iek.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image882_gcfmi1.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image881_zvoisu.webp',
-                'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image883_1_ylodm0.webp'
-            ];
-
-            const marqueeContainer = document.getElementById('logo-marquee');
-
-            // Duplicate logos to create a seamless loop
-            const allLogos = [...logos, ...logos];
-
-            allLogos.forEach(src => {
-                const img = document.createElement('img');
-                img.src = src;
-                img.className = 'h-14 object-contain flex-shrink-0';
-                marqueeContainer.appendChild(img);
-            });
-
-            // Start animation
-            marqueeContainer.style.animation = 'marquee 40s linear infinite';
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-            // --- 1. Testimonial Data Array ---
-            // Now you can easily add, edit, or remove testimonials right here.
-            const testimonialsData = [
-                {
-                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
-                    quote: "Nusa Agency membantu jurnal kampus kami masuk ke indeksasi internasional. Prosesnya jelas, timnya komunikatif, hasilnya memuaskan.",
-                    avatarImg: "https://i.pravatar.cc/150?img=1",
-                    name: "Lisa Anggraini",
-                    title: "Freelancer Graphic Designer"
-                },
-                {
-                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
-                    quote: "Website yang dikembangkan sangat profesional dan sesuai dengan branding perusahaan kami. Peningkatannya luar biasa!",
-                    avatarImg: "https://i.pravatar.cc/150?img=2",
-                    name: "Budi Santoso",
-                    title: "CEO, Tech Corp"
-                },
-                {
-                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
-                    quote: "Manajemen OJS jadi lebih mudah dan efisien. Tim support Nusa Agency selalu siap membantu kapan pun dibutuhkan.",
-                    avatarImg: "https://i.pravatar.cc/150?img=3",
-                    name: "Citra Lestari",
-                    title: "Dosen & Peneliti"
-                },
-                {
-                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
-                    quote: "Proses rebranding berjalan lancar. Desain logo dan identitas visualnya sangat modern dan sesuai dengan visi kami.",
-                    avatarImg: "https://i.pravatar.cc/150?img=4",
-                    name: "Doni Firmansyah",
-                    title: "Startup Founder"
-                },
-                {
-                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
-                    quote: "Konten media sosial kami jadi lebih hidup dan menarik. Engagement rate meningkat drastis sejak ditangani Nusa Agency.",
-                    avatarImg: "https://i.pravatar.cc/150?img=5",
-                    name: "Rina Amelia",
-                    title: "Social Media Manager"
-                },
-                {
-                    starsImg: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758856201/group1762_wyxndq.webp",
-                    quote: "Pelatihan OJS yang diberikan sangat komprehensif dan mudah diikuti, bahkan untuk pemula sekalipun. Sangat direkomendasikan!",
-                    avatarImg: "https://i.pravatar.cc/150?img=6",
-                    name: "Ahmad Hidayat",
-                    title: "Pengelola Jurnal"
-                }
-            ];
-
-            // --- 2. Dynamic Card Generation ---
-            const sliderContainer = document.getElementById('testimonial-slider');
-
-            testimonialsData.forEach(testimonial => {
-                const cardHTML = `
-                <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4">
-                    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-8 h-full">
-                        <div class="flex items-center">
-                            <img src="${testimonial.starsImg}" alt="Rating" class="w-[115px]">
-                        </div>
-                        <p class="text-gray-600 mt-4">"${testimonial.quote}"</p>
-                        <div class="flex items-center mt-6">
-                            <img src="${testimonial.avatarImg}" alt="${testimonial.name}" class="w-14 h-14 rounded-full object-cover">
-                            <div class="ml-4">
-                                <p class="font-bold text-gray-800">${testimonial.name}</p>
-                                <p class="text-sm text-gray-500">${testimonial.title}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-                sliderContainer.innerHTML += cardHTML;
-            });
-
-
-            // --- 3. Testimonial Slider Logic (Now works with the generated cards) ---
-            const slider = document.getElementById('testimonial-slider');
-            const prevBtn = document.getElementById('prev-testimonial');
-            const nextBtn = document.getElementById('next-testimonial');
-
-            // IMPORTANT: We select the cards *after* they have been generated
-            const cards = document.querySelectorAll('.testimonial-card');
-
-            if (cards.length > 0) {
-                let currentIndex = 0;
-
-                function getVisibleCards() {
-                    if (window.innerWidth >= 1024) return 3; // lg
-                    if (window.innerWidth >= 768) return 2; // md
-                    return 1; // mobile
-                }
-
-                function updateSliderPosition() {
-                    const cardWidth = cards[0].offsetWidth;
-                    const newTransformValue = -currentIndex * cardWidth;
-                    slider.style.transform = `translateX(${newTransformValue}px)`;
-                }
-
-                function showNext() {
-                    const visibleCards = getVisibleCards();
-                    if (currentIndex < cards.length - visibleCards) {
-                        currentIndex++;
-                    } else {
-                        currentIndex = 0; // Loop back to start
-                    }
-                    updateSliderPosition();
-                }
-
-                function showPrev() {
-                    if (currentIndex > 0) {
-                        currentIndex--;
-                    } else {
-                        const visibleCards = getVisibleCards();
-                        currentIndex = cards.length - visibleCards; // Loop to the end
-                    }
-                    updateSliderPosition();
-                }
-
-                nextBtn.addEventListener('click', showNext);
-                prevBtn.addEventListener('click', showPrev);
-
-                window.addEventListener('resize', () => {
-                    currentIndex = 0;
-                    updateSliderPosition();
-                });
-            }
-
-            // --- Logo Marquee Logic (remains the same) ---
-            // (Your existing logo marquee code goes here)
-
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            const faqItems = document.querySelectorAll('.faq-item');
-
-            faqItems.forEach(item => {
-                const questionButton = item.querySelector('.faq-question');
-
-                questionButton.addEventListener('click', () => {
-                    const currentlyActive = document.querySelector('.faq-item.active');
-
-                    // If there is an active item and it's not the one we just clicked,
-                    // remove the active class from it.
-                    if (currentlyActive && currentlyActive !== item) {
-                        currentlyActive.classList.remove('active');
-                    }
-
-                    // Toggle the active class on the clicked item.
-                    item.classList.toggle('active');
-                });
-            });
-
-            // Open the first FAQ item by default
-            if (faqItems.length > 0) {
-                faqItems[0].classList.add('active');
-            }
-        });
-    </script>
+    <script type="module" src="script/home.js"></script>
 </body>
 
 </html>

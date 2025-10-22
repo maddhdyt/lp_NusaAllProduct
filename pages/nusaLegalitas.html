@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-56FS37V3");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nusa Agency - Grow Up Your Business</title>
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758723635/nusaagency_2_1_z4fkdt.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@9/swiper-bundle.min.css"
+    />
+
+    <style>
+/* Style untuk pagination bullets agar sesuai gambar */
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: #D1D5DB; /* Tailwind gray-300 */
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #2563EB; /* Tailwind blue-600 */
+      width: 12px;
+      height: 12px;
+    }
+
+    /* Efek utama: Slide non-aktif akan mengecil dan pudar.
+      Slide aktif akan berukuran normal dan 100% opacity.
+    */
+    .swiper-slide .testimonial-card {
+      transform: scale(0.85);
+      opacity: 0.6;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+    .swiper-slide-active .testimonial-card {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    /* Kustomisasi tombol navigasi */
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 44px;
+      height: 44px;
+      background-color: white;
+      border-radius: 9999px; /* rounded-full */
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+      color: #4B5563; /* gray-600 */
+      transition: all 0.3s ease;
+    }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      background-color: #EFF6FF; /* blue-50 */
+      color: #2563EB; /* blue-600 */
+    }
+    /* Sembunyikan ikon panah default Swiper */
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      display: none;
+    }
+    
+    /* Posisikan di luar container pada layar besar */
+    @media (min-width: 1024px) {
+      .swiper-button-prev { left: -60px; }
+      .swiper-button-next { right: -60px; }
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-56FS37V3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+      <div class="container">
+        <div
+          class="flex justify-between items-center lg:[120px] md:h-[110px] h-[100px]"
+        >
+          <a href="/" class="flex-shrink-0">
+            <img
+              src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp"
+              alt="Nusa Agency Logo"
+              class="h-12 md:h-14"
+            />
+          </a>
+
+          <nav class="hidden md:flex space-x-5">
+            <div
+              x-data="{ open: false }"
+              @click.away="open = false"
+              class="relative"
+            >
+              <button
+                @click="open = !open"
+                class="text-sm text-gray-600 hover:text-blue-500 font-semibold flex items-center transition duration-300 focus:outline-none cursor-pointer"
+              >
+                Layanan Lainnya
+                <svg
+                  class="ml-1 h-4 w-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': open}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                x-show="open"
+                x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white py-1 z-50"
+                style="display: none"
+              >
+                <a
+                  href="/pembuatanOjs"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Jasa Pembuatan OJS</a
+                >
+                <a
+                  href="/publisherJurnal"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Jasa Publikasi Jurnal</a
+                >
+                <a
+                  href="/nusaPress"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Jasa Penerbit dan Percetakan Buku</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="#services"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Layanan</a
+            >
+            <a
+              href="#pricing"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Paket OJS</a
+            >
+            <a
+              href="#testimonial"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Testimoni</a
+            >
+            <a
+              href="#ojs"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >OJS Buatan Nusa Agency</a
+            >
+            <a
+              href="#footer"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Kontak</a
+            >
+          </nav>
+
+          <div class="hidden md:flex items-center space-x-4">
+            <a
+              href="https://wa.me/62881022376684?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+              class="conversion w-[45px] h-[45px] !flex !justify-center !items-center rounded-full bg-green-gradient hover:bg-green-600 transition duration-300"
+            >
+              <span
+                class="icon-[mynaui--telephone-call-solid] !w-6 !h-6 text-white !block"
+              ></span>
+            </a>
+            <a
+              href="mailto:admin@nusaagency.com"
+              class="w-[45px] h-[45px] !flex !justify-center !items-center rounded-full bg-green-gradient hover:bg-green-600 transition duration-300"
+            >
+              <span
+                class="icon-[mage--email-fill] !w-6 !h-6 text-white !block"
+              ></span>
+            </a>
+            <a
+              href="https://wa.me/62881022376684?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+              class="conversion flex justify-center items-center h-[45px] px-5 bg-blue-gradient text-white font-semibold rounded-full hover:bg-blue-600 transition duration-300"
+              >Hubungi Kami</a
+            >
+          </div>
+
+          <button
+            id="mobile-menu-button"
+            class="md:hidden p-2 rounded-md focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+          <nav class="flex flex-col space-y-1 pb-8">
+            <a
+              href="#services"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Produk</a
+            >
+            <a
+              href="#pricing"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Paket OJS</a
+            >
+            <a
+              href="#testimonial"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Testimonial</a
+            >
+            <a
+              href="#ojs"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >OJS Buatan Nusa Agency</a
+            >
+            <a
+              href="#contact"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Kontak</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="header" class="pt-16 pb-20">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center"
+          >
+            <div class="text-center md:text-left">
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760756263/image990_kap95e.webp"
+                alt="Jasa Publikasi Jurnal Ilmiah Profesional & Terpercaya"
+                class="h-auto mx-auto md:mx-0"
+              />
+
+              <p
+                class="font-medium text-[#222] leading-relaxed mt-4 max-w-lg mx-auto md:mx-0"
+              >
+                Urus semua dokumen legalitas usaha tanpa repot — dari pendirian
+                PT/CV, izin OSS, hingga pembuatan NPWP dan NIB. Proses cepat,
+                transparan, dan didampingi oleh tim profesional.
+              </p>
+
+              <div
+                class="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start"
+              >
+                <a
+                  href="https://wa.me/62881022376684?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+                  class="conversion bg-green-gradient py-2.5 px-6 rounded-xl text-white font-semibold text-lg whitespace-nowrap"
+                >
+                  Terbit Buku Sekarang
+                </a>
+                <a
+                  href="https://wa.me/62881022376684?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+                  class="conversion bg-white border-2 border-green-700 py-2.5 px-6 rounded-xl text-green-800 font-semibold text-lg whitespace-nowrap hover:bg-green-700 hover:text-white transition-colors duration-300"
+                >
+                  Mulai Konsultasi
+                </a>
+              </div>
+
+              <div class="logo-slider-container mt-12">
+                <div class="logo-slider-track"></div>
+              </div>
+            </div>
+
+            <div class="order-first md:order-last">
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760756421/nusaagency_24_1_zxdhzy.png"
+                alt="Nusa Agency OJS expert with laptop illustrations"
+                class="h-auto w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <!-- Header biru -->
+          <div
+            class="relative bg-[#1677FF] text-white rounded-[32px] px-8 md:px-12 py-10 md:pt-12 md:pb-24"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
+              <!-- Judul -->
+              <div class="md:col-span-2">
+                <h2
+                  class="text-[28px] md:text-[34px] leading-tight font-extrabold"
+                >
+                  Kenapa Harus Urus<br class="hidden sm:block" />
+                  Legalitas di Nusa Agency?
+                </h2>
+              </div>
+
+              <!-- Deskripsi + CTA -->
+              <div class="md:col-span-1 md:justify-self-end md:text-right">
+                <p
+                  class="text-white/90 text-[13px] leading-relaxed mb-4 max-w-md md:ml-auto"
+                >
+                  Kami bantu bisnis Anda jadi resmi dan kredibel dengan layanan
+                  legalitas yang cepat, aman, dan terverifikasi.
+                </p>
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20legalitas%20usaha."
+                  class="inline-flex items-center gap-2 rounded-full bg-white text-[#1677FF] ring-1 ring-white/70 px-5 py-2.5 text-[14px] font-semibold shadow-[0_10px_24px_rgba(255,255,255,.25)] hover:bg-white transition"
+                >
+                  Konsultasi Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards (overlap) -->
+          <div
+            class="relative z-10 -mt-4 md:-mt-18 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+          >
+            <!-- Card 1 -->
+            <article
+              class="rounded-2xl bg-white p-6 ring-1 ring-slate-100 shadow-[0_16px_40px_rgba(2,6,23,.06)]"
+            >
+              <div class="flex items-start gap-4">
+                <!-- Icon besar -->
+                <img
+                  src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760932869/ptr_cozlxu.webp"
+                  alt=""
+                  class="h-12"
+                />
+                <div>
+                  <h3 class="text-[15px] font-extrabold text-slate-900">
+                    Proses Cepat & Transparan
+                  </h3>
+                  <p class="mt-1 text-[13px] leading-relaxed text-slate-600">
+                    Tidak perlu antre dan bingung dengan dokumen. Semua proses
+                    dilakukan online dengan pembaruan progres secara real-time.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+              class="rounded-2xl bg-white p-6 ring-1 ring-slate-100 shadow-[0_16px_40px_rgba(2,6,23,.06)]"
+            >
+              <div class="flex items-start gap-4">
+                <img
+                  src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760932869/law_pcm8hf.webp"
+                  alt=""
+                  class="h-12"
+                />
+                <div>
+                  <h3 class="text-[15px] font-extrabold text-slate-900">
+                    Didampingi Tim Ahli Hukum<br class="hidden sm:block" />
+                    dan Bisnis
+                  </h3>
+                  <p class="mt-1 text-[13px] leading-relaxed text-slate-600">
+                    Setiap langkah Anda dibimbing oleh tim legal dan konsultan
+                    berpengalaman yang paham peraturan terbaru.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="rounded-2xl bg-white p-6 ring-1 ring-slate-100 shadow-[0_16px_40px_rgba(2,6,23,.06)]"
+            >
+              <div class="flex items-start gap-4">
+                <img
+                  src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760932869/rcy_pzv5tt.webp"
+                  alt=""
+                  class="h-12"
+                />
+                <div>
+                  <h3 class="text-[15px] font-extrabold text-slate-900">
+                    Terintegrasi dengan Virtual<br class="hidden sm:block" />
+                    Office & OSS
+                  </h3>
+                  <p class="mt-1 text-[13px] leading-relaxed text-slate-600">
+                    Dapatkan kemudahan pengurusan alamat usaha dan perizinan
+                    sekaligus dalam satu sistem.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+              class="rounded-2xl bg-white p-6 ring-1 ring-slate-100 shadow-[0_16px_40px_rgba(2,6,23,.06)]"
+            >
+              <div class="flex items-start gap-4">
+                <img
+                  src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760932869/shd_nbt9um.webp"
+                  alt=""
+                  class="h-12"
+                />
+                <div>
+                  <h3 class="text-[15px] font-extrabold text-slate-900">
+                    Terintegrasi dengan Virtual<br class="hidden sm:block" />
+                    Office & OSS
+                  </h3>
+                  <p class="mt-1 text-[13px] leading-relaxed text-slate-600">
+                    Dapatkan kemudahan pengurusan alamat usaha dan perizinan
+                    sekaligus dalam satu sistem.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <!-- items-stretch + gap lebih rapat -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-6 md:gap-8"
+          >
+            <!-- KIRI: foto, center vertikal -->
+            <div
+              class="relative h-full flex items-center justify-center lg:justify-start"
+            >
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760758333/group2411_bst1sl.webp"
+                alt="Konsultan legalitas Nusa Agency siap membantu urus izin usaha"
+                class="w-full h-auto object-contain"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- KANAN: heading + grid layanan, center vertikal -->
+            <div class="h-full flex flex-col justify-center">
+              <h2
+                class="text-slate-900 font-extrabold leading-tight text-[28px] md:text-[36px]"
+              >
+                LAYANAN LEGALITAS LENGKAP<br />
+                SESUAI KEBUTUHAN <span class="text-[#1d77ff]">USAHA ANDA</span>
+              </h2>
+              <p class="mt-3 text-slate-600 text-[14px] md:text-[15px]">
+                Kami menyediakan layanan legalitas dari tahap awal pendirian
+                hingga perizinan lanjutan.
+              </p>
+
+              <!-- GRID KARTU -->
+              <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Card 1 -->
+                <article
+                  class="flex items-start gap-3 rounded-xl bg-white ring-1 ring-slate-200 p-4 shadow-sm"
+                >
+                  <div
+                    class="shrink-0 inline-grid place-items-center h-10 w-10 rounded-lg bg-blue-50 ring-1 ring-blue-100"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760933243/image9921_xy3ere.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-[15px]">
+                      Pendirian PT / CV / Firma
+                    </h3>
+                    <p class="text-slate-600 text-[13px]">
+                      Pengurusan Akta Pendirian, SK Kemenkumham, dan NPWP.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article
+                  class="flex items-start gap-3 rounded-xl bg-white ring-1 ring-slate-200 p-4 shadow-sm"
+                >
+                  <div
+                    class="shrink-0 inline-grid place-items-center h-10 w-10 rounded-lg bg-amber-50 ring-1 ring-amber-100"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760933243/image9924_cszgsa.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-[15px]">
+                      Perizinan OSS & NIB
+                    </h3>
+                    <p class="text-slate-600 text-[13px]">
+                      Dapatkan NIB dan izin operasional resmi.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article
+                  class="flex items-start gap-3 rounded-xl bg-white ring-1 ring-slate-200 p-4 shadow-sm"
+                >
+                  <div
+                    class="shrink-0 inline-grid place-items-center h-10 w-10 rounded-lg bg-cyan-50 ring-1 ring-cyan-100"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760933243/image9922_yl9cpk.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-[15px]">
+                      Pembuatan NPWP & SKT Pajak
+                    </h3>
+                    <p class="text-slate-600 text-[13px]">
+                      Urus administrasi perpajakan usaha secara legal dan mudah.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article
+                  class="flex items-start gap-3 rounded-xl bg-white ring-1 ring-slate-200 p-4 shadow-sm"
+                >
+                  <div
+                    class="shrink-0 inline-grid place-items-center h-10 w-10 rounded-lg bg-sky-50 ring-1 ring-sky-100"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760933243/image9925_nti4aq.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-[15px]">
+                      Perubahan Data & Domisili Usaha
+                    </h3>
+                    <p class="text-slate-600 text-[13px]">
+                      Revisi akta, perubahan alamat, atau update data usaha.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article
+                  class="flex items-start gap-3 rounded-xl bg-white ring-1 ring-slate-200 p-4 shadow-sm"
+                >
+                  <div
+                    class="shrink-0 inline-grid place-items-center h-10 w-10 rounded-lg bg-fuchsia-50 ring-1 ring-fuchsia-100"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760933243/image9923_neaz0o.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-[15px]">
+                      Merek Dagang (HKI)
+                    </h3>
+                    <p class="text-slate-600 text-[13px]">
+                      Lindungi produk Anda dengan sertifikat HKI resmi dari
+                      Kemenkumham.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article
+                  class="flex items-start gap-3 rounded-xl bg-white ring-1 ring-slate-200 p-4 shadow-sm"
+                >
+                  <div
+                    class="shrink-0 inline-grid place-items-center h-10 w-10 rounded-lg bg-emerald-50 ring-1 ring-emerald-100"
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760933243/image9926_trqurb.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-[15px]">
+                      Perizinan Spesifik
+                    </h3>
+                    <p class="text-slate-600 text-[13px]">
+                      Izin bidang perdagangan, jasa, konstruksi, pendidikan, dan
+                      lainnya.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="py-14 md:py-18 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <!-- Heading -->
+          <header class="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+            <h2
+              class="text-slate-900 font-extrabold leading-tight text-[28px] md:text-[38px]"
+            >
+              PILIH PAKET LEGALITAS
+            </h2>
+            <div class="text-[24px] md:text-[32px] font-extrabold -mt-1">
+              <span class="text-[#1D75FF]">SESUAI KEBUTUHAN</span>
+            </div>
+            <p class="mt-3 text-slate-600 text-sm md:text-[15px]">
+              Mulai dari usaha kecil hingga perusahaan besar — kami punya solusi
+              legalitas yang tepat untuk Anda.
+            </p>
+          </header>
+
+          <!-- Grid Cards -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7"
+          >
+            <!-- Card: PT -->
+            <article
+              class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+            >
+              <!-- Top title pill -->
+              <div class="px-5 pt-6">
+                <div
+                  class="rounded-[18px] bg-gradient-to-r from-cyan-500 to-emerald-500 text-white px-5 py-4 w-full"
+                >
+                  <h3 class="text-[22px] font-extrabold leading-tight">
+                    Paket<br />Pendirian PT
+                  </h3>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="px-5 mt-4">
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20PT"
+                  class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                >
+                  Konsultasi Sekarang
+                </a>
+              </div>
+
+              <!-- Body -->
+              <div class="px-5 pb-6 pt-4">
+                <p class="font-bold text-slate-900 mb-3">Include:</p>
+                <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                  <!-- helper: check icon -->
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    Akta Pendirian PT
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SK Kemenkumham
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >NPWP PT
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    <div>
+                      NIB Terdiri dari :
+                      <ul
+                        class="mt-1 ml-4 list-disc text-slate-700/90 space-y-1"
+                      >
+                        <li>Pendaftaran BPJS Ketenagakerjaan</li>
+                        <li>Pendaftaran BPJS Kesehatan</li>
+                        <li>API (Angka Pengenal Import)</li>
+                        <li>Hak Akses Kepabeanan</li>
+                        <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Sertifikat Standar
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SPPL (Surat Pernyataan Persetujuan Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >K3L (Pernyataan Mandiri Menjaga Keselamatan, Keamanan,
+                    Kesehatan dan Pelestarian Fungsi Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >PKPLH (Kesanggupan Pengelolaan Lingkungan Hidup)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Pernyataan Mandiri Kesesuaian Memenuhi Persyaratan Izin
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card: Koperasi -->
+            <article
+              class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+            >
+              <div class="px-5 pt-6">
+                <div
+                  class="rounded-[18px] bg-gradient-to-r from-cyan-500 to-emerald-500 text-white px-5 py-4 w-full"
+                >
+                  <h3 class="text-[22px] font-extrabold leading-tight">
+                    Paket<br />Pendirian Koperasi
+                  </h3>
+                </div>
+              </div>
+              <div class="px-5 mt-4">
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20Koperasi"
+                  class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                >
+                  Konsultasi Sekarang
+                </a>
+              </div>
+              <div class="px-5 pb-6 pt-4">
+                <p class="font-bold text-slate-900 mb-3">Include:</p>
+                <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                  <!-- helper: check icon -->
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    Akta Pendirian Koperasi
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SK Kemenkumham
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >NPWP Koperasi
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    <div>
+                      NIB Terdiri dari :
+                      <ul
+                        class="mt-1 ml-4 list-disc text-slate-700/90 space-y-1"
+                      >
+                        <li>Pendaftaran BPJS Ketenagakerjaan</li>
+                        <li>Pendaftaran BPJS Kesehatan</li>
+                        <li>API (Angka Pengenal Import)</li>
+                        <li>Hak Akses Kepabeanan</li>
+                        <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Sertifikat Standar
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SPPL (Surat Pernyataan Persetujuan Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >K3L (Pernyataan Mandiri Menjaga Keselamatan, Keamanan,
+                    Kesehatan dan Pelestarian Fungsi Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >PKPLH (Kesanggupan Pengelolaan Lingkungan Hidup)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Pernyataan Mandiri Kesesuaian Memenuhi Persyaratan Izin
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card: CV -->
+            <article
+              class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+            >
+              <div class="px-5 pt-6">
+                <div
+                  class="rounded-[18px] bg-gradient-to-r from-teal-500 to-lime-500 text-white px-5 py-4 w-full"
+                >
+                  <h3 class="text-[22px] font-extrabold leading-tight">
+                    Paket<br />Pendirian CV
+                  </h3>
+                </div>
+              </div>
+              <div class="px-5 mt-4">
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20CV"
+                  class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                >
+                  Konsultasi Sekarang
+                </a>
+              </div>
+              <div class="px-5 pb-6 pt-4">
+                <p class="font-bold text-slate-900 mb-3">Include:</p>
+                <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                  <!-- helper: check icon -->
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    Akta Pendirian CV
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SK Kemenkumham
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >NPWP CV
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    <div>
+                      NIB Terdiri dari :
+                      <ul
+                        class="mt-1 ml-4 list-disc text-slate-700/90 space-y-1"
+                      >
+                        <li>Pendaftaran BPJS Ketenagakerjaan</li>
+                        <li>Pendaftaran BPJS Kesehatan</li>
+                        <li>API (Angka Pengenal Import)</li>
+                        <li>Hak Akses Kepabeanan</li>
+                        <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Sertifikat Standar
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SPPL (Surat Pernyataan Persetujuan Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >K3L (Pernyataan Mandiri Menjaga Keselamatan, Keamanan,
+                    Kesehatan dan Pelestarian Fungsi Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >PKPLH (Kesanggupan Pengelolaan Lingkungan Hidup)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Pernyataan Mandiri Kesesuaian Memenuhi Persyaratan Izin
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card: Pendirian Firma / Persekutuan Perdata -->
+            <article
+              class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+            >
+              <div class="px-5 pt-6">
+                <div
+                  class="rounded-[18px] bg-gradient-to-r from-teal-500 to-lime-500 text-white px-5 py-4 w-full"
+                >
+                  <h3 class="text-[22px] font-extrabold leading-tight">
+                    Paket Pendirian Firma / Persekutuan Perdata
+                  </h3>
+                </div>
+              </div>
+              <div class="px-5 mt-4">
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20Firma"
+                  class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                >
+                  Konsultasi Sekarang
+                </a>
+              </div>
+              <div class="px-5 pb-6 pt-4">
+                <p class="font-bold text-slate-900 mb-3">Include:</p>
+                <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                  <!-- helper: check icon -->
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    Akta Pendirian Firma
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SK Kemenkumham
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >NPWP Firma
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    <div>
+                      NIB Terdiri dari :
+                      <ul
+                        class="mt-1 ml-4 list-disc text-slate-700/90 space-y-1"
+                      >
+                        <li>Pendaftaran BPJS Ketenagakerjaan</li>
+                        <li>Pendaftaran BPJS Kesehatan</li>
+                        <li>API (Angka Pengenal Import)</li>
+                        <li>Hak Akses Kepabeanan</li>
+                        <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Sertifikat Standar
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SPPL (Surat Pernyataan Persetujuan Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >K3L (Pernyataan Mandiri Menjaga Keselamatan, Keamanan,
+                    Kesehatan dan Pelestarian Fungsi Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >PKPLH (Kesanggupan Pengelolaan Lingkungan Hidup)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Pernyataan Mandiri Kesesuaian Memenuhi Persyaratan Izin
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card: Yayasan -->
+            <article
+              class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+            >
+              <div class="px-5 pt-6">
+                <div
+                  class="rounded-[18px] bg-gradient-to-r from-teal-500 to-lime-500 text-white px-5 py-4 w-full"
+                >
+                  <h3 class="text-[22px] font-extrabold leading-tight">
+                    Paket <br />
+                    Pendirian Yayasan
+                  </h3>
+                </div>
+              </div>
+              <div class="px-5 mt-4">
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20Firma"
+                  class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                >
+                  Konsultasi Sekarang
+                </a>
+              </div>
+              <div class="px-5 pb-6 pt-4">
+                <p class="font-bold text-slate-900 mb-3">Include:</p>
+                <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                  <!-- helper: check icon -->
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    Akta Pendirian Yayasan
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SK Kemenkumham
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >NPWP Yayasan
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    <div>
+                      NIB Terdiri dari :
+                      <ul
+                        class="mt-1 ml-4 list-disc text-slate-700/90 space-y-1"
+                      >
+                        <li>Pendaftaran BPJS Ketenagakerjaan</li>
+                        <li>Pendaftaran BPJS Kesehatan</li>
+                        <li>API (Angka Pengenal Import)</li>
+                        <li>Hak Akses Kepabeanan</li>
+                        <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Sertifikat Standar
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SPPL (Surat Pernyataan Persetujuan Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >K3L (Pernyataan Mandiri Menjaga Keselamatan, Keamanan,
+                    Kesehatan dan Pelestarian Fungsi Lingkungan)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >PKPLH (Kesanggupan Pengelolaan Lingkungan Hidup)
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Pernyataan Mandiri Kesesuaian Memenuhi Persyaratan Izin
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card: 1  PT Perorangan -->
+            <article
+              class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+            >
+              <div class="px-5 pt-6">
+                <div
+                  class="rounded-[18px] bg-gradient-to-r from-teal-500 to-lime-500 text-white px-5 py-4 w-full"
+                >
+                  <h3 class="text-[22px] font-extrabold leading-tight">
+                    Paket 1<br />
+                    PT Perorangan
+                  </h3>
+                </div>
+              </div>
+              <div class="px-5 mt-4">
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20Firma"
+                  class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                >
+                  Konsultasi Sekarang
+                </a>
+              </div>
+              <div class="px-5 pb-6 pt-4">
+                <p class="font-bold text-slate-900 mb-3">Include:</p>
+                <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                  <!-- helper: check icon -->
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                    >
+                      <svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                      </svg>
+                    </span>
+                    Free Cek Nama PT Perorangan
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Surat Pernyataan
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SK Kemenkumham PT Perorangan
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >SK Kemenkumham PT Perorangan
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >NPWP PT Perorangan
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      ><svg
+                        class="h-3 w-3"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                        /></svg></span
+                    >Free Email Perusahaan
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <div class="lg:col-span-3 flex justify-center gap-6 flex-wrap">
+              <!-- Card: 2  PT Perorangan -->
+              <article
+                class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+              >
+                <div class="px-5 pt-6">
+                  <div
+                    class="rounded-[18px] bg-gradient-to-r from-teal-500 to-lime-500 text-white px-5 py-4 w-full"
+                  >
+                    <h3 class="text-[22px] font-extrabold leading-tight">
+                      Paket 2<br />
+                      PT Perorangan
+                    </h3>
+                  </div>
+                </div>
+                <div class="px-5 mt-4">
+                  <a
+                    href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20Firma"
+                    class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                  >
+                    Konsultasi Sekarang
+                  </a>
+                </div>
+                <div class="px-5 pb-6 pt-4">
+                  <p class="font-bold text-slate-900 mb-3">Include:</p>
+                  <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                    <!-- helper: check icon -->
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          />
+                        </svg>
+                      </span>
+                      Free Cek Nama PT Perorangan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >Surat Pernyataan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >NPWP PT Perorangan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >Free Email Perusahaan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >Memiliki Hak Akses OSS
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          />
+                        </svg>
+                      </span>
+                      <div>
+                        NIB Terdiri dari :
+                        <ul
+                          class="mt-1 ml-4 list-disc text-slate-700/90 space-y-1"
+                        >
+                          <li>Pendaftaran BPJS Ketenagakerjaan</li>
+                          <li>Pendaftaran BPJS Kesehatan</li>
+                          <li>API (Angka Pengenal Import)</li>
+                          <li>Hak Akses Kepabeanan</li>
+                          <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- Card: 3  PT Perorangan -->
+              <article
+                class="rounded-[22px] bg-white ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(2,6,23,.06)] overflow-hidden"
+              >
+                <div class="px-5 pt-6">
+                  <div
+                    class="rounded-[18px] bg-gradient-to-r from-teal-500 to-lime-500 text-white px-5 py-4 w-full"
+                  >
+                    <h3 class="text-[22px] font-extrabold leading-tight">
+                      Paket 3<br />
+                      PT Perorangan
+                    </h3>
+                  </div>
+                </div>
+                <div class="px-5 mt-4">
+                  <a
+                    href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20Paket%20Firma"
+                    class="block text-center w-full rounded-[12px] bg-[#1D75FF] text-white font-semibold py-2.5 hover:bg-[#1463e6] transition"
+                  >
+                    Konsultasi Sekarang
+                  </a>
+                </div>
+                <div class="px-5 pb-6 pt-4">
+                  <p class="font-bold text-slate-900 mb-3">Include:</p>
+                  <ul class="space-y-2 text-[13px] leading-5 text-slate-800">
+                    <!-- helper: check icon -->
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          />
+                        </svg>
+                      </span>
+                      Akta Pendirian CV
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >Surat Pernyataan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >SK Kemenkumham PT Perorangan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >NPWP PT Perorangan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >Free Email Perusahaan
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                        ><svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          /></svg></span
+                      >Memiliki Hak Akses OSS
+                    </li>
+                    <li class="flex gap-2">
+                      <span
+                        class="mt-0.5 inline-grid place-items-center h-4.5 w-4.5 rounded-full bg-emerald-100 text-emerald-600"
+                      >
+                        <svg
+                          class="h-3 w-3"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"
+                          />
+                        </svg>
+                      </span>
+                      <div>
+                        NIB Terdiri dari :
+                        <ul
+                          class="mt-1 ml-4 list-disc text-slate-700/90 space-y-1"
+                        >
+                          <li>Pendaftaran BPJS Ketenagakerjaan</li>
+                          <li>Pendaftaran BPJS Kesehatan</li>
+                          <li>API (Angka Pengenal Import)</li>
+                          <li>Hak Akses Kepabeanan</li>
+                          <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                          <li>WLKP (Wajib Lapor Ketenagakerjaan Perusahaan)</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimoni" class="py-16 sm:py-24">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 max-w-3xl mx-auto">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold text-gray-900 uppercase"
+            >
+              Cerita Nyata Dari
+              <span class="text-blue-600">Klien Kami</span>
+            </h2>
+            <p class="mt-4 text-lg text-gray-600">
+              Bagaimana Layanan Legalitas Dari Nusa Agency Membantu Mereka
+              Memulai Bisnis Dengan Tenang Dan Profesional.
+            </p>
+          </div>
+
+          <div class="relative max-w-6xl mx-auto">
+            <div class="swiper-container w-full overflow-hidden">
+              <div class="swiper-wrapper py-8"></div>
+            </div>
+
+            <div class="swiper-pagination static mt-8"></div>
+
+            <div
+              class="swiper-button-prev absolute top-1/2 -translate-y-1/2 left-0 z-10 hidden lg:flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div
+              class="swiper-button-next absolute top-1/2 -translate-y-1/2 right-0 z-10 hidden lg:flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-20">
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div class="flex flex-col justify-center">
+              <h1 class="text-[42px] font-extrabold leading-tight text-[#222]">
+                ADAKAH PERTANYAAN?<br />
+                <span class="text-blue-600 text-[38px]"
+                  >KAMI PUNYA JAWABANNYA.</span
+                >
+              </h1>
+              <p class="text-gray-600 font-medium mt-4 max-w-md">
+                Kami merangkum pertanyaan yang paling sering ditanyakan seputar
+                layanan Nusa Press. Jika masih ada yang belum terjawab, tim kami
+                siap membantu langsung.
+              </p>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg-blue-800 text-white py-12">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-2">
+            <div class="flex items-center">
+              <div
+                class="w-40 h-10 bg-white"
+                style="
+                  -webkit-mask-image: url('https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp');
+                  mask-image: url('https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp');
+                  -webkit-mask-size: contain;
+                  mask-size: contain;
+                  -webkit-mask-repeat: no-repeat;
+                  mask-repeat: no-repeat;
+                  -webkit-mask-position: center;
+                  mask-position: center;
+                "
+              ></div>
+            </div>
+            <p class="mt-4 text-sm text-blue-200 max-w-md">
+              Kami membantu individu, lembaga, dan perusahaan untuk berkarya,
+              berkembang, dan bersaing di era digital melalui layanan publikasi,
+              pelatihan, dan pengembangan platform online yang profesional.
+            </p>
+            <div class="flex space-x-4 mt-6">
+              <a
+                href="#"
+                class="text-blue-200 hover:text-white transition-colors"
+                ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M9.198 21.5h4v-8.01h2.598l.397-3.01h-2.995V8.498c0-.872.243-1.464 1.492-1.464h1.595V4.01c-.276-.037-1.226-.12-2.325-.12-2.302 0-3.878 1.402-3.878 3.986v2.216H7.197v3.01h2v8.01z"
+                  ></path></svg
+              ></a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-white transition-colors"
+                ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"
+                  ></path></svg
+              ></a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-white transition-colors"
+                ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold">Layanan Nusa Agency</h3>
+            <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Pembuatan OJS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Pembuatan Website</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Penerbit Dan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Pelatihan LPK</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Iklan Digital</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Virtual Office</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Publikasi Jurnal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Pembuatan Legalitas</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold">Contact</h3>
+            <div class="mt-4 space-y-4 text-sm">
+              <div class="flex items-start">
+                <svg
+                  class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0 mt-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <p class="text-blue-200">
+                  Perumahan Janati Park, Jl. Raya Cirebon - Bandung Ruko 1-C,
+                  Cibeusi, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363
+                </p>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <a
+                  href="mailto:admin@nusaagency.com"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >admin@nusaagency.com</a
+                >
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <a
+                  href="https://wa.me/62881022376684"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >0881-0223-76684</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-blue-700 text-center">
+          <p class="text-xs text-blue-300">
+            &copy; Copyright 2025 Nusa Agency. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="wa-btn" class="conversion fixed bottom-10 right-10 z-50">
+      <a
+        href="https://wa.me/6281222800879?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+        target="_blank"
+        class="conversion relative block"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          class="w-16 h-16"
+        />
+        <!-- Badge Notifikasi -->
+        <span
+          id="wa-badge"
+          class="hidden absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full"
+        >
+          1
+        </span>
+      </a>
+    </div>
+  </body>
+  <script type="module" src="../script/landing_Legalitas.js"></script>
+  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js" defer></script>
+</html>

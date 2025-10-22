@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-56FS37V3");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nusa Agency - Grow Up Your Business</title>
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758723635/nusaagency_2_1_z4fkdt.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Dekor sakura (pakai <img>, tapi bisa juga diubah ke background-image) */
+      .sakura-left {
+        left: -28px;
+        top: -34px;
+        width: 220px;
+      }
+      .sakura-right {
+        right: -20px;
+        bottom: -34px;
+        width: 220px;
+      }
+      @media (min-width: 768px) {
+        .sakura-left {
+          left: -40px;
+          top: -48px;
+          width: 300px;
+        }
+        .sakura-right {
+          right: -10px;
+          bottom: -48px;
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-56FS37V3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+      <div class="container">
+        <div
+          class="flex justify-between items-center lg:[120px] md:h-[110px] h-[100px]"
+        >
+          <a href="/" class="flex-shrink-0">
+            <img
+              src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp"
+              alt="Nusa Agency Logo"
+              class="h-12 md:h-14"
+            />
+          </a>
+
+          <nav class="hidden md:flex space-x-5">
+            <div
+              x-data="{ open: false }"
+              @click.away="open = false"
+              class="relative"
+            >
+              <button
+                @click="open = !open"
+                class="text-sm text-gray-600 hover:text-blue-500 font-semibold flex items-center transition duration-300 focus:outline-none cursor-pointer"
+              >
+                Layanan Lainnya
+                <svg
+                  class="ml-1 h-4 w-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': open}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                x-show="open"
+                x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white py-1 z-50"
+                style="display: none"
+              >
+                <a
+                  href="/pembuatanOjs"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Jasa Pembuatan OJS</a
+                >
+                <a
+                  href="/publisherJurnal"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Jasa Publikasi Jurnal</a
+                >
+                <a
+                  href="/nusaPress"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Jasa Penerbit dan Percetakan Buku</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="#services"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Layanan</a
+            >
+            <a
+              href="#pricing"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Paket OJS</a
+            >
+            <a
+              href="#testimonial"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Testimoni</a
+            >
+            <a
+              href="#ojs"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >OJS Buatan Nusa Agency</a
+            >
+            <a
+              href="#footer"
+              class="text-sm text-gray-600 hover:text-blue-500 font-semibold transition duration-300"
+              >Kontak</a
+            >
+          </nav>
+
+          <div class="hidden md:flex items-center space-x-4">
+            <a
+              href="https://wa.me/62881022376684?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+              class="conversion w-[45px] h-[45px] !flex !justify-center !items-center rounded-full bg-green-gradient hover:bg-green-600 transition duration-300"
+            >
+              <span
+                class="icon-[mynaui--telephone-call-solid] !w-6 !h-6 text-white !block"
+              ></span>
+            </a>
+            <a
+              href="mailto:admin@nusaagency.com"
+              class="w-[45px] h-[45px] !flex !justify-center !items-center rounded-full bg-green-gradient hover:bg-green-600 transition duration-300"
+            >
+              <span
+                class="icon-[mage--email-fill] !w-6 !h-6 text-white !block"
+              ></span>
+            </a>
+            <a
+              href="https://wa.me/62881022376684?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+              class="conversion flex justify-center items-center h-[45px] px-5 bg-blue-gradient text-white font-semibold rounded-full hover:bg-blue-600 transition duration-300"
+              >Hubungi Kami</a
+            >
+          </div>
+
+          <button
+            id="mobile-menu-button"
+            class="md:hidden p-2 rounded-md focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+          <nav class="flex flex-col space-y-1 pb-8">
+            <a
+              href="#services"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Produk</a
+            >
+            <a
+              href="#pricing"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Paket OJS</a
+            >
+            <a
+              href="#testimonial"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Testimonial</a
+            >
+            <a
+              href="#ojs"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >OJS Buatan Nusa Agency</a
+            >
+            <a
+              href="#contact"
+              class="block px-4 py-2 text-gray-600 hover:bg-gray-100 transition duration-300"
+              >Kontak</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="header" class="py-12 md:py-16 md:min-h-[560px]">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center"
+          >
+            <!-- Kiri -->
+            <div class="text-center md:text-left md:self-center">
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760686245/hero_rtxtvw.webp"
+                alt="Program LKP Bahasa Jepang Nusa Agency: persiapan magang, Tokutei Ginou, dan kerja resmi"
+                class="h-auto mx-auto md:mx-0"
+              />
+              <p
+                class="font-medium text-[#222] leading-relaxed mt-4 max-w-lg mx-auto md:mx-0"
+              >
+                Bangun citra profesional dan legalitas bisnis Anda tanpa perlu
+                kantor fisik. Nusa Agency menyediakan alamat domisili resmi,
+                layanan surat-menyurat, dan legalitas lengkap untuk semua jenis
+                usaha.
+              </p>
+
+              <!-- Feature pills -->
+              <div
+                class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto md:mx-0"
+              >
+                <!-- Domisili Resmi (gedung) -->
+                <a
+                  href="#domisili"
+                  class="group flex items-center gap-3 rounded-xl border-2 border-blue-500 bg-blue-50 text-blue-600 px-4 py-2.5 font-semibold hover:-translate-y-0.5 hover:shadow-[0_10px_22px_rgba(22,119,255,.18)] transition"
+                >
+                  <span class="inline-flex h-6 w-6 items-center justify-center">
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760686781/mdi_officebuildingoutline_lj3go5.webp"
+                      alt=""
+                    />
+                  </span>
+                  <span>Domisili Resmi</span>
+                </a>
+
+                <!-- Legalitas Usaha (timbangan) -->
+                <a
+                  href="#legalitas"
+                  class="group flex items-center gap-3 rounded-xl border-2 border-blue-500 bg-blue-50 text-blue-600 px-4 py-2.5 font-semibold hover:-translate-y-0.5 hover:shadow-[0_10px_22px_rgba(22,119,255,.18)] transition"
+                >
+                  <span class="inline-flex h-6 w-6 items-center justify-center">
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760686781/vector_frnxzx.webp"
+                      alt=""
+                    />
+                  </span>
+                  <span>Legalitas Usaha</span>
+                </a>
+
+                <!-- Alamat Prestisius -->
+                <a
+                  href="#domisili"
+                  class="group flex items-center gap-3 rounded-xl border-2 border-blue-500 bg-blue-50 text-blue-600 px-4 py-2.5 font-semibold hover:-translate-y-0.5 hover:shadow-[0_10px_22px_rgba(22,119,255,.18)] transition"
+                >
+                  <span class="inline-flex h-6 w-6 items-center justify-center">
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760686781/mdi_locationstaroutline_n8ko6t.webp"
+                      alt=""
+                    />
+                  </span>
+                  <span>Alamat Prestisius</span>
+                </a>
+
+                <!-- Harga Terjangkau (rumah + uang) -->
+                <a
+                  href="#harga"
+                  class="group flex items-center gap-3 rounded-xl border-2 border-blue-500 bg-blue-50 text-blue-600 px-4 py-2.5 font-semibold hover:-translate-y-0.5 hover:shadow-[0_10px_22px_rgba(22,119,255,.18)] transition"
+                >
+                  <span class="inline-flex h-6 w-6 items-center justify-center">
+                    <img
+                      src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760686781/group_ynkhzx.webp"
+                      alt=""
+                    />
+                  </span>
+                  <span>Harga Terjangkau</span>
+                </a>
+              </div>
+
+              <div
+                class="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start"
+              >
+                <a
+                  href="https://wa.me/6281222800879?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+                  class="conversion bg-green-gradient py-2.5 px-6 rounded-lg text-white font-semibold text-lg whitespace-nowrap"
+                >
+                  Mulai Konsultasi
+                </a>
+              </div>
+            </div>
+
+            <!-- Kanan -->
+            <div
+              class="order-first md:order-last md:self-center flex justify-center md:justify-end"
+            >
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760686245/group2381_u42krd.webp"
+                alt="Ilustrasi pelatihan LKP Jepang Nusa Agency: kelas bahasa dan budaya kerja Jepang"
+                class="w-full max-w-[560px] h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="solution" class="relative overflow-hidden">
+        <!-- BG gradient -->
+        <div
+          class="absolute inset-0 -z-10 bg-gradient-to-br from-[#0d6efd] via-[#1d86ff] to-[#45a4ff]"
+        ></div>
+        <!-- Aksen lengkung kanan-atas -->
+        <div
+          class="pointer-events-none absolute -top-20 right-0 -z-10 w-[720px] h-[720px] rounded-[48%] bg-white/15 blur-0"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 md:py-16">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start"
+          >
+            <!-- LEFT: Foto -->
+            <div class="flex justify-center md:justify-start">
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760687492/nusaagency_22_1_en9rpi.webp"
+                alt="Pebisnis kewalahan urusan legal dan alamat usaha"
+                class="w-[360px] md:w-[450px] h-auto rounded-[28px] object-cover"
+              />
+            </div>
+
+            <!-- RIGHT: Panel judul + dua kartu -->
+            <div class="space-y-6">
+              <!-- Header panel -->
+              <div
+                class="bg-white rounded-2xl shadow-[0_18px_40px_rgba(2,6,23,.14)] ring-1 ring-slate-100 p-6 md:p-7"
+              >
+                <h2
+                  class="text-[22px] md:text-2xl font-extrabold text-slate-900"
+                >
+                  MASALAH BISNIS ANDA, SOLUSINYA
+                  <span class="block text-[#1777ff]">ADA DI NUSA AGENCY</span>
+                </h2>
+                <p class="mt-2 text-sm text-slate-600 max-w-2xl">
+                  Ikuti setiap langkah persiapan dengan pendampingan penuh dari
+                  tim Nusa Agency — mulai dari pemeriksaan awal hingga
+                  pengelolaan legal & domisili resmi untuk usaha Anda.
+                </p>
+              </div>
+
+              <!-- Dua kartu -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- Tantangan -->
+                <article
+                  class="bg-white rounded-2xl shadow-[0_18px_40px_rgba(2,6,23,.14)] ring-1 ring-slate-100 p-6"
+                >
+                  <h3
+                    class="text-[13px] font-extrabold tracking-wide text-slate-900 uppercase"
+                  >
+                    Tantangan yang sering dihadapi
+                  </h3>
+                  <ul
+                    class="mt-3 space-y-2.5 text-[15px] leading-6 text-slate-700"
+                  >
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Tidak memiliki alamat legal untuk izin usaha.
+                    </li>
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Sewa ruang kantor terlalu tinggi untuk tahap awal bisnis.
+                    </li>
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Kesulitan menerima surat & dokumen penting.
+                    </li>
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Proses legalitas usaha rumit dan memakan waktu.
+                    </li>
+                  </ul>
+                </article>
+
+                <!-- Solusi -->
+                <article
+                  class="bg-white rounded-2xl shadow-[0_18px_40px_rgba(2,6,23,.14)] ring-1 ring-slate-100 p-6"
+                >
+                  <h3
+                    class="text-[13px] font-extrabold tracking-wide text-slate-900 uppercase"
+                  >
+                    Solusi dari <span class="text-[#1777ff]">Nusa Agency</span>
+                  </h3>
+                  <ul
+                    class="mt-3 space-y-2.5 text-[15px] leading-6 text-slate-700"
+                  >
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Alamat domisili resmi &amp; PT/CV/Usaha untuk kebutuhan
+                      legal.
+                    </li>
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Virtual office: hemat biaya dengan citra profesional.
+                    </li>
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Layanan surat masuk, notifikasi digital, dan pengambilan
+                      berkala.
+                    </li>
+                    <li class="flex gap-2.5">
+                      <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      Proses legalitas yang ringkas &amp; tidak memakan waktu.
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why" class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <!-- Heading -->
+          <header class="text-center">
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight"
+            >
+              KENAPA MEMILIH VIRTUAL OFFICE
+              <br />
+              <span class="text-[#1677FF]">DI NUSA AGENCY?</span>
+            </h2>
+            <p
+              class="mt-3 text-[13px] sm:text-sm text-slate-600 max-w-3xl mx-auto"
+            >
+              Kami memahami kebutuhan bisnis modern: legalitas resmi, efisiensi
+              biaya, dan citra profesional. Semua bisa Anda dapatkan hanya
+              dengan satu solusi — Virtual Office Nusa Agency.
+            </p>
+          </header>
+
+          <!-- Grid Cards: icon besar kanan-bawah -->
+          <div
+            class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          >
+            <!-- Card template: pakai relative + pb-24 untuk ruang ikon -->
+            <article
+              class="relative rounded-2xl bg-white shadow-[0_14px_36px_rgba(2,6,23,.10)] ring-1 ring-slate-100 p-5 pb-24 overflow-hidden"
+            >
+              <h3 class="text-[18px] font-extrabold text-slate-900">
+                Domisili Resmi &amp;<br class="hidden sm:block" />
+                Terverifikasi
+              </h3>
+              <p
+                class="mt-2 text-[13.5px] leading-6 text-slate-700 max-w-[36ch]"
+              >
+                Alamat kantor legal yang bisa dipakai untuk PT, CV, OSS, dan
+                kebutuhan administratif sesuai regulasi.
+              </p>
+              <!-- ICON besar kanan-bawah -->
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760754134/image983_oaly5s.webp"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none select-none absolute -bottom-2 -right-1 h-28 w-28 md:h-32 md:w-32 object-contain"
+              />
+            </article>
+
+            <article
+              class="relative rounded-2xl bg-white shadow-[0_14px_36px_rgba(2,6,23,.10)] ring-1 ring-slate-100 p-5 pb-24 overflow-hidden"
+            >
+              <h3 class="text-[18px] font-extrabold text-slate-900">
+                Legalitas Usaha<br class="hidden sm:block" />
+                Lengkap
+              </h3>
+              <p
+                class="mt-2 text-[13.5px] leading-6 text-slate-700 max-w-[36ch]"
+              >
+                Dukungan pembuatan NIB, NPWP, dan perizinan agar bisnis berjalan
+                aman dan terpercaya.
+              </p>
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760754134/image984_uoggha.webp"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none select-none absolute -bottom-2 -right-1 h-28 w-28 md:h-32 md:w-32 object-contain"
+              />
+            </article>
+
+            <article
+              class="relative rounded-2xl bg-white shadow-[0_14px_36px_rgba(2,6,23,.10)] ring-1 ring-slate-100 p-5 pb-24 overflow-hidden"
+            >
+              <h3 class="text-[18px] font-extrabold text-slate-900">
+                Alamat Bisnis<br class="hidden sm:block" />
+                Prestisius
+              </h3>
+              <p
+                class="mt-2 text-[13.5px] leading-6 text-slate-700 max-w-[36ch]"
+              >
+                Alamat strategis di kawasan komersial untuk menaikkan
+                kepercayaan klien & reputasi.
+              </p>
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760754134/frame402_qszfeq.webp"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none select-none absolute -bottom-2 -right-1 h-28 w-28 md:h-32 md:w-32 object-contain"
+              />
+            </article>
+
+            <article
+              class="relative rounded-2xl bg-white shadow-[0_14px_36px_rgba(2,6,23,.10)] ring-1 ring-slate-100 p-5 pb-24 overflow-hidden"
+            >
+              <h3 class="text-[18px] font-extrabold text-slate-900">
+                Hemat Biaya<br class="hidden sm:block" />
+                Operasional
+              </h3>
+              <p
+                class="mt-2 text-[13.5px] leading-6 text-slate-700 max-w-[36ch]"
+              >
+                Semua fasilitas kantor tanpa sewa fisik: hemat sewa, listrik, &
+                SDM—tetap profesional.
+              </p>
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760754134/image986_rtk1qg.webp"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none select-none absolute -bottom-2 -right-1 h-28 w-28 md:h-32 md:w-32 object-contain"
+              />
+            </article>
+
+            <article
+              class="relative rounded-2xl bg-white shadow-[0_14px_36px_rgba(2,6,23,.10)] ring-1 ring-slate-100 p-5 pb-24 overflow-hidden"
+            >
+              <h3 class="text-[18px] font-extrabold text-slate-900">
+                Layanan Administrasi<br class="hidden sm:block" />
+                &amp; Surat-Menyurat
+              </h3>
+              <p
+                class="mt-2 text-[13.5px] leading-6 text-slate-700 max-w-[36ch]"
+              >
+                Terima paket/dokumen, notifikasi cepat via sistem digital—aman &
+                terdokumentasi.
+              </p>
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760754135/image987_xfawne.webp"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none select-none absolute -bottom-2 -right-1 h-28 w-28 md:h-32 md:w-32 object-contain"
+              />
+            </article>
+
+            <article
+              class="relative rounded-2xl bg-white shadow-[0_14px_36px_rgba(2,6,23,.10)] ring-1 ring-slate-100 p-5 pb-24 overflow-hidden"
+            >
+              <h3 class="text-[18px] font-extrabold text-slate-900">
+                Konsultasi &amp;<br class="hidden sm:block" />
+                Pendampingan
+              </h3>
+              <p
+                class="mt-2 text-[13.5px] leading-6 text-slate-700 max-w-[36ch]"
+              >
+                Tim siap mendampingi dari pendaftaran hingga operasional
+                berjalan lancar.
+              </p>
+              <img
+                src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760754135/image988_wun6xg.webp"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none select-none absolute -bottom-2 -right-1 h-28 w-28 md:h-32 md:w-32 object-contain"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="py-12 md:py-16 bg-slate-50/40">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <!-- Title -->
+          <header class="text-center">
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight"
+            >
+              PILIH PAKET VIRTUAL OFFICE
+              <br />
+              <span class="text-[#1677FF]">SESUAI KEBUTUHAN</span>
+            </h2>
+            <p class="mt-3 text-[12.5px] sm:text-[13px] text-slate-600">
+              Fleksibel, Resmi, dan Efisien. Temukan Solusi yang Tepat Untuk
+              Mendukung
+              <br class="hidden sm:block" />Pertumbuhan Bisnis Anda.
+            </p>
+          </header>
+
+          <!-- Cards -->
+          <div
+            class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 items-stretch"
+          >
+            <!-- ========== CARD LEFT ========== -->
+            <article
+              class="rounded-[18px] bg-white ring-1 ring-slate-200 shadow-[0_18px_44px_rgba(2,6,23,.08)] overflow-hidden"
+            >
+              <div class="p-6">
+                <h3 class="text-[24px] font-extrabold text-slate-900">
+                  Paket Ekonomis
+                </h3>
+                <p class="text-[14px] font-medium text-slate-500 mt-1"><del>Rp.250.000</del></p>
+
+                <div class="mt-2 leading-none">
+                  <span class="text-[26px] font-extrabold text-slate-900"
+                    >Rp.</span
+                  >
+                  <span
+                    class="text-[42px] font-extrabold text-[#1677FF] align-baseline"
+                    >125.000</span
+                  >
+                  <span class="text-[16px] font-semibold text-slate-500 align-baseline"
+                    >/Bulan</span
+                  >
+                </div>
+
+                <!-- CTA -->
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20tertarik%20paket%20Virtual%20Office%20Ekonomis."
+                  class="mt-3 inline-flex items-center gap-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white text-[13px] font-semibold px-3 py-1.5 shadow-[0_10px_24px_rgba(16,185,129,.35)]"
+                >
+                  <!-- WA icon -->
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.52 3.5A11 11 0 0 0 2.05 16.37L1 21l4.76-1a11 11 0 0 0 16.9-9.46a10.9 10.9 0 0 0-2.14-6.99ZM12.38 19A9 9 0 0 1 6.8 17.4l-.33-.2l-2.82.69l.7-2.75l-.22-.35A9 9 0 1 1 21 11a9 9 0 0 1-8.62 8Z"
+                    />
+                    <path
+                      d="M17.45 13.26c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.66.15s-.76.97-.93 1.17s-.34.22-.63.07a7.35 7.35 0 0 1-2.16-1.33a8 8 0 0 1-1.47-1.83c-.15-.26 0-.41.11-.56c.28-.35.56-.72.65-.95s.05-.41 0-.56s-.66-1.59-.91-2.17c-.24-.58-.48-.5-.66-.51h-.56a1.07 1.07 0 0 0-.77.36a3.26 3.26 0 0 0-1 2.41a5.67 5.67 0 0 0 1.18 3.02a12.93 12.93 0 0 0 4.9 4.33a16.74 16.74 0 0 0 1.68.62a4 4 0 0 0 1.86.12a3.04 3.04 0 0 0 2-1.42a2.48 2.48 0 0 0 .17-1.42c-.09-.13-.27-.2-.57-.35Z"
+                    />
+                  </svg>
+                  Konsultasi Sekarang
+                </a>
+              </div>
+
+              <!-- Layanan -->
+              <div class="px-6 pb-6">
+                <div
+                  class="bg-slate-50 rounded-[14px] ring-1 ring-slate-200 p-4"
+                >
+                  <h4
+                    class="text-[11px] font-extrabold uppercase tracking-wide text-slate-700"
+                  >
+                    Layanan:
+                  </h4>
+                  <ul class="mt-2 space-y-2 text-[13px] text-slate-700">
+                    <!-- hijau: check-circle -->
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Virtual Office 1 tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Alamat bisnis komersial &amp; prestisius
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Surat perjanjian sewa &amp; domisili
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Layanan resepsionis
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Layanan penanganan surat
+                    </li>
+                    <!-- merah: x-circle -->
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Notifikasi real-time via Whatsapp
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Meeting room 72 jam/tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Logo perusahaan di Meeting Room
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >High speed internet
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Smart TV &amp; Whiteboard
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Gratis air mineral, kopi &amp; teh
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Penggunaan Virtual Office untuk PKP
+                    </li>
+                  </ul>
+                  <p class="mt-2 text-[10px] text-slate-400 italic">
+                    *Saat menggunakan meeting room
+                  </p>
+                </div>
+
+                <!-- Bonus -->
+                <div
+                  class="mt-3 bg-slate-50 rounded-[14px] ring-1 ring-slate-200 p-4"
+                >
+                  <h4
+                    class="text-[11px] font-extrabold uppercase tracking-wide text-slate-700"
+                  >
+                    Bonus:
+                  </h4>
+                  <ul class="mt-2 space-y-2 text-[13px] text-slate-700">
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Virtual Office 1 tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >100+ e-course digital marketing
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >2.500+ template konten digital
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Kalender konten sosial media
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- ========== CARD CENTER (HIGHLIGHT) ========== -->
+            <article
+              class="rounded-[18px] overflow-hidden ring-2 ring-[#1677FF] shadow-[0_22px_60px_rgba(22,119,255,.25)]"
+            >
+              <!-- Header biru -->
+              <div class="p-6 bg-[#1677FF] text-white">
+                <h3 class="text-[24px] font-extrabold">Paket Bisnis</h3>
+                <p class="text-[14px] opacity-95 mt-1"><del>Rp.300.000</del></p>
+
+                <div class="mt-2 leading-none">
+                  <span class="text-[26px] font-extrabold">Rp.</span>
+                  <span class="text-[42px] font-extrabold align-baseline"
+                    >150.000</span
+                  >
+                  <span class="text-[16px] font-semibold opacity-95 align-baseline"
+                    >/Bulan</span
+                  >
+                </div>
+
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20tertarik%20paket%20Virtual%20Office."
+                  class="mt-3 inline-flex items-center gap-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white text-[13px] font-semibold px-3 py-1.5 shadow-[0_10px_24px_rgba(16,185,129,.35)]"
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.52 3.5A11 11 0 0 0 2.05 16.37L1 21l4.76-1a11 11 0 0 0 16.9-9.46a10.9 10.9 0 0 0-2.14-6.99ZM12.38 19A9 9 0 0 1 6.8 17.4l-.33-.2l-2.82.69l.7-2.75l-.22-.35A9 9 0 1 1 21 11a9 9 0 0 1-8.62 8Z"
+                    />
+                    <path
+                      d="M17.45 13.26c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.66.15s-.76.97-.93 1.17s-.34.22-.63.07a7.35 7.35 0 0 1-2.16-1.33a8 8 0 0 1-1.47-1.83c-.15-.26 0-.41.11-.56c.28-.35.56-.72.65-.95s.05-.41 0-.56s-.66-1.59-.91-2.17c-.24-.58-.48-.5-.66-.51h-.56a1.07 1.07 0 0 0-.77.36a3.26 3.26 0 0 0-1 2.41a5.67 5.67 0 0 0 1.18 3.02a12.93 12.93 0 0 0 4.9 4.33a16.74 16.74 0 0 0 1.68.62a4 4 0 0 0 1.86.12a3.04 3.04 0 0 0 2-1.42a2.48 2.48 0 0 0 .17-1.42c-.09-.13-.27-.2-.57-.35Z"
+                    />
+                  </svg>
+                  Konsultasi Sekarang
+                </a>
+              </div>
+
+              <!-- Body putih: dua panel putih bundar -->
+              <div class="px-6 pb-6 bg-white">
+                <div
+                  class="mt-4 bg-white rounded-[14px] ring-1 ring-slate-200 p-4 shadow-[0_6px_16px_rgba(2,6,23,.04)]"
+                >
+                  <h4
+                    class="text-[11px] font-extrabold uppercase tracking-wide text-slate-700"
+                  >
+                    Layanan:
+                  </h4>
+                  <!-- (isi daftar sama seperti kartu kiri) -->
+                  <ul class="mt-2 space-y-2 text-[13px] text-slate-700">
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Virtual Office 1 tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Alamat bisnis komersial &amp; prestisius
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Surat perjanjian sewa &amp; domisili
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Layanan resepsionis
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Layanan penanganan surat
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Notifikasi real-time via Whatsapp
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Meeting room 72 jam/tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Logo perusahaan di Meeting Room
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >High speed internet
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Smart TV &amp; Whiteboard
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Gratis air mineral, kopi &amp; teh
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-rose-500 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.536-10.95a1 1 0 1 0-1.414-1.414L10 7.757 7.879 5.636a1 1 0 1 0-1.414 1.414L8.586 9.17l-2.121 2.12a1 1 0 1 0 1.414 1.415L10 10.586l2.122 2.121a1 1 0 0 0 1.414-1.414L11.414 9.17l2.122-2.121Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Penggunaan Virtual Office untuk PKP
+                    </li>
+                  </ul>
+                  <p class="mt-2 text-[10px] text-slate-400 italic">
+                    *Saat menggunakan meeting room
+                  </p>
+                </div>
+
+                <div
+                  class="mt-3 bg-white rounded-[14px] ring-1 ring-slate-200 p-4 shadow-[0_6px_16px_rgba(2,6,23,.04)]"
+                >
+                  <h4
+                    class="text-[11px] font-extrabold uppercase tracking-wide text-slate-700"
+                  >
+                    Bonus:
+                  </h4>
+                  <ul class="mt-2 space-y-2 text-[13px] text-slate-700">
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Virtual Office 1 tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >100+ e-course digital marketing
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >2.500+ template konten digital
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Kalender konten sosial media
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- ========== CARD RIGHT (copy dari left) ========== -->
+            <article
+              class="rounded-[18px] bg-white ring-1 ring-slate-200 shadow-[0_18px_44px_rgba(2,6,23,.08)] overflow-hidden"
+            >
+              <div class="p-6">
+                <h3 class="text-[24px] font-extrabold text-slate-900">
+                  Paket Ekonomis
+                </h3>
+                <p class="text-[14px] font-medium text-slate-500 mt-1"><del>Rp.333.333</del></p>
+
+                <div class="mt-2 leading-none">
+                  <span class="text-[26px] font-extrabold text-slate-900"
+                    >Rp.</span
+                  >
+                  <span
+                    class="text-[42px] font-extrabold text-[#1677FF] align-baseline"
+                    >166.666</span
+                  >
+                  <span class="text-[16px] font-semibold text-slate-500 align-baseline"
+                    >/Bulan</span
+                  >
+                </div>
+
+                <!-- CTA -->
+                <a
+                  href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20tertarik%20paket%20Virtual%20Office%20Ekonomis."
+                  class="mt-3 inline-flex items-center gap-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white text-[13px] font-semibold px-3 py-1.5 shadow-[0_10px_24px_rgba(16,185,129,.35)]"
+                >
+                  <!-- WA icon -->
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.52 3.5A11 11 0 0 0 2.05 16.37L1 21l4.76-1a11 11 0 0 0 16.9-9.46a10.9 10.9 0 0 0-2.14-6.99ZM12.38 19A9 9 0 0 1 6.8 17.4l-.33-.2l-2.82.69l.7-2.75l-.22-.35A9 9 0 1 1 21 11a9 9 0 0 1-8.62 8Z"
+                    />
+                    <path
+                      d="M17.45 13.26c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.66.15s-.76.97-.93 1.17s-.34.22-.63.07a7.35 7.35 0 0 1-2.16-1.33a8 8 0 0 1-1.47-1.83c-.15-.26 0-.41.11-.56c.28-.35.56-.72.65-.95s.05-.41 0-.56s-.66-1.59-.91-2.17c-.24-.58-.48-.5-.66-.51h-.56a1.07 1.07 0 0 0-.77.36a3.26 3.26 0 0 0-1 2.41a5.67 5.67 0 0 0 1.18 3.02a12.93 12.93 0 0 0 4.9 4.33a16.74 16.74 0 0 0 1.68.62a4 4 0 0 0 1.86.12a3.04 3.04 0 0 0 2-1.42a2.48 2.48 0 0 0 .17-1.42c-.09-.13-.27-.2-.57-.35Z"
+                    />
+                  </svg>
+                  Konsultasi Sekarang
+                </a>
+              </div>
+
+              <!-- Layanan -->
+              <div class="px-6 pb-6">
+                <div
+                  class="bg-slate-50 rounded-[14px] ring-1 ring-slate-200 p-4"
+                >
+                  <h4
+                    class="text-[11px] font-extrabold uppercase tracking-wide text-slate-700"
+                  >
+                    Layanan:
+                  </h4>
+                  <ul class="mt-2 space-y-2 text-[13px] text-slate-700">
+                    <!-- hijau: check-circle -->
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Virtual Office 1 tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Alamat bisnis komersial &amp; prestisius
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Surat perjanjian sewa &amp; domisili
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Layanan resepsionis
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Layanan penanganan surat
+                    </li>
+                    <!-- merah: x-circle -->
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Notifikasi real-time via Whatsapp
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Meeting room 72 jam/tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Logo perusahaan di Meeting Room
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >High speed internet
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Smart TV &amp; Whiteboard
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Gratis air mineral, kopi &amp; teh
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Penggunaan Virtual Office untuk PKP
+                    </li>
+                  </ul>
+                  <p class="mt-2 text-[10px] text-slate-400 italic">
+                    *Saat menggunakan meeting room
+                  </p>
+                </div>
+
+                <!-- Bonus -->
+                <div
+                  class="mt-3 bg-slate-50 rounded-[14px] ring-1 ring-slate-200 p-4"
+                >
+                  <h4
+                    class="text-[11px] font-extrabold uppercase tracking-wide text-slate-700"
+                  >
+                    Bonus:
+                  </h4>
+                  <ul class="mt-2 space-y-2 text-[13px] text-slate-700">
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Virtual Office 1 tahun
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >100+ e-course digital marketing
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >2.500+ template konten digital
+                    </li>
+                    <li class="flex gap-2">
+                      <svg
+                        class="h-3.5 w-3.5 text-emerald-600 mt-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.707a1 1 0 0 0-1.414-1.414L9 10.172 7.707 8.879a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                          clip-rule="evenodd"
+                        /></svg
+                      >Kalender konten sosial media
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" class="py-10 md:py-14">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <!-- Left: Heading + desc + arrows -->
+            <div>
+              <h2
+                class="text-3xl md:text-4xl font-extrabold leading-tight text-slate-900"
+              >
+                DARI ALUMNI KAMI
+                <br />
+                <span class="text-[#1677FF]">DI JEPANG.</span>
+              </h2>
+              <p class="mt-4 text-[15px] text-slate-700 max-w-md">
+                Cerita nyata dari para peserta yang telah mengikuti Pelatihan
+                LPK Jepang Nusa Agency — belajar, berjuang, dan kini sukses
+                membangun karier di Jepang.
+              </p>
+
+              <!-- Arrows -->
+              <div class="mt-6 flex gap-3">
+                <button
+                  id="alumni-prev"
+                  class="h-9 w-9 grid place-items-center rounded-full bg-emerald-100 text-emerald-600 hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+                  aria-label="Testimoni sebelumnya"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m15 19-7-7l7-7"
+                    />
+                  </svg>
+                </button>
+                <button
+                  id="alumni-next"
+                  class="h-9 w-9 grid place-items-center rounded-full bg-emerald-100 text-emerald-600 hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+                  aria-label="Testimoni berikutnya"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m9 5 7 7l-7 7"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Testimonial card (slider) -->
+            <div id="alumni-slider" class="relative">
+              <!-- Kartu putih konsisten -->
+              <div
+                class="bg-white rounded-2xl shadow-[0_12px_30px_rgba(2,6,23,.1)] ring-1 ring-slate-100 p-6 md:p-7"
+              >
+                <!-- Quote mark -->
+                <div class="text-emerald-500 mb-3">
+                  <svg
+                    class="h-7 w-7"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7.17 6.1c-2.2.7-3.67 2.7-3.67 5.1v6.7h6.6V11a4.9 4.9 0 0 0-2.93-4.9zm10 0C15 6.8 13.5 8.8 13.5 11.2v6.7h6.6V11a4.9 4.9 0 0 0-2.93-4.9z"
+                    />
+                  </svg>
+                </div>
+
+                <!-- Konten yang di-slide (smooth) -->
+                <div
+                  id="alumni-wrap"
+                  class="transition-all duration-500 ease-out opacity-0 translate-y-1"
+                >
+                  <!-- text area diberi min-h agar kartu konsisten -->
+                  <blockquote
+                    id="alumni-text"
+                    class="text-slate-800 text-[15px] md:text-base leading-7 min-h-[96px]"
+                  >
+                    <!-- isi via JS -->
+                  </blockquote>
+
+                  <div class="mt-4 flex items-center gap-3">
+                    <img
+                      id="alumni-avatar"
+                      src=""
+                      alt=""
+                      class="h-10 w-10 rounded-full object-cover ring-2 ring-white shadow"
+                    />
+                    <div>
+                      <p
+                        id="alumni-name"
+                        class="font-semibold text-slate-900"
+                      ></p>
+                      <p id="alumni-role" class="text-sm text-slate-600"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- dots -->
+              <div id="alumni-dots" class="mt-5 flex gap-2"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section id="faq" class="py-20">
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div class="flex flex-col justify-center">
+              <h1 class="text-[42px] font-extrabold leading-tight text-[#222]">
+                ADAKAH PERTANYAAN?<br />
+                <span class="text-blue-600 text-[38px]"
+                  >KAMI PUNYA JAWABANNYA.</span
+                >
+              </h1>
+              <p class="text-gray-600 font-medium mt-4 max-w-md">
+                Kami merangkum pertanyaan yang paling sering ditanyakan seputar
+                layanan Nusa Press. Jika masih ada yang belum terjawab, tim kami
+                siap membantu langsung.
+              </p>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg-blue-800 text-white py-12">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-2">
+            <div class="flex items-center">
+              <div
+                class="w-40 h-10 bg-white"
+                style="
+                  -webkit-mask-image: url('https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp');
+                  mask-image: url('https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758721423/nusalogo_cynay5.webp');
+                  -webkit-mask-size: contain;
+                  mask-size: contain;
+                  -webkit-mask-repeat: no-repeat;
+                  mask-repeat: no-repeat;
+                  -webkit-mask-position: center;
+                  mask-position: center;
+                "
+              ></div>
+            </div>
+            <p class="mt-4 text-sm text-blue-200 max-w-md">
+              Kami membantu individu, lembaga, dan perusahaan untuk berkarya,
+              berkembang, dan bersaing di era digital melalui layanan publikasi,
+              pelatihan, dan pengembangan platform online yang profesional.
+            </p>
+            <div class="flex space-x-4 mt-6">
+              <a
+                href="#"
+                class="text-blue-200 hover:text-white transition-colors"
+                ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M9.198 21.5h4v-8.01h2.598l.397-3.01h-2.995V8.498c0-.872.243-1.464 1.492-1.464h1.595V4.01c-.276-.037-1.226-.12-2.325-.12-2.302 0-3.878 1.402-3.878 3.986v2.216H7.197v3.01h2v8.01z"
+                  ></path></svg
+              ></a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-white transition-colors"
+                ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"
+                  ></path></svg
+              ></a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-white transition-colors"
+                ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold">Layanan Nusa Agency</h3>
+            <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Pembuatan OJS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Pembuatan Website</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Penerbit Dan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Pelatihan LPK</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Iklan Digital</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Virtual Office</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Publikasi Jurnal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >Jasa Pembuatan Legalitas</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold">Contact</h3>
+            <div class="mt-4 space-y-4 text-sm">
+              <div class="flex items-start">
+                <svg
+                  class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0 mt-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <p class="text-blue-200">
+                  Perumahan Janati Park, Jl. Raya Cirebon - Bandung Ruko 1-C,
+                  Cibeusi, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363
+                </p>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <a
+                  href="mailto:admin@nusaagency.com"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >admin@nusaagency.com</a
+                >
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="h-5 w-5 mr-3 text-blue-200 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <a
+                  href="https://wa.me/62881022376684"
+                  class="text-blue-200 hover:text-white transition-colors"
+                  >0881-0223-76684</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-blue-700 text-center">
+          <p class="text-xs text-blue-300">
+            &copy; Copyright 2025 Nusa Agency. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="wa-btn" class="conversion fixed bottom-10 right-10 z-50">
+      <a
+        href="https://wa.me/6281222800879?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F"
+        target="_blank"
+        class="conversion relative block"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          class="w-16 h-16"
+        />
+        <!-- Badge Notifikasi -->
+        <span
+          id="wa-badge"
+          class="hidden absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full"
+        >
+          1
+        </span>
+      </a>
+    </div>
+  </body>
+  <script type="module" src="../script/landing_lpk.js"></script>
+</html>
