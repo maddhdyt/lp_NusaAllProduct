@@ -44,7 +44,7 @@ export const servicesData = [
         title: 'Publikasi Jurnal Nasional',
         description: 'Nusa Agency memberikan pelayanan asistensi maupun penerbitan jurnal yang terakreditasi Dikti/Sinta, baik Sinta 1, 2, 3, 4, dan 5 dengan seluruh rumpun ilmu.',
         buttonText: 'Submit Artikel Sekarang',
-        buttonLink: '#',
+        buttonLink: 'https://wa.me/62881022376684?text=Halo%20admin%20Nusa%20Publisher!%20Saya%20dari%20website%20ingin%20menanyakan%20tentang%20jasa%20publikasi%20jurnal',
         features: [
             'Penyesuaian Template Jurnal',
             'Translate',
@@ -63,7 +63,7 @@ export const servicesData = [
         title: 'Publikasi Jurnal Internasional',
         description: 'Kami juga melayani asistensi untuk publikasi jurnal internasional bereputasi dan terindeks Scopus, Web of Science, dan database bergengsi lainnya.',
         buttonText: 'Submit Artikel Sekarang',
-        buttonLink: '#',
+        buttonLink: 'https://wa.me/62881022376684?text=Halo%20admin%20Nusa%20Publisher!%20Saya%20dari%20website%20ingin%20menanyakan%20tentang%20jasa%20publikasi%20jurnal',
         features: [
             'Penyesuaian Template Jurnal',
             'Translate',
@@ -82,7 +82,7 @@ export const servicesData = [
         title: 'Publikasi Jurnal ISSN',
         description: 'Tingkatkan kapasitas dan kompetensi Anda dalam penulisan karya ilmiah melalui workshop dan pelatihan privat yang kami selenggarakan secara online dan offline.',
         buttonText: 'Submit Artikel Sekarang',
-        buttonLink: '#',
+        buttonLink: 'https://wa.me/62881022376684?text=Halo%20admin%20Nusa%20Publisher!%20Saya%20dari%20website%20ingin%20menanyakan%20tentang%20jasa%20publikasi%20jurnal',
         features: [
             'Penyesuaian Template Jurnal',
             'Translate',

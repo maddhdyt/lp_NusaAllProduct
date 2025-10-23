@@ -44,6 +44,7 @@ export const pricingData = [
         publishTime: '11 Hari Buku Terbit!',
         revisionNote: 'Gratis Revisi Unlimited',
         buttonColor: 'bg-green-gradient hover:bg-green-600',
+        Links: "https://wa.me/62881022376684?text=Halo%2C%20saya%20dari%20website%20ingin%20konsultasi%20mengenai%20paket%20Royale%20All%20In%20penerbitan%2Fpercetakan%20buku%20di%20Nusa%20Press",
         features: [
             { text: 'E-Book & ISBN Resmi', included: true },
             { text: 'Katalog Perpustakaan Nasional', included: true },
@@ -64,6 +65,7 @@ export const pricingData = [
         publishTime: '20 Hari Buku Terbit!',
         revisionNote: 'Gratis 3x Revisi',
         buttonColor: 'bg-green-gradient hover:bg-green-600',
+        Links: "https://wa.me/62881022376684?text=Halo%2C%20saya%20dari%20website%20ingin%20konsultasi%20mengenai%20paket%20Elite%20Prime%20penerbitan%2Fpercetakan%20buku%20di%20Nusa%20Press",
         features: [
             { text: 'E-Book & ISBN Resmi', included: true },
             { text: 'Katalog Perpustakaan Nasional', included: true },
@@ -84,6 +86,7 @@ export const pricingData = [
         publishTime: '35 Hari Buku Terbit!',
         revisionNote: 'Tanpa Revisi',
         buttonColor: 'bg-green-gradient hover:bg-green-600',
+        Links: "https://wa.me/62881022376684?text=Halo%2C%20saya%20dari%20website%20ingin%20konsultasi%20mengenai%20paket%20Basic%20Start%20penerbitan%2Fpercetakan%20buku%20di%20Nusa%20Press",
         features: [
             { text: 'E-Book & ISBN Resmi', included: true },
             { text: 'Katalog Perpustakaan Nasional', included: true },
@@ -176,30 +179,31 @@ export const testimonialsData = [
     }
 ];
 
-// data/homeFaqData.js
+// /data/homeFaqData.js
+
 export const bookFaqs = [
     {
-        question: "Bagaimana cara kerja layanan Nusa Agency?",
-        answer: "Kami mulai dari konsultasi kebutuhan Anda, lalu menyusun strategi dan eksekusi yang disesuaikan dengan target bisnis maupun institusi Anda."
+        question: "Bagaimana alur penerbitan buku di Nusa Press?",
+        answer: "Prosesnya dimulai dari pengiriman naskah, review & seleksi, proses editing & layout, desain cover, hingga cetak. Tim kami akan mendampingi Anda di setiap langkah."
     },
     {
-        question: "Berapa lama waktu yang dibutuhkan untuk sebuah proyek?",
-        answer: "Waktu pengerjaan bervariasi tergantung kompleksitas proyek. Untuk pengembangan website standar, estimasi waktu sekitar 4-8 minggu. Kami akan memberikan timeline detail setelah konsultasi awal."
+        question: "Berapa lama waktu yang dibutuhkan untuk menerbitkan buku?",
+        answer: "Waktu bervariasi tergantung kesiapan naskah dan kompleksitas editing/layout. Secara umum, proses dari naskah diterima hingga buku terbit bisa memakan waktu antara 2 hingga 4 bulan."
     },
     {
-        question: "Apakah ada layanan maintenance setelah proyek selesai?",
-        answer: "Ya, kami menawarkan paket maintenance dan support bulanan untuk memastikan website atau sistem Anda berjalan optimal, aman, dan selalu terupdate."
+        question: "Apakah Nusa Press juga mengurus ISBN dan editing?",
+        answer: "Ya, kami menyediakan layanan lengkap (one-stop solution). Selain cetak, kami juga membantu pengurusan ISBN, editing naskah, desain layout, dan desain cover sesuai paket yang Anda pilih."
     },
     {
-        question: "Bagaimana model penetapan harga di Nusa Agency?",
-        answer: "Kami tidak memiliki daftar harga tetap karena setiap proyek unik. Kami akan memberikan penawaran harga yang transparan dan detail setelah memahami sepenuhnya ruang lingkup proyek Anda melalui sesi konsultasi gratis."
+        question: "Bagaimana cara menghitung biaya cetak buku?",
+        answer: "Biaya bersifat kustom, tergantung pada beberapa faktor: jumlah halaman, jenis kertas, finishing cover (doff/glossy), jumlah eksemplar, dan layanan tambahan yang diambil (seperti editing)."
     },
     {
-        question: "Seberapa besar keterlibatan saya sebagai klien?",
-        answer: "Kolaborasi adalah kunci. Keterlibatan Anda akan sangat penting pada tahap awal (diskusi konsep), persetujuan desain, dan sesi umpan balik. Kami akan menjaga komunikasi secara teratur agar proyek berjalan sesuai visi Anda."
+        question: "Apa yang harus saya siapkan untuk menerbitkan buku?",
+        answer: "Hal utama adalah naskah Anda yang sudah final dalam format digital (misalnya .docx). Jika Anda memiliki preferensi desain atau referensi cover, itu juga akan sangat membantu."
     },
     {
-        question: "Apa yang membedakan Nusa Agency dari yang lain?",
-        answer: "Fokus kami adalah menjadi mitra strategis jangka panjang. Kami memiliki spesialisasi mendalam dalam solusi untuk institusi akademik (seperti OJS) dan pendekatan berbasis data yang memastikan hasil yang terukur."
+        question: "Apakah bisa cetak buku satuan (Print-on-Demand)?",
+        answer: "Tentu! Kami melayani cetak satuan (Print-on-Demand/POD) maupun cetak offset untuk jumlah besar. Anda tidak perlu mencetak ribuan buku sekaligus, kami sesuaikan dengan kebutuhan Anda."
     }
 ];

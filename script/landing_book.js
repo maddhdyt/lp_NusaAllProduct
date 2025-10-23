@@ -3,6 +3,15 @@ import { pricingData } from '../data/dataBook.js';
 import { whyChooseUsData } from '../data/dataBook.js';
 import { testimonialsData } from '../data/dataBook.js';
 
+window.addEventListener("load", () => {
+    const badge = document.getElementById("wa-badge");
+
+    // Tampilkan badge setelah 2 detik
+    setTimeout(() => {
+        badge.classList.remove("hidden");
+    }, 2000);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.logo-slider-track');
 
@@ -49,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <ul class="space-y-3 text-left mb-8 flex-grow">
                             ${featuresHTML}
                         </ul>
-                        <a href="#" class="${pkg.buttonColor} text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                        <a href="${pkg.Links}" class="${pkg.buttonColor} text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
                             Kirim Naskah Sekarang
                         </a>
                     </div>

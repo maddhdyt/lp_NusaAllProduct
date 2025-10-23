@@ -1,4 +1,12 @@
 import { clientLogos } from '../data/dataJournal.js';
+window.addEventListener("load", () => {
+    const badge = document.getElementById("wa-badge");
+
+    // Tampilkan badge setelah 2 detik
+    setTimeout(() => {
+        badge.classList.remove("hidden");
+    }, 2000);
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.logo-slider-track');

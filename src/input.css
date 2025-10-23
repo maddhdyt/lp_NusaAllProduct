@@ -69,7 +69,9 @@ html {
     transform: scale(1.1);
 }
 
-@media (min-width: 768px) { /* Corresponds to Tailwind's 'md' breakpoint */
+@media (min-width: 768px) {
+
+    /* Corresponds to Tailwind's 'md' breakpoint */
     .stat-item:not(:first-child) {
         border-left: 1px solid rgba(255, 255, 255, 0.2);
     }
@@ -144,7 +146,7 @@ html {
 }
 
 .testimonial-card {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
@@ -191,9 +193,11 @@ html {
 }
 
 .bg-paket-lkp {
-          /* ganti URL di bawah dengan bg milikmu */
-          background-image: url("https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760425728/Group_2422_j7owko.png");
-          background-size: cover; /* auto responsive */
-          background-position: center; /* posisikan di tengah */
-          background-repeat: no-repeat;
-        }
+    /* ganti URL di bawah dengan bg milikmu */
+    background-image: url("https://res.cloudinary.com/dhjqjn2hn/image/upload/v1760425728/Group_2422_j7owko.png");
+    background-size: cover;
+    /* auto responsive */
+    background-position: center;
+    /* posisikan di tengah */
+    background-repeat: no-repeat;
+}
