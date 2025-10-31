@@ -1,9 +1,4 @@
-// /data/dataLpk.js
-// ========================================
-// Data untuk Testimoni & FAQ LPK Jepang
-// ========================================
 
-// TESTIMONIALS (dipakai slider)
 export const testimonialsData = [
   {
     text:
@@ -53,7 +48,7 @@ export const testimonialsData = [
 ];
 
 // FAQ (accordion)
-export const bookFaqs = [
+export const lpkFaqs = [
   {
     question: "Apa syarat minimal untuk ikut program LPK Jepang?",
     answer:
@@ -73,5 +68,57 @@ export const bookFaqs = [
     question: "Perlukah bisa bahasa Jepang sebelum daftar?",
     answer:
       "Tidak wajib. Peserta akan mengikuti kelas intensif dari nol. Namun jika sudah memiliki dasar JLPT/JFT akan menjadi nilai tambah."
+  },
+  {
+    question: "Bagaimana biaya dan apakah bisa dicicil?",
+    answer:
+      "Biaya menyesuaikan jenis program. Tersedia opsi cicilan (DP lalu angsuran bertahap) sesuai ketentuan. Detail rinci akan dijelaskan saat konsultasi."
   }
 ];
+
+export const lpkWhy = {
+  title: "KENAPA MEMILIH LPK",
+  titleEmphasis: "NUSA AGENCY?",
+  description:
+    "Kami hadir untuk mendukung individu, mahasiswa, pekerja, hingga pelaku usaha dalam meningkatkan keterampilan. Dengan instruktur berpengalaman dan kurikulum yang relevan, setiap peserta mendapat pengalaman belajar yang praktis dan bersertifikat resmi.",
+  bullets: [
+    "Sertifikat resmi yang diakui nasional",
+    "Instruktur berpengalaman & praktisi industri",
+    "Kurikulum relevan dengan dunia kerja"
+  ],
+  gallery: [
+  {
+    src: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1761364353/group-smart-asian-architect-interior-design-team-consulting-with-constrction-engineer-work-brainstrom-meeting-with-house-project-blueprint-home-mockup-house-renovation-structure-background_uoegjm.webp",
+    alt: "Kegiatan peserta LPK di lapangan",
+    label: {
+      title: "Praktik Lapangan",
+      subtitle: "Pembinaan intensif bersama instruktur bersertifikat"
+    }
+  },
+  {
+    src: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1761364352/smart-asian-glasses-engineer-use-radio-connection-working-site-construction_io6ntw.webp",
+    alt: "Pembekalan keselamatan kerja",
+    label: {
+      title: "Keselamatan Kerja",
+      subtitle: "Pembekalan K3 sesuai standar industri Jepang"
+    }
+  },
+  {
+    src: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1761364350/granddaughter-talking-with-her-grandmother-sitting-wheelchair-cheerful-concept-happy-family_sllyk8.webp",
+    alt: "Pelatihan KAIGO – careworker",
+    label: {
+      title: "KAIGO",
+      subtitle: "Perawatan lanjut dengan standar profesional Jepang"
+    }
+  },
+  {
+    src: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1761364353/image58_ecjbh6.webp",
+    alt: "Praktik kerja konstruksi",
+    label: {
+      title: "Konstruksi",
+      subtitle: "Simulasi kerja nyata & budaya kerja tim"
+    }
+  }
+]
+
+};

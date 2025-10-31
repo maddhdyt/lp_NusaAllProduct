@@ -2,36 +2,11 @@
 
 // === IMPORT DATA (pastikan path benar) ===
 import { clientLogos } from '../data/dataJournal.js';
-import { pricingData, whyChooseUsData, testimonialsData, bookFaqs } from '../data/dataBook.js';
+import { testimonialsData, lkpFaqs } from '../data/dataLkp.js'; 
+
 
 document.addEventListener('DOMContentLoaded', () => {
-  /* ================== 1) LOGO SLIDER (opsional & aman) ================== */
-  const track = document.querySelector('.logo-slider-track');
-  if (track && Array.isArray(clientLogos)) {
-    clientLogos.forEach(logo => {
-      const img = document.createElement('img');
-      img.src = logo.src;
-      img.alt = logo.alt ?? '';
-      img.loading = 'lazy';
-      track.appendChild(img);
-    });
-    // Duplikasi untuk efek infinite
-    [...track.children].forEach(node => track.appendChild(node.cloneNode(true)));
-  }
 
-  /* ================== 2) PRICING (opsional) ================== */
-  const pricingGrid = document.querySelector('#pricing-grid');
-  if (pricingGrid && Array.isArray(pricingData)) {
-    // TODO: render pricing di sini (dibiarkan kosong sesuai kodenya)
-  }
-
-  /* ================== 3) WHY CHOOSE US (opsional) ================== */
-  const whyChooseUsGrid = document.querySelector('#why-choose-us-grid');
-  if (whyChooseUsGrid && Array.isArray(whyChooseUsData)) {
-    // TODO: render why choose us di sini (dibiarkan kosong sesuai kodenya)
-  }
-
-  /* ================== 4) TESTIMONIALS ================== */
   const testimonialsGrid = document.querySelector('#testimonials-grid');
   if (testimonialsGrid && Array.isArray(testimonialsData)) {
     testimonialsGrid.innerHTML = ''; // bersihkan dulu
@@ -61,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
       `);
     });
 
-    // Animasi muncul (opsional)
     const cards = document.querySelectorAll('.testimonial-card');
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => {
@@ -74,11 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(c => io.observe(c));
   }
 
-  /* ================== 5) FAQ (TETAP AKTIF) ================== */
   const faqContainer = document.getElementById('faq-accordion');
-  if (faqContainer && Array.isArray(bookFaqs)) {
+  if (faqContainer && Array.isArray(lkpFaqs)) {
     // Build HTML FAQ
-    faqContainer.innerHTML = bookFaqs.map((faq, idx) => `
+    faqContainer.innerHTML = lkpFaqs.map((faq, idx) => `
       <div class="faq-item border-b border-gray-200 py-4 ${idx === 0 ? 'active' : ''}">
         <button class="faq-question w-full flex items-center justify-between text-left font-semibold text-slate-800">
           <h4 class="text-lg font-semibold text-gray-800">${faq.question}</h4>

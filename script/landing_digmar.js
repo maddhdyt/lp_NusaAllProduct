@@ -1,5 +1,5 @@
 
-import { testimonialsLegal,legalFaqs } from '../data/dataLegal.js';
+import { digitalMarketingTestimonials,dmFaqs } from '../data/dataDigmar.js';
 import { clientLogos } from '../data/dataJournal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -160,8 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 4. Masukkan semua data testimoni ke dalam Swiper wrapper
-  //    GANTI 'testimonials' menjadi 'testimonialsLegal'
-  swiperWrapper.innerHTML = testimonialsLegal.map(createSlide).join('');
+  //    GANTI 'testimonials' menjadi 'digitalMarketingTestimonials'
+  swiperWrapper.innerHTML = digitalMarketingTestimonials.map(createSlide).join('');
 
 
   // 5. Inisialisasi Swiper.js (tidak ada perubahan di sini)
@@ -188,8 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ================== FAQ ================== */
   const faqContainer = document.getElementById('faq-accordion');
-  if (faqContainer && Array.isArray(legalFaqs) && legalFaqs.length) {
-    faqContainer.innerHTML = legalFaqs.map((faq, i) => `
+  if (faqContainer && Array.isArray(dmFaqs) && dmFaqs.length) {
+    faqContainer.innerHTML = dmFaqs.map((faq, i) => `
         <div class="faq-item border-b border-gray-200 py-4 ${i === 0 ? 'active' : ''}">
           <button class="faq-question w-full flex items-center justify-between text-left font-semibold text-slate-800">
             <h4 class="text-lg font-semibold text-gray-800">${faq.question}</h4>

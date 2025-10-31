@@ -1,5 +1,5 @@
 // /js/landingLpk.js
-import { testimonialsData, lpkFaqs, lpkWhy } from '../data/dataLpk.js';
+import { testimonialsData, voFaqs } from '../data/dataVo.js';
 
 
 window.addEventListener("load", () => {
@@ -38,7 +38,7 @@ const FALLBACK_TESTI = [
 /* =========================
    UTIL
 ========================= */
-const $ = (sel) => document.querySelector(sel);
+const $  = (sel) => document.querySelector(sel);
 const $$ = (root, sel) => Array.from(root.querySelectorAll(sel));
 
 /* =========================
@@ -135,30 +135,26 @@ function initTestimonials() {
 ========================= */
 function initFaq() {
   const faqContainer = $('#faq-accordion');
-  if (!faqContainer || !Array.isArray(lpkFaqs) || !lpkFaqs.length) return;
+  if (!faqContainer || !Array.isArray(voFaqs) || !voFaqs.length) return;
 
-  faqContainer.innerHTML = lpkFaqs
-    .map(
-      (faq, i) => `
-      <div class="faq-item border-b border-gray-200 py-4 ${i === 0 ? 'active' : ''}">
-        <button class="faq-question w-full flex items-center justify-between text-left font-semibold text-slate-800">
-          <h4 class="text-lg font-semibold text-gray-800">${faq.question}</h4>
-          <span class="ml-4 flex-shrink-0">
-            <svg class="faq-icon-plus h-6 w-6 text-blue-600 ${i === 0 ? 'hidden' : ''}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m-3-3h6" />
-            </svg>
-            <svg class="faq-icon-minus h-6 w-6 text-blue-600 ${i === 0 ? '' : 'hidden'}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6" />
-            </svg>
-          </span>
-        </button>
-        <div class="faq-answer mt-2 text-slate-600 ${i === 0 ? '' : 'hidden'}">
-          <p>${faq.answer}</p>
-        </div>
+  faqContainer.innerHTML = voFaqs.map((faq, i) => `
+    <div class="faq-item border-b border-gray-200 py-4 ${i === 0 ? 'active' : ''}">
+      <button class="faq-question w-full flex items-center justify-between text-left font-semibold text-slate-800">
+        <h4 class="text-lg font-semibold text-gray-800">${faq.question}</h4>
+        <span class="ml-4 flex-shrink-0">
+          <svg class="faq-icon-plus h-6 w-6 text-blue-600 ${i === 0 ? 'hidden' : ''}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m-3-3h6" />
+          </svg>
+          <svg class="faq-icon-minus h-6 w-6 text-blue-600 ${i === 0 ? '' : 'hidden'}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6" />
+          </svg>
+        </span>
+      </button>
+      <div class="faq-answer mt-2 text-slate-600 ${i === 0 ? '' : 'hidden'}">
+        <p>${faq.answer}</p>
       </div>
-    `
-    )
-    .join('');
+    </div>
+  `).join('');
 
   $$(faqContainer, '.faq-item').forEach((item) => {
     const btn   = item.querySelector('.faq-question');
@@ -181,90 +177,6 @@ function initFaq() {
       minus?.classList.toggle('hidden', !opened);
     });
   });
-}
-
-/* =========================
-   WHY SECTION (judul, bullet, grid foto)
-========================= */
-function initWhy() {
-  if (!lpkWhy) return;
-
-  const titleEl   = $('#why-title');
-  const descEl    = $('#why-desc');
-  const bulletsEl = $('#why-bullets');
-  const gridEl    = $('#why-grid');
-
-  if (!titleEl || !descEl || !bulletsEl || !gridEl) return;
-
-  // Title
-  titleEl.innerHTML = `
-    ${lpkWhy.title}<br />
-    <span class="bg-gradient-to-r from-blue-800 to-green-600 bg-clip-text text-transparent">
-      ${lpkWhy.titleEmphasis}
-    </span>
-  `;
-
-  // Description
-  descEl.textContent = lpkWhy.description ?? '';
-
-  // Bullets
-  const checkIcon = (id) => `
-    <svg class="h-3.5 w-3.5" viewBox="0 0 48 48" aria-hidden="true">
-      <defs>
-        <mask id="${id}">
-          <g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4">
-            <path fill="#555" d="M24 44a20 20 0 1 0 0-40a20 20 0 0 0 0 40Z" />
-            <path stroke-linecap="round" d="m16 24l6 6l12-12" />
-          </g>
-        </mask>
-      </defs>
-      <path fill="#22c55e" d="M0 0h48v48H0z" mask="url(#${id})" />
-    </svg>
-  `;
-
-  bulletsEl.innerHTML = (lpkWhy.bullets || [])
-    .map(
-      (text, i) => `
-      <li class="flex items-start gap-3">
-        <span class="mt-0.5 inline-grid place-items-center h-6 w-6 rounded-full bg-emerald-100">
-          ${checkIcon('good' + (i + 1))}
-        </span>
-        <span>${text}</span>
-      </li>
-    `
-    )
-    .join('');
-
-  // Gallery grid
-  gridEl.innerHTML = (lpkWhy.gallery || [])
-    .map((g) => {
-      const hasLabel = g.label && (g.label.title || g.label.subtitle);
-      return `
-        <a href="#" class="group relative block rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="${g.src}"
-            alt="${g.alt ?? ''}"
-            class="w-full h-40 md:h-44 object-cover transition-transform duration-300 group-hover:scale-[1.04]"
-            loading="lazy"
-          />
-          ${
-            hasLabel
-              ? `
-                <div class="absolute inset-0 flex items-end p-4">
-                  <div class="w-full rounded-lg px-4 py-3 bg-gradient-to-r from-[#2F80ED]/90 via-[#2D9CDB]/90 to-[#56CCF2]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    ${g.label.title ? `<p class="text-white font-extrabold tracking-wide">${g.label.title}</p>` : ''}
-                    ${g.label.subtitle ? `<p class="text-xs text-white/90 -mt-0.5">${g.label.subtitle}</p>` : ''}
-                  </div>
-                </div>
-              `
-              : `
-                <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[#2F80ED] via-[#2D9CDB] to-[#56CCF2]/90"></div>
-              `
-          }
-        </a>
-      `;
-    })
-    .join('');
 }
 
 /* =========================
