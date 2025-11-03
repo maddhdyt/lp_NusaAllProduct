@@ -1819,10 +1819,6 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
-  .text-\[12px\]\/80 {
-    font-size: 12px;
-    line-height: calc(var(--spacing) * 80);
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
