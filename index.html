@@ -67,11 +67,14 @@
                             x-transition:leave-end="transform opacity-0 scale-95"
                             class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1 z-50"
                             style="display: none;">
-                            <a href="/pembuatanOjs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Pembuatan
+                            <a href="/pembuatanOjs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa
+                                Pembuatan
                                 OJS</a>
-                            <a href="/publisherJurnal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Publikasi
+                            <a href="/publisherJurnal"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Publikasi
                                 Jurnal</a>
-                            <a href="/nusaPress" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa Penerbit
+                            <a href="/nusaPress" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa
+                                Penerbit
                                 dan Percetakan Buku</a>
                         </div>
                     </div>
@@ -135,7 +138,7 @@
                     <p class="font-medium text-[#222] text-center leading-[24px] mt-2">Kami adalah Nusa Agency, creative
                         digital partner yang membantu bisnis, lembaga, dan komunitas <br>tumbuh melalui teknologi,
                         desain, dan strategi digital yang relevan.</p>
-                    <a href=""
+                    <a href="https://wa.me/6281222800879?text=Halo%20Nusa%20Agency%2C%20saya%20ingin%20konsultasi%20untuk%20mulai%20proyek%20digital.%20Apakah%20bisa%20dibantu%3F"
                         class="bg-green-gradient py-2.5 rounded-xl px-5 text-white mt-4 font-semibold text-lg">Mulai
                         Proyek Anda</a>
                     <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758806642/group2159_lq8the.webp"
@@ -226,47 +229,48 @@
                 </div>
             </div>
         </section>
-        <section id="testimonial" class="py-14 sm:py-20">
+
+        <section id="testimonial" class="mt-14">
             <div class="container mx-auto px-4">
-                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-[#222]">TESTIMONIAL
-                    <span class="bg-gradient-to-r from-blue-800 to-green-600 bg-clip-text text-transparent">NUSA
+                <h2 class="text-3xl md:text-5xl font-extrabold leading-tight text-[#222] text-center">TESTIMONIALS<br>
+                    <span
+                        class="bg-gradient-to-r from-blue-800 to-green-600 bg-clip-text text-transparent block mt-2">NUSA
                         AGENCY</span>
-                </h1>
-                <p class="text-[#222] font-semibold mt-1.5 lg:w-1/2">Klien kami merasakan manfaat nyata dari layanan
-                    digital Nusa Agency — mulai dari publikasi akademik hingga transformasi branding.</p>
-                <div class="relative mt-12">
-                    <div id="testimonial-slider-wrapper" class="overflow-hidden">
-                        <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+                </h2>
+                <p class="text-gray-600 font-medium mt-2 text-center max-w-2xl mx-auto">Bukti Nyata Pengalaman Mereka
+                    Bersama Layanan Kami.</p>
+
+                <div class="relative mt-12" id="testimonial-carousel">
+                    <div class="overflow-hidden">
+                        <div class="flex transition-transform duration-500 ease-in-out -mx-3" id="carousel-track">
                         </div>
                     </div>
-                    <button id="prev-testimonial"
-                        class="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors z-10 cursor-pointer">
-                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                            </path>
+
+                    <button id="prev-btn"
+                        class="cursor-pointer absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white rounded-full shadow-md w-12 h-12 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
-                    <button id="next-testimonial"
-                        class="absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors z-10 cursor-pointer">
-                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                            </path>
+
+                    <button id="next-btn"
+                        class="cursor-pointer absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white rounded-full shadow-md w-12 h-12 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
                     </button>
                 </div>
-                <div class="mt-20">
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div
-                            class="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                            <div id="logo-marquee" class="flex items-center gap-5 sm:gap-15">
-                            </div>
-                        </div>
-                        <p class="text-gray-600 font-semibold text-center md:text-left flex-shrink-0 md:max-w-xs">Kami
-                            bangga dipercaya oleh berbagai kampus, lembaga, dan bisnis di Indonesia.</p>
-                    </div>
+
+                <div class="flex justify-center mt-8 space-x-2" id="carousel-dots">
                 </div>
             </div>
         </section>
+
+
+
+
         <section id="portfolio" class="mt-14">
             <div class="container">
                 <h1 class="text-4xl md:text-[54px] font-extrabold leading-tight md:leading-14 text-[#222] text-center">

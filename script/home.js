@@ -336,3 +336,167 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const testimonials = [
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208023/4_xgsdu5.webp',
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208023/5_mwdvnx.webp',
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208022/8_mkur6f.webp',
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208022/7_enc0c3.webp',
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208022/6_prpods.webp',
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208022/1_muwdf0.webp',
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208022/3_y9spqo.webp',
+        'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759208022/2_mbiu0y.webp',
+    ];
+
+    const track = document.getElementById('carousel-track');
+    const dotsContainer = document.getElementById('carousel-dots');
+    const nextButton = document.getElementById('next-btn');
+    const prevButton = document.getElementById('prev-btn');
+
+    let currentIndex = 0;
+    let visibleCards = 4;
+
+    // --- Create Cards ---
+    testimonials.forEach((src) => {
+        const card = document.createElement('div');
+        card.className = 'w-full md:w-1/2 lg:w-1/4 flex-shrink-0 px-3';
+        card.innerHTML = `<img src="${src}" alt="Testimonial" class="w-full h-auto rounded-lg shadow-lg">`;
+        track.appendChild(card);
+    });
+
+    const slides = Array.from(track.children);
+    let dots = [];
+
+    // --- Core Functions (Dots, Sizing, Movement) ---
+    const setupDots = () => {
+        dotsContainer.innerHTML = ''; // Clear existing dots
+        const numDots = slides.length > visibleCards ? slides.length - visibleCards + 1 : 1;
+
+        for (let i = 0; i < numDots; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'cursor-pointer w-3 h-3 bg-gray-300 rounded-full transition-colors duration-300 focus:outline-none';
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+        dots = Array.from(dotsContainer.children);
+    };
+
+    const updateVisibleCards = () => {
+        if (window.innerWidth < 768) visibleCards = 1;
+        else if (window.innerWidth < 1024) visibleCards = 2;
+        else visibleCards = 4;
+
+        setupDots();
+    };
+
+    const getMaxIndex = () => Math.max(0, slides.length - visibleCards);
+
+    const updateCarousel = () => {
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('bg-blue-600', index === currentIndex);
+            dot.classList.toggle('bg-gray-300', index !== currentIndex);
+        });
+    };
+
+    const goToSlide = (index) => {
+        currentIndex = Math.max(0, Math.min(index, getMaxIndex()));
+        updateCarousel();
+    };
+
+    const showNextSlide = () => {
+        if (currentIndex >= getMaxIndex()) goToSlide(0);
+        else goToSlide(currentIndex + 1);
+    };
+
+    const showPrevSlide = () => {
+        if (currentIndex <= 0) goToSlide(getMaxIndex());
+        else goToSlide(currentIndex - 1);
+    };
+
+    // --- Initial Setup and Arrow Listeners ---
+    nextButton.addEventListener('click', showNextSlide);
+    prevButton.addEventListener('click', showPrevSlide);
+    window.addEventListener('resize', () => {
+        updateVisibleCards();
+        goToSlide(currentIndex);
+    });
+
+    // =================================================================
+    // == NEW: DRAG AND SWIPE FUNCTIONALITY
+    // =================================================================
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+
+    track.addEventListener('mousedown', dragStart);
+    track.addEventListener('touchstart', dragStart, { passive: true });
+
+    track.addEventListener('mousemove', dragging);
+    track.addEventListener('touchmove', dragging, { passive: true });
+
+    track.addEventListener('mouseup', dragEnd);
+    track.addEventListener('mouseleave', dragEnd);
+    track.addEventListener('touchend', dragEnd);
+
+    function getPositionX(event) {
+        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+
+    function dragStart(event) {
+        isDragging = true;
+        startPos = getPositionX(event);
+
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        currentTranslate = -currentIndex * slideWidth;
+
+        // Disable transition for smooth dragging
+        track.style.transition = 'none';
+        track.style.cursor = 'grabbing';
+    }
+
+    function dragging(event) {
+        if (!isDragging) return;
+        const currentPosition = getPositionX(event);
+        const diff = currentPosition - startPos;
+        track.style.transform = `translateX(${currentTranslate + diff}px)`;
+    }
+
+    function dragEnd(event) {
+        if (!isDragging) return;
+        isDragging = false;
+
+        const currentPosition = event.type.includes('mouse') ? event.pageX : (event.changedTouches[0] ? event.changedTouches[0].clientX : startPos);
+        const movedBy = currentPosition - startPos;
+        const slideWidth = slides[0].getBoundingClientRect().width;
+
+        // Enable transition for the snap-back effect
+        track.style.transition = 'transform 0.5s ease-in-out';
+        track.style.cursor = 'grab';
+
+        // Snap to next/prev slide if moved more than 25% of slide width
+        if (movedBy < -slideWidth / 4 && currentIndex < getMaxIndex()) {
+            currentIndex += 1;
+        }
+        if (movedBy > slideWidth / 4 && currentIndex > 0) {
+            currentIndex -= 1;
+        }
+
+        goToSlide(currentIndex);
+    }
+
+    // Disable default image drag behavior
+    track.querySelectorAll('img').forEach(img => {
+        img.addEventListener('dragstart', (e) => e.preventDefault());
+    });
+
+    // --- Initial Run ---
+    updateVisibleCards();
+    goToSlide(0);
+});

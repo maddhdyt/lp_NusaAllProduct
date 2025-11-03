@@ -5,37 +5,37 @@ export const products = [
         title: "Open Journal Systems",
         description: "Instalasi, kustomisasi, dan pelatihan OJS atau website institusi yang profesional.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image934_orhrc3.webp",
-        link: "/pembuatanOjs.html" // Changed to the correct file name
+        link: "/pembuatanOjs" // Changed to the correct file name
     },
     {
         title: "Website Development",
         description: "Pembuatan website modern, responsif, dan SEO-ready untuk mendukung pertumbuhan digital bisnis Anda.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image933_xlea6b.webp",
-        link: "#" // Add link when ready
+        link: "/webDev" // Add link when ready
     },
     {
         title: "Jasa Iklan Digital",
         description: "Strategi periklanan berbasis data di Google Ads, Meta Ads, dan platform digital lainnya untuk menjangkau audiens yang tepat.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815898/image935_saggnd.webp",
-        link: "#"
+        link: "/nusaDigital"
     },
     {
         title: "Publikasi Jurnal",
         description: "Pendampingan submit, layout, hingga strategi indeksasi untuk jurnal ilmiah.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image936_c9vzbk.webp",
-        link: "#"
+        link: "/publisherJurnal"
     },
     {
         title: "Penerbitan Buku",
         description: "Kurasi naskah, ISBN, desain sampul & tata letak, percetakan, hingga distribusi.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image937_w3z7nv.webp",
-        link: "#"
+        link: "/nusaPress"
     },
     {
         title: "Pelatihan LKP",
         description: "Kursus keterampilan untuk mendukung peningkatan kompetensi individu dan tenaga kerja.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image938_hpd2lb.webp",
-        link: "#"
+        link: "/nusaLkp"
     },
     {
         title: "Pelatihan LPK",
@@ -47,13 +47,13 @@ export const products = [
         title: "Virtual Office",
         description: "Layanan kantor virtual profesional dengan alamat bisnis resmi, penerimaan surat, hingga dukungan administrasi.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image940_lyuom1.webp",
-        link: "#"
+        link: "/nusaLpk"
     },
     {
         title: "Legalitas Usaha",
         description: "Pendampingan pengurusan perizinan, badan hukum, hingga sertifikasi usaha agar bisnis berjalan lebih aman dan terpercaya.",
         iconUrl: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758815897/image941_przbew.webp",
-        link: "#"
+        link: "/nusaLegalitas"
     }
 ];
 
