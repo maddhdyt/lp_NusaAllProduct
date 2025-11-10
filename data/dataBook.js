@@ -35,73 +35,128 @@ export const clientLogos = [
 ];
 
 
-// data/pricingData.js
+// /data/bookPackagesData.js
+export const WA_NUMBER = "6281222800879"; // ganti ke nomor kamu
 
-export const pricingData = [
+export const bookPackages = [
     {
-        name: 'Royale All In',
-        headerColor: 'bg-blue-gradient',
-        publishTime: '11 Hari Buku Terbit!',
-        revisionNote: 'Gratis Revisi Unlimited',
-        buttonColor: 'bg-green-gradient hover:bg-green-600',
-        Links: "https://wa.me/62881022376684?text=Halo%2C%20saya%20dari%20website%20ingin%20konsultasi%20mengenai%20paket%20Royale%20All%20In%20penerbitan%2Fpercetakan%20buku%20di%20Nusa%20Press",
-        features: [
-            { text: 'E-Book & ISBN Resmi', included: true },
-            { text: 'Katalog Perpustakaan Nasional', included: true },
-            { text: 'Desain Cover & Layout Premium', included: true },
-            { text: 'Video Teaser Promosi', included: true },
-            { text: 'Distribusi Toko Buku Online & Marketplace', included: true },
-            { text: 'Campaign Iklan Digital', included: true },
-            { text: 'Royalti 25% Ebook', included: true },
-            { text: 'Royalti 20% Cetak', included: true },
-            { text: 'Publikasi Artikel Media Partner', included: true },
-            { text: 'Publikasi SINTA 5 (Gratis)', included: true },
-            { text: 'Merchandise', included: true },
+        name: "HEMAT",
+        copies: "5 EKSEMPLAR",
+        pages: "(Max. 150 Halaman)",
+        cocokUntuk: "Penulis pemula yang butuh paket dasar, rapi, dan ekonomis.",
+        accent: "#2563EB",
+        fasilitas: [
+            "ISSN Cetak + Barcode",
+            "ISB Digital + Barcode",
+            "Layout 2x Revisi",
+            "Design Cover 2x Revisi",
+            "3 Eksemplar Untuk Penulis",
+            "2 Eksemplar Untuk Perpusnas",
+            "1 Eksemplar Untuk Perpusda"
+        ],
+        include: [
+            "E-Book",
+            "E-Sertifikat Penulis",
+            "Penjualan Buku Cetak & E-Book (Gramedia, Kubuku, Playbook, Shopee & Website)",
+            "Profit Share Buku Cetak 20%",
+            "Profit Share Buku Digital 10%"
         ]
     },
     {
-        name: 'Elite Prime',
-        headerColor: 'bg-blue-800',
-        publishTime: '20 Hari Buku Terbit!',
-        revisionNote: 'Gratis 3x Revisi',
-        buttonColor: 'bg-green-gradient hover:bg-green-600',
-        Links: "https://wa.me/62881022376684?text=Halo%2C%20saya%20dari%20website%20ingin%20konsultasi%20mengenai%20paket%20Elite%20Prime%20penerbitan%2Fpercetakan%20buku%20di%20Nusa%20Press",
-        features: [
-            { text: 'E-Book & ISBN Resmi', included: true },
-            { text: 'Katalog Perpustakaan Nasional', included: true },
-            { text: 'Desain Cover & Layout Premium', included: true },
-            { text: 'Video Teaser Promosi', included: false },
-            { text: 'Distribusi Toko Buku Online & Marketplace', included: true },
-            { text: 'Campaign Iklan Digital', included: false },
-            { text: 'Royalti 25% Ebook', included: true },
-            { text: 'Royalti 20% Cetak', included: true },
-            { text: 'Publikasi Artikel Media Partner', included: true },
-            { text: 'Publikasi SINTA 5 (Gratis)', included: false },
-            { text: 'Merchandise', included: false },
+        name: "KONVERSI",
+        copies: "5 EKSEMPLAR",
+        pages: "(Max. 150 Halaman)",
+        cocokUntuk: "Mahasiswa/akademisi yang ingin ubah karya ilmiah jadi buku profesional.",
+
+        accent: "#22C55E",
+        fasilitas: [
+            "Judul Buku",
+            "Penghapusan Abstraksi & Hal. Pengesahan",
+            "Perubahan Konteks Kalimat",
+            "Cek Plagiasi, Footnote & Daftar Pustaka",
+            "ISSN Cetak + Barcode",
+            "ISB Digital + Barcode",
+            "Proofreading",
+            "Layout 2x Revisi",
+            "Design Cover 2x Revisi",
+            "3 Eksemplar Untuk Penulis",
+            "2 Eksemplar Untuk Perpusnas",
+            "1 Eksemplar Untuk Perpusda"
+        ],
+        include: [
+            "E-Book",
+            "E-Sertifikat Penulis",
+            "Terindeks Google Scholar",
+            "Penjualan Buku Cetak & E-Book (Gramedia, Kubuku, Playbook, Shopee & Website)",
+            "Promosi Sosial Media (Instagram Nusa Agency)",
+            "Profit Share Buku Cetak 20%",
+            "Profit Share Buku Digital 10%",
+            "Masuk Grup WhatsApp Eksklusif Nusa Press"
         ]
     },
     {
-        name: 'Basic Start',
-        headerColor: 'bg-blue-800',
-        publishTime: '35 Hari Buku Terbit!',
-        revisionNote: 'Tanpa Revisi',
-        buttonColor: 'bg-green-gradient hover:bg-green-600',
-        Links: "https://wa.me/62881022376684?text=Halo%2C%20saya%20dari%20website%20ingin%20konsultasi%20mengenai%20paket%20Basic%20Start%20penerbitan%2Fpercetakan%20buku%20di%20Nusa%20Press",
-        features: [
-            { text: 'E-Book & ISBN Resmi', included: true },
-            { text: 'Katalog Perpustakaan Nasional', included: true },
-            { text: 'Desain Cover & Layout Premium', included: true },
-            { text: 'Video Teaser Promosi', included: false },
-            { text: 'Distribusi Toko Buku Online & Marketplace', included: false },
-            { text: 'Campaign Iklan Digital', included: false },
-            { text: 'Royalti 25% Ebook', included: false },
-            { text: 'Royalti 20% Cetak', included: false },
-            { text: 'Publikasi Artikel Media Partner', included: false },
-            { text: 'Publikasi SINTA 5 (Gratis)', included: false },
-            { text: 'Merchandise', included: false },
+        name: "BUILDING HAKI",
+        copies: "25 EKSEMPLAR",
+        pages: "(Max. 160 Halaman)",
+        cocokUntuk: "Penulis yang fokus legalitas & perlindungan karya (HAKI).",
+        accent: "#F59E0B",
+        fasilitas: [
+            "LoA",
+            "ISSN Cetak + Barcode",
+            "ISB Digital + Barcode",
+            "Proofreading",
+            "Layout 3x Revisi",
+            "Design Cover 2x Revisi",
+            "25 Eksemplar Untuk Penulis",
+            "Free 2 Eksemplar Untuk Perpusnas",
+            "Free 1 Eksemplar Untuk Perpusda",
+            "HAKI (Hak Cipta Intelektual)"
+        ],
+        include: [
+            "E-Book",
+            "E-Sertifikat Penulis",
+            "Terindeks Google Scholar",
+            "Penjualan Buku Cetak & E-Book (Gramedia, Kubuku, Playbook, Shopee & Website)",
+            "Promosi Sosial Media (Instagram Nusa Agency)",
+            "Profit Share Buku Cetak 20%",
+            "Profit Share Buku Digital 10%",
+            "Masuk Grup WhatsApp Eksklusif Nusa Press"
+        ]
+    },
+    {
+        name: "PREMIUM",
+        copies: "100 EKSEMPLAR",
+        pages: "(Max. 150 Halaman)",
+        cocokUntuk: "Brand/penulis yang butuh skala besar + kemasan premium & promosi.",
+        accent: "#EF4444",
+        fasilitas: [
+            "LoA",
+            "ISSN Cetak + Barcode",
+            "ISB Digital + Barcode",
+            "Proofreading",
+            "Layout 4x Revisi",
+            "Design Cover 3x Revisi",
+            "100 Eksemplar Untuk Penulis",
+            "Free 2 Eksemplar Untuk Perpusnas",
+            "Free 1 Eksemplar Untuk Perpusda",
+            "HAKI (Hak Cipta Intelektual)"
+        ],
+        include: [
+            "E-Book",
+            "E-Sertifikat Penulis",
+            "Terindeks Google Scholar",
+            "Penjualan Buku Cetak & E-Book (Gramedia, Kubuku, Playbook, Shopee & Website)",
+            "Promosi Sosial Media (Instagram Nusa Agency)",
+            "Profit Share Buku Cetak 20%",
+            "Profit Share Buku Digital 10%",
+            "Masuk Grup WhatsApp Eksklusif Nusa Press",
+            "Diskon Potongan Harga 10% Next Project"
         ]
     }
 ];
+
+
+
 
 // data/whyChooseUsData.js
 

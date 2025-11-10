@@ -1,7 +1,9 @@
 import { clientLogos } from '../data/dataJournal.js';
-import { pricingData } from '../data/dataBook.js';
 import { whyChooseUsData } from '../data/dataBook.js';
 import { testimonialsData } from '../data/dataBook.js';
+    import { bookPackages, WA_NUMBER } from '../data/dataBook.js';
+
+
 
 window.addEventListener("load", () => {
     const badge = document.getElementById("wa-badge");
@@ -31,42 +33,107 @@ document.addEventListener('DOMContentLoaded', () => {
         track.appendChild(clone);
     });
 
-    const pricingGrid = document.querySelector('#pricing-grid');
+    // /js/bookPackages.js
 
-    if (pricingGrid) {
-        pricingData.forEach(pkg => {
-            const checkIcon = `<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`;
-            const xIcon = `<svg class="w-5 h-5 text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`;
+    const grid = document.getElementById('book-packages-grid');
 
-            const featuresHTML = pkg.features.map(feature => `
-                <li class="flex items-center ${!feature.included ? 'text-gray-400' : 'text-gray-700'}">
-                    ${feature.included ? checkIcon : xIcon}
-                    <span class="${!feature.included ? 'line-through' : ''}">${feature.text}</span>
-                </li>
-            `).join('');
+    const check = `
+<svg viewBox="0 0 24 24" class="h-4 w-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+</svg>`;
 
-            const cardHTML = `
-                <div class="bg-white rounded-2xl shadow-xl flex flex-col text-center transform hover:-translate-y-2 transition-transform duration-300 p-8">
-                    <div class="${pkg.headerColor} text-white font-extrabold text-4xl py-6 rounded-t-2xl rounded-2xl">
-                        PAKET <br> ${pkg.name.toUpperCase()}
-                    </div>
-                    <div class="flex-grow flex flex-col mt-6">
-                        <div class="mb-6">
-                            <p class="font-extrabold text-green-gradient text-3xl">${pkg.publishTime}</p>
-                            <p class="font-semibold text-gray-700">${pkg.revisionNote}</p>
-                        </div>
-                        <ul class="space-y-3 text-left mb-8 flex-grow">
-                            ${featuresHTML}
-                        </ul>
-                        <a href="${pkg.Links}" class="${pkg.buttonColor} text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
-                            Kirim Naskah Sekarang
-                        </a>
-                    </div>
-                </div>
-            `;
-            pricingGrid.innerHTML += cardHTML;
-        });
+    function features(list) {
+        return list.map(t => `
+    <li class="flex gap-2 text-[13px] text-slate-700">${check}<span>${t}</span></li>
+  `).join('');
     }
+
+    function waLink(plan) {
+        const msg = encodeURIComponent(
+            `Halo Nusa Agency, saya tertarik paket ${plan}. Mohon info & penawaran ya.`
+        );
+        return `https://wa.me/${WA_NUMBER}?text=${msg}`;
+    }
+
+    function card(pkg, i) {
+        const did = `details-${i}`;
+        return `
+  <article class="group bg-white rounded-2xl shadow-lg text-slate-900 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+    <div class="p-6 flex flex-col h-full">
+      <header>
+        <p class="text-[12px] font-semibold text-slate-500">PAKET PENERBITAN</p>
+        <h3 class="text-[22px] font-extrabold" style="color:${pkg.accent}">${pkg.name}</h3>
+        <p class="font-semibold text-slate-800 text-[13px]">${pkg.copies}</p>
+        <p class="text-[11px] italic text-slate-500">${pkg.pages}</p>
+         <div class="mt-3 text-[13px] text-slate-700">
+        ${pkg.cocokUntuk ?? ''}
+      </div>
+      </header>
+
+      <!-- CTA utama -->
+      <a href="${waLink(pkg.name)}"
+         class="mt-4 inline-flex w-full items-center justify-center rounded-lg text-white font-semibold text-sm py-2.5"
+         style="background-color:${pkg.accent}">
+        Konsultasi Paket ${pkg.name}
+      </a>
+
+      <!-- Toggle detail (untuk mobile/desktop via click) -->
+      <button type="button"
+        class="mt-2 text-sm font-semibold text-slate-700 hover:text-slate-900 underline underline-offset-4"
+        aria-controls="${did}" aria-expanded="false"
+        onclick="window.toggleDetails('${did}', this)">
+        Lihat Detail
+      </button>
+
+      <!-- DETAIL: smooth expand; hover open on desktop -->
+      <div id="${did}"
+           class="details overflow-hidden max-h-0 opacity-0
+              transition-[max-height,opacity] duration-500 ease-in-out
+              group-hover:max-h-[1200px] group-hover:opacity-100">
+        <div class="mt-4 border-t border-slate-200 pt-4">
+          <div class="grid grid-cols-1 gap-4">
+            <div>
+              <p class="font-bold text-slate-800 mb-1">Fasilitas</p>
+              <ul class="space-y-1">${features(pkg.fasilitas)}</ul>
+            </div>
+            <div>
+              <p class="font-bold text-slate-800 mb-1">Include</p>
+              <ul class="space-y-1">${features(pkg.include)}</ul>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </article>`;
+    }
+
+    grid.innerHTML = bookPackages.map(card).join('');
+
+    /* ===== Mobile/Desktop click toggle =====
+       - add/remove classes: max-h-0 <-> max-h-[1200px], opacity-0 <-> opacity-100
+    */
+    window.toggleDetails = (id, btn) => {
+  const el = document.getElementById(id);
+  const opened = el.classList.contains('max-h-[1200px]');
+
+  if (opened) {
+    el.classList.remove('max-h-[1200px]', 'opacity-100');
+    el.classList.add('max-h-0', 'opacity-0');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.textContent = 'Lihat Detail';
+  } else {
+    el.classList.add('max-h-[1200px]', 'opacity-100');
+    el.classList.remove('max-h-0', 'opacity-0');
+    btn.setAttribute('aria-expanded', 'true');
+    btn.textContent = 'Tutup Detail';
+  }
+};
+
+
+
+
 
     const whyChooseUsGrid = document.querySelector('#why-choose-us-grid');
 

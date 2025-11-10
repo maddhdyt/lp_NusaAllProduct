@@ -1,7 +1,7 @@
 // A list of all available pricing packages for OJS
 export const pricingPackages = [
     {
-        title: "Paket OJS 1",
+        title: "Paket OJS Basic",
         description: "Sesuaikan kebutuhan Anda dengan paket fleksibel yang kami sediakan.",
         whatsappLink: "https://wa.me/6285121117589?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20Paket%20OJS%201%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F",
         features: [
@@ -41,7 +41,7 @@ export const pricingPackages = [
         ]
     },
     {
-        title: "Paket OJS 2",
+        title: "Paket OJS Elite",
         description: "Sesuaikan kebutuhan Anda dengan paket fleksibel yang kami sediakan.",
         whatsappLink: "https://wa.me/6285121117589?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20Paket%20OJS%202%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F",
         features: [
@@ -82,7 +82,7 @@ export const pricingPackages = [
         ]
     },
     {
-        title: "Paket OJS 3",
+        title: "Paket OJS Royal",
         description: "Sesuaikan kebutuhan Anda dengan paket fleksibel yang kami sediakan.",
         whatsappLink: "https://wa.me/6285121117589?text=Saya%20tertarik%20dengan%20paket%20pembuatan%20Web%20Jurnal%20(OJS)%20Paket%20OJS%203%20nya%2C%20bisa%20infokan%C2%A0lebih%C2%A0lanjut%3F",
         features: [

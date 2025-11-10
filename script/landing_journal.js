@@ -307,3 +307,39 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+      
+      // Ambil elemen-elemen yang dibutuhkan
+      const popup = document.getElementById('promo-popup');
+      const content = document.getElementById('popup-content');
+      const closeButton = document.getElementById('close-popup-button');
+
+      // Fungsi untuk menampilkan pop-up
+      const showPopup = () => {
+        popup.classList.remove('hidden');
+      };
+
+      // Fungsi untuk menyembunyikan pop-up
+      const hidePopup = () => {
+        popup.classList.add('hidden');
+      };
+
+      // --- PASANG EVENT LISTENERS ---
+
+      // 1. Sembunyikan pop-up saat tombol 'X' (close) diklik
+      closeButton.addEventListener('click', hidePopup);
+
+      // 2. Sembunyikan pop-up saat area OVERLAY (di luar konten) diklik
+      popup.addEventListener('click', (event) => {
+        if (event.target === popup) {
+          hidePopup();
+        }
+      });
+      
+      // --- PERUBAHAN UTAMA ADA DI SINI ---
+      // Langsung panggil fungsi showPopup() saat halaman dimuat.
+      // Tidak perlu 'setTimeout' atau 'button'
+      showPopup();
+
+    });
+

@@ -3,36 +3,37 @@
 // We use "export default" to make this array available to other JavaScript files.
 export const clientLogos = [
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image881_zvoisu.webp',
-        alt: 'Pusat Hosting'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095313/ikp_ihflri.webp',
+        alt: ' IKP'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image882_gcfmi1.webp',
-        alt: 'Pusat Hosting'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095340/unp_mfyppi.webp',
+        alt: 'UNP'
+    },
+    
+    {
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095328/uin_dn1dg0.webp',
+        alt: 'UIN'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image879_zc6iek.webp',
-        alt: 'LPK'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095336/ums_c1pib1.webp',
+        alt: 'UMS'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/3_1_1_xcwhs6.webp',
-        alt: 'Babatox'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095324/ui_d9osbu.webp',
+        alt: 'UI'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image880_tsgvud.webp',
-        alt: 'MNC'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095332/uinb_rgzd6m.webp',
+        alt: 'UINB'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/2.arkainstitute.jpeg_lxxery.webp',
-        alt: 'Arka Institute'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095351/akti_ltegta.webp',
+        alt: 'AKTI'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/image425_gzdhkk.webp',
-        alt: 'Hookey Graph'
-    },
-    {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image883_1_ylodm0.webp',
-        alt: 'Educate'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095347/wd_tfcvhm.webp',
+        alt: 'WD'
     }
 ];
 
