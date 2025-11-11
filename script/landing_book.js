@@ -1,10 +1,6 @@
-import { clientLogos } from '../data/dataJournal.js';
-import { whyChooseUsData } from '../data/dataBook.js';
-import { testimonialsData } from '../data/dataBook.js';
-    import { bookPackages, WA_NUMBER } from '../data/dataBook.js';
+import { clientLogos, whyChooseUsData, bookFaqs, testimonialsData, bookPackages, WA_NUMBER } from '../data/dataBook.js';
 
-
-
+// section logo slider badge
 window.addEventListener("load", () => {
     const badge = document.getElementById("wa-badge");
 
@@ -33,8 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         track.appendChild(clone);
     });
 
-    // /js/bookPackages.js
-
+    // section bookPackages
     const grid = document.getElementById('book-packages-grid');
 
     const check = `
@@ -58,26 +53,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function card(pkg, i) {
         const did = `details-${i}`;
         return `
-  <article class="group bg-white rounded-2xl shadow-lg text-slate-900 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+  <article class="card bg-white rounded-2xl shadow-lg text-slate-900 overflow-hidden transition-all duration-300 hover:-translate-y-1">
     <div class="p-6 flex flex-col h-full">
       <header>
         <p class="text-[12px] font-semibold text-slate-500">PAKET PENERBITAN</p>
         <h3 class="text-[22px] font-extrabold" style="color:${pkg.accent}">${pkg.name}</h3>
         <p class="font-semibold text-slate-800 text-[13px]">${pkg.copies}</p>
         <p class="text-[11px] italic text-slate-500">${pkg.pages}</p>
-         <div class="mt-3 text-[13px] text-slate-700">
-        ${pkg.cocokUntuk ?? ''}
-      </div>
+        <div class="mt-3 text-[13px] text-slate-700">${pkg.cocokUntuk ?? ''}</div>
       </header>
 
-      <!-- CTA utama -->
       <a href="${waLink(pkg.name)}"
          class="mt-4 inline-flex w-full items-center justify-center rounded-lg text-white font-semibold text-sm py-2.5"
          style="background-color:${pkg.accent}">
         Konsultasi Paket ${pkg.name}
       </a>
 
-      <!-- Toggle detail (untuk mobile/desktop via click) -->
       <button type="button"
         class="mt-2 text-sm font-semibold text-slate-700 hover:text-slate-900 underline underline-offset-4"
         aria-controls="${did}" aria-expanded="false"
@@ -85,11 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         Lihat Detail
       </button>
 
-      <!-- DETAIL: smooth expand; hover open on desktop -->
       <div id="${did}"
-           class="details overflow-hidden max-h-0 opacity-0
-              transition-[max-height,opacity] duration-500 ease-in-out
-              group-hover:max-h-[1200px] group-hover:opacity-100">
+           class="details overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-500 ease-in-out">
         <div class="mt-4 border-t border-slate-200 pt-4">
           <div class="grid grid-cols-1 gap-4">
             <div>
@@ -101,40 +89,92 @@ document.addEventListener('DOMContentLoaded', () => {
               <ul class="space-y-1">${features(pkg.include)}</ul>
             </div>
           </div>
-
-          
         </div>
       </div>
     </div>
   </article>`;
     }
 
+    // render cards
     grid.innerHTML = bookPackages.map(card).join('');
 
-    /* ===== Mobile/Desktop click toggle =====
-       - add/remove classes: max-h-0 <-> max-h-[1200px], opacity-0 <-> opacity-100
-    */
-    window.toggleDetails = (id, btn) => {
-  const el = document.getElementById(id);
-  const opened = el.classList.contains('max-h-[1200px]');
+   // ==== HOVER/CLICK: cuma 1 card yang memanjang ====
+(() => {
+  const cards = Array.from(grid.querySelectorAll('article.card'));
 
-  if (opened) {
-    el.classList.remove('max-h-[1200px]', 'opacity-100');
-    el.classList.add('max-h-0', 'opacity-0');
-    btn.setAttribute('aria-expanded', 'false');
-    btn.textContent = 'Lihat Detail';
-  } else {
-    el.classList.add('max-h-[1200px]', 'opacity-100');
-    el.classList.remove('max-h-0', 'opacity-0');
-    btn.setAttribute('aria-expanded', 'true');
-    btn.textContent = 'Tutup Detail';
+  function openPanel(panel)  { panel.style.maxHeight = panel.scrollHeight + 'px'; panel.style.opacity = '1'; }
+  function closePanel(panel) { panel.style.maxHeight = '0px'; panel.style.opacity = '0'; }
+
+  function collapseOthers(exceptPanel) {
+    cards.forEach(c => {
+      const p = c.querySelector('.details');
+      const b = c.querySelector('button[aria-controls]');
+      if (p && p !== exceptPanel) {
+        closePanel(p);
+        if (b) { b.setAttribute('aria-expanded','false'); b.textContent = 'Lihat Detail'; b.removeAttribute('data-pinned'); }
+      }
+    });
   }
-};
+
+  const HOVER_DELAY = 120;
+  let t = null;
+
+  cards.forEach(card => {
+    const panel = card.querySelector('.details');
+    const btn   = card.querySelector('button[aria-controls]');
+    if (!panel) return;
+
+    // default tertutup
+    closePanel(panel);
+    btn?.setAttribute('aria-expanded','false');
+
+    // HOVER: buka hanya kartu ini
+    card.addEventListener('mouseenter', () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        if (btn?.getAttribute('data-pinned') === 'true') return; // kalau lagi dipin via klik, jangan ganggu
+        collapseOthers(panel);
+        openPanel(panel);
+        btn?.setAttribute('aria-expanded','true');
+        if (btn) btn.textContent = 'Tutup Detail';
+      }, HOVER_DELAY);
+    });
+
+    // KELUAR HOVER: tutup jika tidak dipin
+    card.addEventListener('mouseleave', () => {
+      clearTimeout(t);
+      if (btn?.getAttribute('data-pinned') === 'true') return;
+      closePanel(panel);
+      btn?.setAttribute('aria-expanded','false');
+      if (btn) btn.textContent = 'Lihat Detail';
+    });
+
+    // KLIK tombol: pin / unpin (buat mobile & desktop)
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const opened = panel.style.maxHeight && panel.style.maxHeight !== '0px';
+        if (opened && btn.getAttribute('data-pinned') === 'true') {
+          // unpin + tutup
+          closePanel(panel);
+          btn.setAttribute('aria-expanded','false');
+          btn.textContent = 'Lihat Detail';
+          btn.removeAttribute('data-pinned');
+        } else {
+          // pin + tutup yang lain
+          collapseOthers(panel);
+          openPanel(panel);
+          btn.setAttribute('aria-expanded','true');
+          btn.textContent = 'Tutup Detail';
+          btn.setAttribute('data-pinned','true');
+        }
+      });
+    }
+  });
+})();
 
 
 
-
-
+    // Section Why Choose Us
     const whyChooseUsGrid = document.querySelector('#why-choose-us-grid');
 
     if (whyChooseUsGrid) {
@@ -157,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Section Testimonials
     const testimonialsGrid = document.querySelector('#testimonials-grid');
 
     if (testimonialsGrid) {
@@ -198,8 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-import { bookFaqs } from '../data/dataBook.js';
-
+// Section FAQ 
 document.addEventListener('DOMContentLoaded', function () {
 
     const faqContainer = document.getElementById('faq-accordion');
@@ -228,7 +268,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         faqContainer.innerHTML = allFaqsHtml;
 
-        // Now, add the click functionality
         const faqItems = faqContainer.querySelectorAll('.faq-item');
         faqItems.forEach(item => {
             const questionButton = item.querySelector('.faq-question');

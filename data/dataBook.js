@@ -1,41 +1,40 @@
-// We use "export default" to make this array available to other JavaScript files.
 export const clientLogos = [
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image881_zvoisu.webp',
-        alt: 'Pusat Hosting'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095313/ikp_ihflri.webp',
+        alt: ' IKP'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image882_gcfmi1.webp',
-        alt: 'Pusat Hosting'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095340/unp_mfyppi.webp',
+        alt: 'UNP'
+    },
+    
+    {
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095328/uin_dn1dg0.webp',
+        alt: 'UIN'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image879_zc6iek.webp',
-        alt: 'LPK'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095336/ums_c1pib1.webp',
+        alt: 'UMS'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/3_1_1_xcwhs6.webp',
-        alt: 'Babatox'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095324/ui_d9osbu.webp',
+        alt: 'UI'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image880_tsgvud.webp',
-        alt: 'MNC'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095332/uinb_rgzd6m.webp',
+        alt: 'UINB'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/2.arkainstitute.jpeg_lxxery.webp',
-        alt: 'Arka Institute'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095351/akti_ltegta.webp',
+        alt: 'AKTI'
     },
     {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855845/image425_gzdhkk.webp',
-        alt: 'Hookey Graph'
-    },
-    {
-        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758855844/image883_1_ylodm0.webp',
-        alt: 'Educate'
+        src: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756095347/wd_tfcvhm.webp',
+        alt: 'WD'
     }
 ];
 
-
-// /data/bookPackagesData.js
+// section bookPackages 
 export const WA_NUMBER = "6281222800879"; // ganti ke nomor kamu
 
 export const bookPackages = [
@@ -66,7 +65,7 @@ export const bookPackages = [
         name: "KONVERSI",
         copies: "5 EKSEMPLAR",
         pages: "(Max. 150 Halaman)",
-        cocokUntuk: "Mahasiswa/akademisi yang ingin ubah karya ilmiah jadi buku profesional.",
+        cocokUntuk: "Mahasiswa atau Akademisi yang ingin ubah karya ilmiah menjadi buku.",
 
         accent: "#22C55E",
         fasilitas: [
@@ -195,42 +194,42 @@ export const testimonialsData = [
         text: "Proses penerbitan buku saya dari naskah mentah sampai jadi buku fisik sangat profesional. Kualitas cetaknya luar biasa dan timnya sangat membantu.",
         author: 'Andi Pratama',
         title: 'Penulis Novel Fiksi Ilmiah',
-        imageSrc: 'https://i.pravatar.cc/150?u=andi'
+        imageSrc: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1762842389/screenshot20251111102602_bigsmd.webp'
     },
     {
         rating: 5,
         text: "Nusa Agency benar-benar mengerti kebutuhan saya untuk cetak buku dalam jumlah kecil. Hasilnya rapi, tajam, dan harganya sangat transparan. Sangat direkomendasikan!",
         author: 'Citra Lestari',
         title: 'Penerbit Indie',
-        imageSrc: 'https://i.pravatar.cc/150?u=citra'
+        imageSrc: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1762842388/image1054_xzdeqf.webp'
     },
     {
         rating: 5,
         text: "Dari desain layout, sampul, hingga pengurusan ISBN, semuanya diurus dengan baik. Saya tidak perlu khawatir soal teknis dan bisa fokus pada tulisan. Terima kasih!",
         author: 'Budi Santoso',
         title: 'Dosen & Peneliti',
-        imageSrc: 'https://i.pravatar.cc/150?u=budi'
+        imageSrc: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1762842389/screenshot20251111102306_rtymot.webp'
     },
     {
         rating: 4,
         text: "Kualitas cetaknya bagus, hanya saja ada sedikit keterlambatan dari jadwal yang dijanjikan. Namun, tim komunikasi mereka sangat responsif dan proaktif memberi update.",
         author: 'Dewi Anggraini',
         title: 'Penulis Buku Anak',
-        imageSrc: 'https://i.pravatar.cc/150?u=dewi'
+        imageSrc: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1762842388/screenshot20251111102500_bkq226.webp'
     },
     {
         rating: 5,
         text: "Sebagai penulis pemula, saya sangat terbantu dengan layanan konsultasi mereka. Mereka memberikan arahan yang jelas dan membuat proses penerbitan terasa mudah.",
         author: 'Eko Wahyudi',
         title: 'Travel Blogger',
-        imageSrc: 'https://i.pravatar.cc/150?u=eko'
+        imageSrc: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1762842388/screenshot20251111102809_rs458s.webp'
     },
     {
         rating: 5,
         text: "Finishing bukunya sempurna! Laminasi doff dan kualitas jilidnya membuat buku saya terlihat sangat premium. Layak dengan harganya.",
         author: 'Fitriani Halim',
         title: 'Desainer Grafis & Penulis',
-        imageSrc: 'https://i.pravatar.cc/150?u=fitriani'
+        imageSrc: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1762842388/screenshot20251111102652_kjcflc.webp'
     }
 ];
 
