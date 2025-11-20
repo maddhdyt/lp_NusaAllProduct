@@ -35,7 +35,7 @@ export const testimonialsData = [
       'Proses domisili perusahaan jadi jauh lebih mudah. Alamat VO langsung bisa dipakai untuk NIB/OSS dan surat-menyurat. Adminnya responsif, semua jelas step by step.',
     name: 'Rama Wijaya',
     role: 'Founder — Konsultan Pajak',
-    avatar: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=200&h=200&fit=crop',
+    avatar: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763611776/image59_re66f0.webp',
     rating: 5
   },
   {
@@ -43,7 +43,7 @@ export const testimonialsData = [
       'Resepsionisnya membantu terima paket & telepon klien dengan profesional. Meeting room bersih dan representatif untuk presentasi pertama kami.',
     name: 'Indah Kartika',
     role: 'Co-Founder — Agensi Kreatif',
-    avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=200&h=200&fit=crop',
+    avatar: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763611775/image60_masszi.webp',
     rating: 5
   },
   {
@@ -51,7 +51,7 @@ export const testimonialsData = [
       'Biaya transparan, kontrak jelas, dan bisa upgrade paket kalau kebutuhan tim bertambah. Efisien banget untuk tahap awal bisnis.',
     name: 'Denny Pratama',
     role: 'Owner — Startup EduTech',
-    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&fit=crop',
+    avatar: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763611775/image61_m7lazr.webp',
     rating: 4
   },
   {
@@ -59,7 +59,7 @@ export const testimonialsData = [
       'Dokumen domisili & PKS cepat diproses. Tim membantu koordinasi keperluan legal hingga beres. Lokasinya strategis dan mudah diakses klien.',
     name: 'Salsa Nuraini',
     role: 'Direktur — Biro Hukum',
-    avatar: 'https://images.unsplash.com/photo-1544005316-04ae1ca286ed?q=80&w=200&h=200&fit=crop',
+    avatar: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763611776/image62_plmcyd.webp',
     rating: 5
   },
   {
@@ -67,7 +67,7 @@ export const testimonialsData = [
       'Layanannya lengkap: alamat usaha, penerimaan surat, notifikasi paket, hingga kuota meeting room. Sangat worth it dibanding sewa kantor fisik.',
     name: 'Kevin Hartanto',
     role: 'CEO — Distribusi F&B',
-    avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&h=200&fit=crop',
+    avatar: 'https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763611775/image63_nflr3e.webp',
     rating: 5
   }
 ];

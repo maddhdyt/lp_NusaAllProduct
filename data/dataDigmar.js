@@ -2,7 +2,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "Leads naik 3x hanya dalam 6 minggu. Funnel-nya jelas, copy iklan rapi, dan retargeting-nya presisi. ROI paling sehat sejauh ini.",
-    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610786/Fajar_Ramadhan_qlzhxz.png",
     name: "Fajar Ramadhan",
     title: "CMO — Kulina Rasa",
     rating: 5
@@ -10,7 +10,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "Tim membantu dari riset keyword sampai landing page. CPA turun 42% dan booking via WhatsApp jadi makin rapih terukur.",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610774/Nadia_Prameswari_r4cxoa.png",
     name: "Nadia Prameswari",
     title: "Owner — Klinik Aesthetic Glow",
     rating: 5
@@ -18,7 +18,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "Konten organik + iklan Meta-nya konsisten. Follower tumbuh natural dan omzet campaign Lebaran naik 2.1x dibanding tahun lalu.",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610782/Rico_Aditya_f3o7mn.png",
     name: "Rico Aditya",
     title: "Founder — Dapur Beku Nusantara",
     rating: 5
@@ -26,7 +26,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "Dashboard reporting-nya lengkap: CAC, LTV, ROAS semua kebaca. Keputusan marketing jadi cepat karena datanya real-time.",
-    image: "https://randomuser.me/api/portraits/women/28.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610784/Tania_Kusuma_uqrduq.png",
     name: "Tania Kusuma",
     title: "Head of Growth — Edutech ID",
     rating: 5
@@ -34,7 +34,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "Google Ads mereka rapi banget. Struktur SKAG & negative keyword bikin biaya iklan lebih efisien tanpa menurunkan kualitas leads.",
-    image: "https://randomuser.me/api/portraits/men/46.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610781/Ardiansyah_Putra_tjwr55.png",
     name: "Ardiansyah Putra",
     title: "Direktur — CV Mitra Konstruksi",
     rating: 5
@@ -42,7 +42,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "Strategi omnichannel-nya jalan: TikTok, IG, dan marketplace sinkron. Produk baru sold out di minggu pertama pre-order.",
-    image: "https://randomuser.me/api/portraits/women/19.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610782/Claudia_Putri_mapgbk.png",
     name: "Claudia Putri",
     title: "Co-Founder — Bellewear",
     rating: 5
@@ -50,7 +50,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "Email automation + segmentasi audiens bikin repeat order naik. Program loyalty sederhana tapi efektif banget.",
-    image: "https://randomuser.me/api/portraits/men/85.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610779/Dimas_Hartono_vrrxba.png",
     name: "Dimas Hartono",
     title: "Owner — Kopi Sisi Kota",
     rating: 4
@@ -58,7 +58,7 @@ export const digitalMarketingTestimonials = [
   {
     quote:
       "A/B testing kreatif dilakukan terus-menerus. CTR stabil di atas benchmark dan CTR Link Ads Meta bisa tembus 2,9%.",
-    image: "https://randomuser.me/api/portraits/women/52.jpg",
+    image: "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1763610781/Maya_Astari_kfdlpa.png",
     name: "Maya Astari",
     title: "Marketing Manager — Svarna Jewelry",
     rating: 5
